@@ -2,6 +2,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 
+import {colors} from "../styles/theme";
+
 const HeroWrapper = styled.div`
   position: relative;
   height: 100vh;
@@ -18,13 +20,17 @@ const HeroContainer = styled.div`
   z-index: 2;
 `;
 
+const H1 = styled.h1`
+  color: ${colors.text};
+`;
+
 export default ({ data }) => (
   <HeroWrapper>
     <Helmet>
       <title>{data.site.siteMetadata.title}</title>
     </Helmet>
     <HeroContainer>
-      <h1>Acclimate Consulting</h1>
+      <H1>Acclimate Consulting</H1>
     </HeroContainer>
   </HeroWrapper>
 );

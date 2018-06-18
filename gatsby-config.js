@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`roboto`, `open sans`]
+        fonts: [`open sans`, `roboto`]
       }
     },
     `gatsby-plugin-styled-components`,
@@ -52,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-118666025-1`,
+        trackingId: `UA-120924365-1`,
       },
     },
     `gatsby-plugin-offline`,
