@@ -94,7 +94,7 @@ export default class ContactForm extends React.Component {
   render() {
     return (
       <div>
-        <H2>Drop me a line</H2>
+        <H2>Contact us</H2>
         <Form
           name="contact"
           method="post"

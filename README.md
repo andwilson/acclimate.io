@@ -1,6 +1,7 @@
-# &Wilson
-## Andrew Wilson's personal portfolio, notes, and consulting website
+# Acclimate Consulting website
 
-This site is built using Gatsby static site generator and is hosted on Netlify.  This makes it easy to easily add content to the site with markdown and automatically trigger new builds when pushed to this repository.  Markdown supports images, syntax highlighting, iframes, and even custom React components.  Links and routes are automatically added with each new markdown post, using frontmatter to filter and sort appropriately.
+This website serves to inform existing and potential customers of Acclimate Consulting.  It presents an overview of our services, methodology, team, and thinking.
 
-Check it out at [andwilson.com](https://www.andwilson.com)
+This website is build using Gatsby static site generator and is hosted on Netlify.  This makes it modular, easy to maintain, incredibly fast, and interactive if need be.
+
+Check it out at [acclimate.io](https://www.acclimate.io)
