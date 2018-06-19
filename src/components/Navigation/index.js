@@ -69,24 +69,42 @@ const Logo = styled(Img)`
   }
 `;
 
+const P = styled.p`
+  color: black;
+  background: green;
+  ${TestLink}:hover & {
+    color: white;
+    background: white;
+  }
+`;
+
+const TestLink = styled.a`
+  background: gray;
+`;
+
 export default ({ data }) => (
-    <Wrapper>
-        <NavBar>
-            <Title>
-                <Link to={"/"}>
-                <Logo
-                    sizes={data.logo.sizes}
-                />
-                </Link>
-                <TLink to={"/"}>
-                    {data.site.siteMetadata.title}
-                </TLink>
-            </Title>
-            <Nav>
-                <SLink to={"/services/"} style={{ marginLeft: 0 }}>Services</SLink>
-                <SLink to={"/about/"}>About</SLink>
-                <SLink to={"/contact/"}>Contact</SLink>
-            </Nav>
-        </NavBar>
-    </Wrapper>
+  <Wrapper>
+    <NavBar>
+      <Title>
+        <Link to={"/"}>
+          <Logo
+            sizes={data.logo.sizes}
+          />
+        </Link>
+        <TLink to={"/"}>
+          {data.site.siteMetadata.title}
+        </TLink>
+      </Title>
+      <Nav>
+        <SLink to={"/services/"} style={{ marginLeft: 0 }}>Services</SLink>
+        
+        <TestLink href="#">
+          <P>This changes</P>
+        </TestLink>
+
+        <SLink to={"/about/"}>About</SLink>
+        <SLink to={"/contact/"}>Contact</SLink>
+      </Nav>
+    </NavBar>
+  </Wrapper>
 );
