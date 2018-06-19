@@ -21,7 +21,7 @@ const HeroContainer = styled.div`
 `;
 
 const H1 = styled.h1`
-  color: ${colors.text};
+  color: ${colors.primary};
 `;
 
 export default ({ data }) => (

@@ -5,6 +5,8 @@ import styled from "styled-components";
 import "../styles/normalize.css";
 import "../styles/base.css";
 
+import Navigation from "../components/Navigation";
+
 import favicon from "../images/favicon.ico";
 
 const Container = styled.div`
@@ -21,6 +23,7 @@ class Layout extends React.Component {
         <Helmet>
           <link rel="shortcut icon" type="image/png" href={favicon} />
         </Helmet>
+        <Navigation data={this.props.data}/>
         <Container>{children()}</Container>
       </div>
     );
@@ -34,6 +37,11 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    logo: imageSharp(id: { regex: "/logo-light.png/" }) {
+      sizes(maxWidth: 100, grayscale: false) {
+        ...GatsbyImageSharpSizes
       }
     }
   }
