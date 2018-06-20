@@ -11,7 +11,8 @@ const Top = styled.div`
   position: relative;
   height: calc(100vh - 65px);
   width: 100vw;
-  background: url(${topImage}) no-repeat center center fixed;
+  background-color: ${colors.dark};
+  background: url(${topImage}) no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -37,7 +38,6 @@ export default ({ data }) => (
       </div>
     </Top>
     <div>
-      Copyright 2018
     </div>
   </div>
 );
