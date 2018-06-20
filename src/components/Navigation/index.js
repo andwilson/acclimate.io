@@ -107,17 +107,6 @@ const SLink = styled(Link)`
   line-height: 500%;
 `;
 
-const Contact = styled(Link)`
-  text-decoration: none;
-  color: ${colors.dark};
-  background: ${colors.light}
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 14px;
-  font-weight: 300;
-  margin-left: 15px;
-`;
-
 export default ({ data }) => (
   <Wrapper>
     <Nav>
@@ -150,7 +139,6 @@ export default ({ data }) => (
             <li><SLink>Contact</SLink></li>
           </Drop>
         </Li>
-        <li><Contact to={"/contact/"}>Contact</Contact></li>
       </UL>
     </Nav>
   </Wrapper>
