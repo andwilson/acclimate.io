@@ -29,21 +29,10 @@ const Title = styled.div`
 const Nav = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const SLink = styled(Link)`
   text-decoration: none;
   color: ${colors.light};
   font-size: 14px;
   font-weight: 300;
-  margin: 0 0 0 20px;
-  transition: all 0.2s ease;
-  &:hover {
-    -ms-transform: translate(0px, -1px);
-    -webkit-transform: translate(0px, -1px);
-    transform: translate(0px, -1px);
-    color: #FFFFFF;
-  }
 `;
 
 const TLink = styled(Link)`
@@ -69,17 +58,90 @@ const Logo = styled(Img)`
   }
 `;
 
-const P = styled.p`
-  color: black;
-  background: green;
-  ${TestLink}:hover & {
-    color: white;
-    background: white;
+const About = styled.button`
+  background: none;
+  border: none;  
+  text-decoration: none;
+  color: ${colors.light};
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  transition: all 0.2s ease;
+  &:hover {
+
+    color: #FFFFFF;
   }
 `;
 
-const TestLink = styled.a`
-  background: gray;
+const Company = styled.button`
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: ${colors.light};
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 0 0 20px;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #FFFFFF;
+  }
+`;
+
+const Contact = styled(Link)`
+  text-decoration: none;
+  color: ${colors.light};
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 0 0 20px;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #FFFFFF;
+  }
+`;
+
+const ADrop = styled.div`
+  position: absolute;
+  background: ${colors.medium};
+  display: none;
+  ${About}:hover & {
+    display: flex;
+    flex-direction: column;
+  }
+  &:hover {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const CDrop = styled.div`
+  position: absolute;
+  background: ${colors.medium};
+  display: none;
+  ${Company}:hover & {
+    display: flex;
+    flex-direction: column; 
+  }
+  &:hover {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const SLink = styled(Link)`
+  background: none;
+  border: none;  
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: ${colors.light};
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #FFFFFF;
+  }
 `;
 
 export default ({ data }) => (
@@ -96,14 +158,23 @@ export default ({ data }) => (
         </TLink>
       </Title>
       <Nav>
-        <SLink to={"/services/"} style={{ marginLeft: 0 }}>Services</SLink>
-        
-        <TestLink href="#">
-          <P>This changes</P>
-        </TestLink>
-
-        <SLink to={"/about/"}>About</SLink>
-        <SLink to={"/contact/"}>Contact</SLink>
+        <About>
+          About
+        <ADrop>
+            <SLink>Services</SLink>
+            <SLink>Process</SLink>
+            <SLink>Industries</SLink>
+          </ADrop>
+        </About>
+        <Company>
+          Company
+          <CDrop>
+            <SLink>Team</SLink>
+            <SLink>Careers</SLink>
+            <SLink>Contact</SLink>
+          </CDrop>
+        </Company>
+        <Contact to={"/contact/"}>Contact</Contact>
       </Nav>
     </NavBar>
   </Wrapper>
