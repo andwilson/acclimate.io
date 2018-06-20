@@ -10,9 +10,8 @@ import Navigation from "../components/Navigation";
 import favicon from "../images/favicon.ico";
 
 const Container = styled.div`
-  max-width: 960px;
-  margin: auto;
-  padding: 0 12px 12px 12px;
+  position: relative;
+  top: 65px;
 `;
 
 class Layout extends React.Component {
@@ -36,7 +35,7 @@ export const pageQuery = graphql`
   query LayoutQuery {
     site {
       siteMetadata {
-        title
+        shortName
       }
     }
     logo: imageSharp(id: { regex: "/logo-light.png/" }) {

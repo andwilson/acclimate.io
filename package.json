@@ -1,6 +1,6 @@
 {
-  "name": "AndWilson",
-  "description": "Andrew Wilsons personal online portfolio",
+  "name": "Accliamte Consulting",
+  "description": "Website to explain the Acclimate Consulting services and team",
   "version": "1.0.0",
   "author": "Andrew Wilson",
   "dependencies": {
@@ -32,7 +32,7 @@
   "devDependencies": {
     "prettier": "^1.6.1"
   },
-  "homepage": "www.andwilson.com",
+  "homepage": "acclimate.io",
   "keywords": [
     "gatsby"
   ],

@@ -5,11 +5,10 @@ import Img from "gatsby-image";
 import { colors } from "../../styles/theme";
 
 const Wrapper = styled.div`
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
   background-color: ${colors.dark};
-  margin-bottom: 18px;
-  -webkit-box-shadow: 0px 0px 3px 0px #ccc;
-  -moz-box-shadow: 0px 0px 3px 0px #ccc;
-  box-shadow: 0px 0px 3px 0px #ccc;
 `;
 
 const Nav = styled.nav`
@@ -23,7 +22,7 @@ const Nav = styled.nav`
 const Left = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  padding-left: 10px;
 `;
 
 const Title = styled(Link)`
@@ -81,6 +80,7 @@ const Item = styled.div`
 
 const Drop = styled.div`
   position: absolute;
+  z-index: -1;
   left: 0;
   top: 65px;
   width: 100%;
@@ -121,7 +121,7 @@ export default ({ data }) => (
           <Link to={"/"}>
             <Logo sizes={data.logo.sizes} />
           </Link>
-          <Title to={"/"}>{data.site.siteMetadata.title}</Title>
+          <Title to={"/"}>{data.site.siteMetadata.shortName}</Title>
       </Left>
       <Right>
         <Item>

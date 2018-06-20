@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Acclimate",
+    longName: "Acclimate Consulting",
+    shortName: "Acclimate",
     author: "Andrew Wilson",
   },
   plugins: [
