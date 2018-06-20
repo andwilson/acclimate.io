@@ -53,8 +53,22 @@ const Title = styled(Link)`
   }
 `;
 
-const Li = styled.li` 
+const Li1 = styled.li` 
   position: relative;
+  margin: 0;
+  > a {
+    color: ${colors.light};
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+`;
+
+const Li2 = styled.li` 
   margin-left: 15px;
   > a {
     color: ${colors.light};
@@ -68,7 +82,22 @@ const Li = styled.li`
   }
 `;
 
-const Drop = styled.ul`
+const Contact = styled(Link)`
+  background: ${colors.light};
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: ${colors.dark};
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 0 0 15px;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #FFFFFF;
+  }
+`;
+
+const Ul1 = styled.ul`
   position: absolute;
   list-style: none;
   margin: 0;
@@ -81,9 +110,30 @@ const Drop = styled.ul`
     height: 50px;
     border: 1px solid white;
   }
-  ${Li}:hover & {
+  ${Li1}:hover & {
     display: flex;
     flex-direction: column;
+    visibility: visible;
+    opacity: 1;
+  }
+`;
+
+const Ul2 = styled.ul`
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: ${colors.medium};
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  > li {
+    height: 50px;
+    border: 1px solid white;
+  }
+  ${Li2}:hover & {
+    display: flex;
+    flex-direction: column; 
     visibility: visible;
     opacity: 1;
   }
@@ -120,23 +170,23 @@ export default ({ data }) => (
         </li>
       </UL>
       <UL>
-        <Li>
+        <Li1>
           <a href="#">About</a>
-          <Drop>
+          <Ul1>
             <li><SLink>Services</SLink></li>
             <li><SLink>Process</SLink></li>
             <li><SLink>Industries</SLink></li>
-          </Drop>
-        </Li>
-        <Li>
+          </Ul1>
+        </Li1>
+        <Li2>
           <a href="#">Company</a>
-          <Drop>
+          <Ul2>
             <li><SLink>Team</SLink></li>
             <li><SLink>Careers</SLink></li>
             <li><SLink>Contact</SLink></li>
-          </Drop>
-        </Li>
-        <Li><SLink to={"/contact/"}>Contact</SLink></Li>
+          </Ul2>
+        </Li2>
+        <li><Contact to={"/contact/"}>Contact</Contact></li>
       </UL>
     </Nav>
   </Wrapper>
