@@ -34,7 +34,7 @@ const Logo = styled(Img)`
   margin-right: 10px;
   width: 40px;
   transition: all 0.4s ease;
-  &: hover {
+  &:hover {
     transform: rotate(72deg);
   }
 `;
@@ -46,39 +46,45 @@ const Title = styled(Link)`
   font-weight: 700;
   transition: all 0.2s ease;
   &:hover {
-    -ms-transform: translate(0px, -1px);
-    -webkit-transform: translate(0px, -1px);
-    transform: translate(0px, -1px);
     color: #FFFFFF;
   }
 `;
 
 const Li = styled.li` 
-  position: relative;
   margin-left: 15px;
   > a {
+    text-decoration: none;
     color: ${colors.light};
     font-size: 14px;
     font-weight: 300;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    &:hover {
-      color: #FFFFFF;
-    }
+  }
+  &:after {
+    content: "\u25b6";
+    color: ${colors.light};
+    font-size: 10px;
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 5px;
+    transition: all 0.1s ease;
+  }
+  transition: all 0.1s ease;
+  &:hover > a {
+    color: #FFFFFF;
+  }
+  &:hover:after {
+    transform: rotate(90deg);
   }
 `;
 
 const Drop = styled.ul`
   position: absolute;
   list-style: none;
-  margin: 0;
   padding: 0;
   background: ${colors.medium};
   display: none;
   visibility: hidden;
   opacity: 0;
   > li {
-    height: 50px;
     border: 1px solid white;
   }
   ${Li}:hover & {
@@ -94,14 +100,22 @@ const SLink = styled(Link)`
   border: none;
   text-decoration: none;
   color: ${colors.light};
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 500%;
+`;
+
+const Contact = styled(Link)`
+  text-decoration: none;
+  color: ${colors.dark};
+  background: ${colors.light}
+  border-radius: 5px;
+  padding: 5px;
   font-size: 14px;
   font-weight: 300;
-  line-height: 150%;
-  margin: 0;
-  transition: all 0.2s ease;
-  &:hover {
-    color: #FFFFFF;
-  }
+  margin-left: 15px;
 `;
 
 export default ({ data }) => (
@@ -136,7 +150,7 @@ export default ({ data }) => (
             <li><SLink>Contact</SLink></li>
           </Drop>
         </Li>
-        <Li><SLink to={"/contact/"}>Contact</SLink></Li>
+        <li><Contact to={"/contact/"}>Contact</Contact></li>
       </UL>
     </Nav>
   </Wrapper>
