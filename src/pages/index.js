@@ -21,8 +21,11 @@ const Top = styled.div`
     max-width: 940px;
     margin: auto;
     padding: 0 10px 10px 10px;
-  h1, h2, h3 {
+  > h1, h3 {
     color: ${colors.light};
+  }
+  > h3 {
+    font-weight: 300;
   }
 `;
 
@@ -35,6 +38,7 @@ export default ({ data }) => (
       <div>
         <h1>Acclimate Consulting</h1>
         <h3>Your in-house data science team</h3>
+        <button>Contact us</button>
       </div>
     </Top>
     <div>
