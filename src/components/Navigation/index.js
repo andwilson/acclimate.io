@@ -5,7 +5,6 @@ import Img from "gatsby-image";
 import { colors } from "../../styles/theme";
 
 const Wrapper = styled.div`
-  position: fixed;
   width: 100vw;
   z-index: 2;
   background-color: ${colors.dark};
@@ -137,7 +136,7 @@ export default ({ data }) => (
           <Drop>
             <SLink>Team</SLink>
             <SLink>Careers</SLink>
-            <SLink>Contact</SLink>
+            <SLink to="/contact">Contact</SLink>
           </Drop>
         </Item>
       </Right>

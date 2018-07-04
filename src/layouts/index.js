@@ -1,18 +1,15 @@
 import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components";
+import Headroom from "react-headroom";
 
 import "../styles/normalize.css";
 import "../styles/base.css";
 
 import Navigation from "../components/Navigation";
+// import Footer from "../components/Footer";
 
 import favicon from "../images/favicon.ico";
-
-const Container = styled.div`
-  position: relative;
-  top: 65px;
-`;
 
 const Layout = ({ children, data }) => {
   return (
@@ -20,8 +17,8 @@ const Layout = ({ children, data }) => {
       <Helmet>
         <link rel="shortcut icon" type="image/png" href={favicon} />
       </Helmet>
-      <Navigation data={data} />
-      <Container>{children()}</Container>
+      <Headroom><Navigation data={data} /></Headroom>
+      <div>{children()}</div>
     </div>
   );
 };

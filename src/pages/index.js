@@ -2,6 +2,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 
+// import PageContainer from "../components/PageContainer"
+
 import { colors } from "../styles/theme";
 
 import topImage from "../images/network-3.jpg";
@@ -28,6 +30,15 @@ const Top = styled.div`
   }
 `;
 
+const Thinking = styled.div`
+  background: ${colors.light};
+  > div {
+    max-width: 960px;
+    margin: auto;
+    padding: 10px;
+  }
+`;
+
 export default ({ data }) => (
   <div>
     <Helmet>
@@ -40,6 +51,12 @@ export default ({ data }) => (
         <button type="button">Contact us</button>
       </div>
     </Top>
+    <Thinking>
+      <div>
+        <h2>Our Thinking</h2>
+        <p>We think about lots of things!</p>
+      </div>
+    </Thinking>
   </div>
 );
 
