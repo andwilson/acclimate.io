@@ -17,23 +17,34 @@
     "gatsby-source-filesystem": "^1.4.3",
     "gatsby-transformer-sharp": "^1.6.22",
     "react-fontawesome": "^1.6.1",
+    "react-helmet": "^5.2.0",
     "styled-components": "^3.2.5",
     "yarn": "^1.6.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
     "eslint-plugin-prettier": "^2.6.1",
-    "prettier": "^1.6.1"
+    "eslint-plugin-react": "^7.10.0",
+    "prettier": "^1.13.7"
   },
   "homepage": "acclimate.io",
   "keywords": [
-    "gatsby"
+    "gasty",
+    "machine learning",
+    "consulting",
+    "stratgy"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'"
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint **/*.{js,jsx} --quiet"
   }
 }

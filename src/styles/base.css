@@ -1,12 +1,16 @@
 body {
   height: 100%;
   font-family: open sans;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: open sans;
-  color: #2689BE;
+  color: #2689be;
 }
 
 p {

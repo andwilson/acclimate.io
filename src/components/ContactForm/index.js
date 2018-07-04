@@ -22,10 +22,10 @@ const Form = styled.form`
   }
   > input {
     border-radius: 5px;
-    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(189,189,189,0.3);
-    -moz-box-shadow: inset 0px 1px 2px 0px rgba(189,189,189,0.3);
-    box-shadow: inset 1px 1px 2px 0px rgba(189,189,189,0.3);
-    border: 1px solid rgba(189,189,189,1);
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(189, 189, 189, 0.3);
+    -moz-box-shadow: inset 0px 1px 2px 0px rgba(189, 189, 189, 0.3);
+    box-shadow: inset 1px 1px 2px 0px rgba(189, 189, 189, 0.3);
+    border: 1px solid rgba(189, 189, 189, 1);
     padding: 7px;
     :focus {
       outline: none;
@@ -35,10 +35,10 @@ const Form = styled.form`
   > textarea {
     height: 150px;
     border-radius: 5px;
-    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(189,189,189,0.3);
-    -moz-box-shadow: inset 0px 1px 2px 0px rgba(189,189,189,0.3);
-    box-shadow: inset 1px 1px 2px 0px rgba(189,189,189,0.3);
-    border: 1px solid rgba(189,189,189,1);
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(189, 189, 189, 0.3);
+    -moz-box-shadow: inset 0px 1px 2px 0px rgba(189, 189, 189, 0.3);
+    box-shadow: inset 1px 1px 2px 0px rgba(189, 189, 189, 0.3);
+    border: 1px solid rgba(189, 189, 189, 1);
     padding: 7px;
     resize: none;
     :focus {
@@ -57,17 +57,16 @@ const Form = styled.form`
     transition: all 0.2s ease;
     padding: 7px
     :hover {
-      opacity: 0.8
+      opacity: 0.8;
     }
   }
 `;
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join("&");
 }
-
 
 export default class ContactForm extends React.Component {
   constructor(props) {
@@ -111,7 +110,6 @@ export default class ContactForm extends React.Component {
           <input type="email" name="email" onChange={this.handleChange} />
           <label>Message:</label>
           <textarea name="message" onChange={this.handleChange} />
-          <div></div>
           <button type="submit">
             SEND <FA name="arrow-circle-right" />
           </button>

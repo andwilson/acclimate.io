@@ -14,20 +14,17 @@ const Container = styled.div`
   top: 65px;
 `;
 
-class Layout extends React.Component {
-  render() {
-    const { location, children } = this.props;
-    return (
-      <div>
-        <Helmet>
-          <link rel="shortcut icon" type="image/png" href={favicon} />
-        </Helmet>
-        <Navigation data={this.props.data}/>
-        <Container>{children()}</Container>
-      </div>
-    );
-  }
-}
+const Layout = ({ children, data }) => {
+  return (
+    <div>
+      <Helmet>
+        <link rel="shortcut icon" type="image/png" href={favicon} />
+      </Helmet>
+      <Navigation data={data} />
+      <Container>{children()}</Container>
+    </div>
+  );
+};
 
 export default Layout;
 

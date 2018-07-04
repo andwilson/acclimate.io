@@ -1,7 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components";
-import Img from "gatsby-image";
 
 import { colors } from "../styles/theme";
 
@@ -38,11 +37,9 @@ export default ({ data }) => (
       <div>
         <h1>Acclimate Consulting</h1>
         <h3>Your in-house data science team</h3>
-        <button>Contact us</button>
+        <button type="button">Contact us</button>
       </div>
     </Top>
-    <div>
-    </div>
   </div>
 );
 

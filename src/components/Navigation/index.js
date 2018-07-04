@@ -118,10 +118,10 @@ export default ({ data }) => (
   <Wrapper>
     <Nav>
       <Left>
-          <Link to={"/"}>
+          <Link to="/">
             <Logo sizes={data.logo.sizes} />
           </Link>
-          <Title to={"/"}>{data.site.siteMetadata.shortName}</Title>
+          <Title to="/">{data.site.siteMetadata.shortName}</Title>
       </Left>
       <Right>
         <Item>
