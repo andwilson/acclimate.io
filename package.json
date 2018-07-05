@@ -16,6 +16,7 @@
     "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-source-filesystem": "^1.4.3",
     "gatsby-transformer-sharp": "^1.6.22",
+    "polished": "^1.9.3",
     "react-fontawesome": "^1.6.1",
     "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0",

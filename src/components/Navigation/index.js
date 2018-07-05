@@ -16,6 +16,7 @@ const Nav = styled.nav`
   margin: auto;
   height: 65px;
   justify-content: space-between;
+  border-bottom: 1px solid ${colors.medium};
 `;
 
 const Left = styled.div`
@@ -27,7 +28,7 @@ const Left = styled.div`
 const Title = styled(Link)`
   font-weight: 700;
   text-decoration: none;
-  color: ${colors.light};
+  color: #ffffff;
   font-size: 20px;
   transition: all 0.2s ease;
   &:hover {
@@ -55,13 +56,13 @@ const Item = styled.div`
   position: relative;
   > a {
     text-decoration: none;
-    color: ${colors.light};
+    color: #ffffff;
     font-size: 14px;
     font-weight: 300;
   }
   &:after {
     content: "\u003e";
-    color: ${colors.light};
+    color: #ffffff;
     font-size: 14px;
     font-weight: 300;
     display: inline-block;
@@ -84,6 +85,7 @@ const Drop = styled.div`
   top: 65px;
   width: 100%;
   background: ${colors.dark};
+  border-radius: 0 0 5px 5px;
   display: none;
   visibility: hidden;
   opacity: 0;
@@ -105,11 +107,14 @@ const SLink = styled(Link)`
   padding-left: 10px;
   border-top: 1px solid ${colors.medium};
   text-decoration: none;
-  color: ${colors.light};
+  color: #ffffff;
   font-size: 12px;
   font-weight: 300;
   &:hover {
     background: ${colors.medium};
+  }
+  &:last-of-type {
+    border-radius: 0 0 5px 5px;
   }
 `;
 
@@ -127,8 +132,8 @@ export default ({ data }) => (
           <a href="#">About</a>
           <Drop>
             <SLink>Services</SLink>
-            <SLink>Process</SLink>
             <SLink>Industries</SLink>
+            <SLink>Process</SLink>
           </Drop>
         </Item>
         <Item>
