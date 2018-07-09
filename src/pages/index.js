@@ -68,6 +68,7 @@ const SectionWrapper = styled.div.attrs({
   background: props => props.background || colors.light
 })`
   background: ${props => props.background};
+  border-top: 1px solid ${props => lighten(0.05, props.background)};
   > div {
     max-width: 960px;
     margin: auto;
@@ -106,6 +107,16 @@ const Services = styled.div`
   }
 `;
 
+const LightText = styled.div`
+  color: #ffffff;
+  > h1,
+  h2,
+  h3,
+  h4 {
+    color: #ffffff;
+  }
+`;
+
 export default ({ data }) => (
   <div>
     <Helmet>
@@ -117,8 +128,8 @@ export default ({ data }) => (
           Make <span>intelligent</span> business decisions
         </h1>
         <h3>
-          Acclimate Consulting drives ROI in your business with the latest data
-          driven technology
+          Acclimate Consulting drives ROI in your business with the latest
+          technologies
         </h3>
         <CallToAction to="/contact">Get in touch</CallToAction>
       </div>
@@ -147,52 +158,40 @@ export default ({ data }) => (
       </div>
     </SectionWrapper>
     <SectionWrapper background={colors.dark}>
-      <div>
+      <LightText>
         <h2>Process</h2>
-        Hell of thundercats bushwick jianbing af, man bun tilde irony fam plaid
-        woke pitchfork tbh. Sustainable portland readymade dreamcatcher,
-        glossier celiac la croix whatever franzen iceland typewriter. Tofu
-        church-key cliche, sriracha taiyaki la croix af typewriter. Roof party
-        kale chips snackwave quinoa franzen tattooed semiotics sustainable
-        kinfolk vexillologist YOLO lo-fi listicle next level venmo. Lo-fi DIY
-        VHS sriracha. Selfies pickled microdosing whatever master cleanse
-        hashtag.
-      </div>
-    </SectionWrapper>
-    <SectionWrapper background={colors.primary}>
-      <div>
-        <h2>Industries</h2>
-        <p>
-          Chia deep v hexagon, squid chillwave banh mi intelligentsia beard
-          fixie umami. Taxidermy poutine cloud bread mixtape letterpress
-          meditation. Glossier gochujang YOLO jianbing 90's shoreditch truffaut
-          gentrify stumptown lo-fi vegan bitters kale chips 8-bit. Gastropub
-          messenger bag blog affogato flexitarian sustainable bespoke typewriter
-          8-bit.
-        </p>
-      </div>
+        <ol>
+          <li>Discovery: lorem ipsum...</li>
+          <li>Engagement: lorem ipsum...</li>
+          <li>Deployment: lorem ipsum...</li>
+          <li>Support: lorem ipsum...</li>
+        </ol>
+      </LightText>
     </SectionWrapper>
     <SectionWrapper background={colors.light}>
       <div>
+        <h2>Industries</h2>
+        <p>
+          Add industries widget...
+        </p>
+      </div>
+    </SectionWrapper>
+    <SectionWrapper background={colors.dark}>
+      <LightText>
         <h2>Team</h2>
         <p>
           We are a team of data scientists, hackers, business strategists, and
           entrepreneurs with broad experience from several different industries
         </p>
-      </div>
+      </LightText>
     </SectionWrapper>
-    <SectionWrapper background={colors.secondary}>
+    <SectionWrapper background={colors.light}>
       <div>
         <h2>Contact & careers</h2>
-        <p>
-          You probably haven't heard of them hashtag chillwave kogi cred man
-          braid microdosing before they sold out. Drinking vinegar scenester
-          adaptogen poutine green juice pitchfork, bicycle rights schlitz
-          mixtape forage pork belly. Cardigan migas pabst, bitters health goth
-          vaporware church-key crucifix chambray umami. Stumptown pour-over
-          ethical, meggings banh mi cold-pressed austin. Thundercats shaman
-          activated charcoal vegan put a bird on it.
-        </p>
+        Schedule your free business analysis today<br />
+        <CallToAction to="/contact">Get in touch</CallToAction>
+        <br /><br />
+        If you'd like to join our team...
       </div>
     </SectionWrapper>
   </div>
