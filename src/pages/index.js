@@ -6,7 +6,7 @@ import { lighten, darken } from "polished";
 
 import { colors } from "../styles/theme";
 
-import topImage from "../images/network-3.jpg";
+import topImage from "../images/network-4.jpg";
 import StrategySVG from "../images/strategy.svg";
 import MachinelearningSVG from "../images/machinelearning.svg";
 import DevelopmentSVG from "../images/development.svg";
@@ -165,7 +165,6 @@ export default ({ data }) => (
           Acclimate Consulting drives ROI in your business with the latest
           technologies
         </h3>
-
         <CallToAction to="/contact">Get in touch</CallToAction>
       </div>
     </Top>
