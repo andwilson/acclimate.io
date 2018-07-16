@@ -11,6 +11,12 @@ module.exports = {
         fonts: [`open sans\:300,400,600,700,800`]
       }
     },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        include: `${__dirname}/src/images`
+      },
+    },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,

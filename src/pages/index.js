@@ -7,10 +7,10 @@ import { lighten, darken } from "polished";
 import { colors } from "../styles/theme";
 
 import topImage from "../images/network-3.jpg";
-import strategy from "../images/strategy.svg";
-import machinelearning from "../images/machinelearning.svg";
-import development from "../images/development.svg";
-import support from "../images/support.svg";
+import StrategySVG from "../images/strategy.svg";
+import MachinelearningSVG from "../images/machinelearning.svg";
+import DevelopmentSVG from "../images/development.svg";
+import SupportSVG from "../images/support.svg";
 
 const Top = styled.div`
   position: relative;
@@ -98,11 +98,45 @@ const Services = styled.div`
       font-weight: 500;
       margin: 0 0 10px 0;
     }
-    > img {
+    > svg {
       width: 100px;
       display: block;
       margin: auto;
-      fill: ${colors.secondary};
+      fill: ${colors.medium};
+      stroke: ${colors.medium};
+      stroke-width: 2;
+      transition: all 1s ease;
+      &:hover {
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-name: draw;
+        fill: ${colors.light};
+      }
+    }
+    #strategySVG {
+      stroke-dasharray: 2143;
+      stroke-dashoffset: 2143;
+    }
+    #machinelearningSVG {
+      stroke-dasharray: 3076;
+      stroke-dashoffset: 3076;
+    }
+    #developmentSVG {
+      stroke-dasharray: 7981;
+      stroke-dashoffset: 7981;
+    }
+    #supportSVG {
+      stroke-dasharray: 7262;
+      stroke-dashoffset: 7262;
+    }
+    @keyframes draw
+     {
+      to {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+      }
     }
   }
 `;
@@ -131,6 +165,7 @@ export default ({ data }) => (
           Acclimate Consulting drives ROI in your business with the latest
           technologies
         </h3>
+
         <CallToAction to="/contact">Get in touch</CallToAction>
       </div>
     </Top>
@@ -140,19 +175,19 @@ export default ({ data }) => (
         <Services>
           <div>
             <h4>Digital Strategy</h4>
-            <img src={strategy} />
+            <StrategySVG />
           </div>
           <div>
             <h4>Data Science & Machine Learning</h4>
-            <img src={machinelearning} />
+            <MachinelearningSVG />
           </div>
           <div>
             <h4>Application Development</h4>
-            <img src={development} />
+            <DevelopmentSVG />
           </div>
           <div>
             <h4>Training & Support</h4>
-            <img src={support} />
+            <SupportSVG />
           </div>
         </Services>
       </div>
@@ -171,9 +206,7 @@ export default ({ data }) => (
     <SectionWrapper background={colors.light}>
       <div>
         <h2>Industries</h2>
-        <p>
-          Add industries widget...
-        </p>
+        <p>Add industries widget...</p>
       </div>
     </SectionWrapper>
     <SectionWrapper background={colors.dark}>
@@ -190,7 +223,8 @@ export default ({ data }) => (
         <h2>Contact & careers</h2>
         Schedule your free business analysis today<br />
         <CallToAction to="/contact">Get in touch</CallToAction>
-        <br /><br />
+        <br />
+        <br />
         If you'd like to join our team...
       </div>
     </SectionWrapper>
