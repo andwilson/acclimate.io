@@ -85,28 +85,51 @@ const SectionWrapper = styled.div.attrs({
   }
 `;
 
+const HorizontalAccent = styled.div`
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: ${colors.primary};
+  margin: 20px auto;
+`;
+
 const WhySection = styled.div`
   h1 {
-    marg
+    text-align: center;
   }
   > div {
-
+    display: flex;
+    
+    > div {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 10px;
+      margin: 0 20px 0 0;
+      &:last-of-type {
+        margin: 0;
+      }
+    }
   }
 `;
 
 const ServicesSection = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
   > div {
-    flex-grow: 1;
-    flex-basis: 0;
+    flex: 1 0;
+    flex-basis: 80%;
+    @media (min-width: 500px) {
+      flex-basis: 40%;
+    }
+    @media (min-width: 910px) {
+      flex-basis: 20%;
+    }
     background: #ffffff;
-    padding: 10px;
-    margin: 0 20px 0 0;
+    padding: 20px 10px;
+    margin: 5px;
     border-radius: 5px;
     border: 1px solid ${darken(0.01, colors.light)};
-    &:last-of-type {
-      margin: 0;
-    }
     > h4 {
       text-align: center;
       font-weight: 500;
@@ -145,8 +168,7 @@ const ServicesSection = styled.div`
       stroke-dasharray: 7262;
       stroke-dashoffset: 7262;
     }
-    @keyframes draw
-     {
+    @keyframes draw {
       to {
         stroke-dashoffset: 0;
         fill-opacity: 1;
@@ -173,9 +195,15 @@ export default ({ data }) => (
       </div>
     </Top>
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
-      <div>
+      <WhySection>
         <h1>Why partner with Acclimate?</h1>
-      </div>
+        <HorizontalAccent />
+        <div>
+          <div>Some text 1</div>
+          <div>Some text 2</div>
+          <div>Some text 3</div>
+        </div>
+      </WhySection>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.light}>
       <div>
@@ -183,32 +211,36 @@ export default ({ data }) => (
         <ServicesSection>
           <div>
             <h4>Digital Strategy</h4>
+            <HorizontalAccent />
             <StrategySVG />
           </div>
           <div>
             <h4>Data Science & ML</h4>
+            <HorizontalAccent />
             <MachinelearningSVG />
           </div>
           <div>
             <h4>Application Development</h4>
+            <HorizontalAccent />
             <DevelopmentSVG />
           </div>
           <div>
             <h4>Training & Support</h4>
+            <HorizontalAccent />
             <SupportSVG />
           </div>
         </ServicesSection>
       </div>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.dark} fontColor={colors.white}>
-    <div>
-      <h1>Process</h1>
-      <ol>
-        <li>Discovery: lorem ipsum...</li>
-        <li>Engagement: lorem ipsum...</li>
-        <li>Deployment: lorem ipsum...</li>
-        <li>Support: lorem ipsum...</li>
-      </ol>
+      <div>
+        <h1>Process</h1>
+        <ol>
+          <li>Discovery: lorem ipsum...</li>
+          <li>Engagement: lorem ipsum...</li>
+          <li>Deployment: lorem ipsum...</li>
+          <li>Support: lorem ipsum...</li>
+        </ol>
       </div>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.light}>
