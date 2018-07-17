@@ -85,7 +85,7 @@ const SectionWrapper = styled.div.attrs({
   }
 `;
 
-const HorizontalAccent = styled.div`
+const HorizontalAccent = styled.span`
   display: block;
   width: 50px;
   height: 3px;
@@ -99,13 +99,21 @@ const WhySection = styled.div`
   }
   > div {
     display: flex;
-    
+    align-content: space-between;
+    flex-direction: column;
+    margin: 0 -10px;
+    @media (min-width: 650px) {
+      flex-direction: row;
+    }
     > div {
-      flex-grow: 1;
-      flex-basis: 0;
+      flex: 1;
       padding: 10px;
-      margin: 0 20px 0 0;
-      &:last-of-type {
+      margin: 0 10px;
+      text-align: center;
+      > h4 {
+        margin-top: 0;
+      }
+      p {
         margin: 0;
       }
     }
@@ -199,9 +207,32 @@ export default ({ data }) => (
         <h1>Why partner with Acclimate?</h1>
         <HorizontalAccent />
         <div>
-          <div>Some text 1</div>
-          <div>Some text 2</div>
-          <div>Some text 3</div>
+          <div>
+            <h4>Reason 1</h4>
+            <p>
+              Our vision is to bring every customer-centric company into the
+              future. Our mission is your mission, acclimated to “State of the
+              Art” Technology and shifted into overdrive.
+            </p>
+          </div>
+          <div>
+            <h4>Reason 2</h4>
+            <p>
+              Our primary focus is to help you build a more intelligent
+              business. We leverage our experience in business strategy, data
+              science and state-of-the-art A.I technology so you can make better
+              decisions that scale.
+            </p>
+          </div>
+          <div>
+            <h4>Reason 3</h4>
+            <p>
+              What brought us together was our shared excitement emerging
+              technologies, and how they can transform businesses. We want to
+              bring this vision into reality, fusing everyday businesses with
+              the power of today’s state of the art technology.
+            </p>
+          </div>
         </div>
       </WhySection>
     </SectionWrapper>
