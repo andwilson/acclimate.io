@@ -65,23 +65,37 @@ const CallToAction = styled(Link)`
 `;
 
 const SectionWrapper = styled.div.attrs({
-  background: props => props.background || colors.light
+  backgroundColor: props => props.backgroundColor || colors.light,
+  fontColor: props => props.fontColor || colors.dark
 })`
-  background: ${props => props.background};
-  border-top: 1px solid ${props => lighten(0.05, props.background)};
+  background: ${props => props.backgroundColor};
+  border-top: 1px solid ${props => lighten(0.05, props.backgroundColor)};
   > div {
     max-width: 960px;
     margin: auto;
     padding: 20px;
-    > h2 {
-      margin: 0 0 20px 0;
+    color: ${props => props.fontColor};
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      ${props => props.fontColor};
     }
   }
 `;
 
-const Services = styled.div`
-  display: flex;
+const WhySection = styled.div`
+  h1 {
+    marg
   }
+  > div {
+
+  }
+`;
+
+const ServicesSection = styled.div`
+  display: flex;
   > div {
     flex-grow: 1;
     flex-basis: 0;
@@ -141,16 +155,6 @@ const Services = styled.div`
   }
 `;
 
-const LightText = styled.div`
-  color: #ffffff;
-  > h1,
-  h2,
-  h3,
-  h4 {
-    color: #ffffff;
-  }
-`;
-
 export default ({ data }) => (
   <div>
     <Helmet>
@@ -168,10 +172,15 @@ export default ({ data }) => (
         <CallToAction to="/contact">Get in touch</CallToAction>
       </div>
     </Top>
-    <SectionWrapper background={colors.light}>
+    <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <div>
-        <h2>Services</h2>
-        <Services>
+        <h1>Why partner with Acclimate?</h1>
+      </div>
+    </SectionWrapper>
+    <SectionWrapper backgroundColor={colors.light}>
+      <div>
+        <h1>Services</h1>
+        <ServicesSection>
           <div>
             <h4>Digital Strategy</h4>
             <StrategySVG />
@@ -188,38 +197,38 @@ export default ({ data }) => (
             <h4>Training & Support</h4>
             <SupportSVG />
           </div>
-        </Services>
+        </ServicesSection>
       </div>
     </SectionWrapper>
-    <SectionWrapper background={colors.dark}>
-      <LightText>
-        <h2>Process</h2>
-        <ol>
-          <li>Discovery: lorem ipsum...</li>
-          <li>Engagement: lorem ipsum...</li>
-          <li>Deployment: lorem ipsum...</li>
-          <li>Support: lorem ipsum...</li>
-        </ol>
-      </LightText>
+    <SectionWrapper backgroundColor={colors.dark} fontColor={colors.white}>
+    <div>
+      <h1>Process</h1>
+      <ol>
+        <li>Discovery: lorem ipsum...</li>
+        <li>Engagement: lorem ipsum...</li>
+        <li>Deployment: lorem ipsum...</li>
+        <li>Support: lorem ipsum...</li>
+      </ol>
+      </div>
     </SectionWrapper>
-    <SectionWrapper background={colors.light}>
+    <SectionWrapper backgroundColor={colors.light}>
       <div>
-        <h2>Industries</h2>
+        <h1>Industries</h1>
         <p>Add industries widget...</p>
       </div>
     </SectionWrapper>
-    <SectionWrapper background={colors.dark}>
-      <LightText>
-        <h2>Team</h2>
+    <SectionWrapper backgroundColor={colors.white}>
+      <div>
+        <h1>Team</h1>
         <p>
           We are a team of data scientists, hackers, business strategists, and
           entrepreneurs with broad experience from several different industries
         </p>
-      </LightText>
+      </div>
     </SectionWrapper>
-    <SectionWrapper background={colors.light}>
+    <SectionWrapper backgroundColor={colors.black} fontColor={colors.white}>
       <div>
-        <h2>Contact & careers</h2>
+        <h1>Contact & careers</h1>
         Schedule your free business analysis today<br />
         <CallToAction to="/contact">Get in touch</CallToAction>
         <br />
