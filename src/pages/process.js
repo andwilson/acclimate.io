@@ -1,7 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components";
-import PageHeader from "../components/PageHeader"
+
+import PageHeader from "../components/PageHeader";
 
 import ProcessSVG from "../images/process.svg";
 
@@ -14,10 +15,10 @@ export default () => (
       <ProcessSVG />
       <div>
         <h1>
-          Acclimate provides end-to-end <span>Process</span>
+          Acclimate has a <span>process</span> that just works
         </h1>
         <h3>
-          From a free discovery session through implementation, our team at Acclimate will be with you througout your transformation process
+          A consulting engagement follows a typical process, but it can be customized to suite your unique needs and timeline
         </h3>
       </div>
     </PageHeader>

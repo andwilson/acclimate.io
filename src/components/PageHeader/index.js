@@ -12,6 +12,7 @@ export default styled.div`
   align-items: center;
   justify-content: center;
   > svg {
+      fill: none;
       fill-opacity: 0;
       position: fixed;
       height: calc(100vh - 65px - 100px);
@@ -25,15 +26,16 @@ export default styled.div`
       stroke-dashoffset: 5882;
       animation-name: draw;
   }
-  @keyframes draw
-     {
+  @keyframes draw {
       to {
         stroke-dashoffset: 0;
+        fill: none;
+      fill-opacity: 0;
       }
     }
   > div {
     z-index: 2;
-    max-width: 700;
+    max-width: 700px;
     margin: auto;
     padding: 0 10px 10px 10px;
     > h1 {
@@ -46,5 +48,6 @@ export default styled.div`
     > h3 {
         color: #ffffff;
         font-weight: 300;
+    }
   }
 `;

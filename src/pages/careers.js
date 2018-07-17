@@ -14,10 +14,10 @@ export default () => (
       <CareersSVG />
       <div>
         <h1>
-          Acclimate provides end-to-end <span>Careers</span>
+          Gain valuable <span>career</span> experience with us
         </h1>
         <h3>
-          From a free discovery session through implementation, our team at Acclimate will be with you througout your transformation process
+          Become a technology practicioner by joining Acclimate, helping businesses supercharge their capabilities with customized intelligent applications
         </h3>
       </div>
     </PageHeader>

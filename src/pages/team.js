@@ -14,10 +14,10 @@ export default () => (
       <TeamSVG />
       <div>
         <h1>
-          Acclimate provides end-to-end <span>Team</span>
+          The <span>team</span> at Acclimate is what sets us apart
         </h1>
         <h3>
-          From a free discovery session through implementation, our team at Acclimate will be with you througout your transformation process
+          With a variety of industry experience and technical capabilities, the team at Acclimate can flex to support your unique needs and goals.
         </h3>
       </div>
     </PageHeader>

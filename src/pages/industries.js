@@ -17,7 +17,7 @@ export default () => (
           Technology strategy is vital in all <span>industries</span>
         </h1>
         <h3>
-          From a free discovery session through implementation, our team at Acclimate will be with you througout your transformation process
+          Whether you look to acquire and retain customers, improve efficiency, automate operations, or create delightful experiences, the team at Acclimate can help
         </h3>
       </div>
     </PageHeader>
