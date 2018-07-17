@@ -16,7 +16,7 @@ const Top = styled.div`
   position: relative;
   height: calc(100vh - 65px);
   width: 100vw;
-  background-color: ${colors.dark};
+  background-color: ${colors.black};
   background: url(${topImage}) no-repeat center center;
   background-size: cover;
   display: flex;
@@ -89,7 +89,7 @@ const Services = styled.div`
     padding: 10px;
     margin: 0 20px 0 0;
     border-radius: 5px;
-    border: 1px solid ${darken(0.05, colors.light)};
+    border: 1px solid ${darken(0.01, colors.light)};
     &:last-of-type {
       margin: 0;
     }
@@ -177,7 +177,7 @@ export default ({ data }) => (
             <StrategySVG />
           </div>
           <div>
-            <h4>Data Science & Machine Learning</h4>
+            <h4>Data Science & ML</h4>
             <MachinelearningSVG />
           </div>
           <div>

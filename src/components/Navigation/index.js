@@ -132,16 +132,16 @@ export default ({ data }) => (
           <a href="#">About</a>
           <Drop>
             <SLink to="services">Services</SLink>
-            <SLink>Industries</SLink>
-            <SLink>Process</SLink>
+            <SLink to="industries">Industries</SLink>
+            <SLink to="process">Process</SLink>
           </Drop>
         </Item>
         <Item>
           <a href="#">Company</a>
           <Drop>
-            <SLink>Team</SLink>
-            <SLink>Careers</SLink>
-            <SLink to="/contact">Contact</SLink>
+            <SLink to="team">Team</SLink>
+            <SLink to="careers">Careers</SLink>
+            <SLink to="contact">Contact</SLink>
           </Drop>
         </Item>
       </Right>

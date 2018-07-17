@@ -3,18 +3,18 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 import PageHeader from "../components/PageHeader"
 
-import ServicesSVG from "../images/services.svg";
+import TeamSVG from "../images/team.svg";
 
 export default () => (
   <div>
     <Helmet>
-      <title>Acclimate | Services</title>
+      <title>Acclimate | Team</title>
     </Helmet>
     <PageHeader>
-      <ServicesSVG />
+      <TeamSVG />
       <div>
         <h1>
-          Acclimate provides end-to-end <span>services</span>
+          Acclimate provides end-to-end <span>Team</span>
         </h1>
         <h3>
           From a free discovery session through implementation, our team at Acclimate will be with you througout your transformation process
