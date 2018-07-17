@@ -11,6 +11,7 @@ import StrategySVG from "../images/strategy.svg";
 import MachinelearningSVG from "../images/machinelearning.svg";
 import DevelopmentSVG from "../images/development.svg";
 import SupportSVG from "../images/support.svg";
+import ProcessCircleSVG from "../images/process-circle.svg";
 
 const Top = styled.div`
   position: relative;
@@ -185,6 +186,49 @@ const ServicesSection = styled.div`
   }
 `;
 
+const ProcessSection = styled.div`
+  > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -20px;
+    @media (min-width: 650px) {
+      flex-direction: row;
+    }
+    > div {
+      :nth-of-type(1) {
+        border-color: ${darken(0.15, colors.primary)};  
+      }
+      :nth-of-type(2) {
+        border-color: ${darken(0.05, colors.primary)};
+      }
+      :nth-of-type(3) {
+        border-color: ${lighten(0.05, colors.primary)};
+      }
+      :nth-of-type(4) {
+        border-color: ${lighten(0.15, colors.primary)};
+      }
+      border-left: 3px solid ${colors.primary};
+      flex: 1;
+      margin: 20px;
+      padding-left: 20px;
+      @media (min-width: 650px) {
+        border-top: 3px solid ${colors.primary};
+        border-left: none;
+        padding: 20px 0 0 0;
+      }
+      > h4 {
+        margin-top: 0;
+      }
+      > div {
+        font-weight: 200;
+      }
+      > svg {
+        fill: ${colors.secondary};
+      }
+    }
+  }
+`;
+
 export default ({ data }) => (
   <div>
     <Helmet>
@@ -263,16 +307,43 @@ export default ({ data }) => (
         </ServicesSection>
       </div>
     </SectionWrapper>
-    <SectionWrapper backgroundColor={colors.dark} fontColor={colors.white}>
-      <div>
+    <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
+      <ProcessSection>
         <h1>Process</h1>
-        <ol>
-          <li>Discovery: lorem ipsum...</li>
-          <li>Engagement: lorem ipsum...</li>
-          <li>Deployment: lorem ipsum...</li>
-          <li>Support: lorem ipsum...</li>
-        </ol>
-      </div>
+        <div>
+          <div>
+            <h4>Discovery</h4>
+            <div>
+              That's what makes life fun. That you can make these decisions.
+              That you can create the world that you want. Just let your mind
+              wander and enjoy. This should make you happy.
+            </div>
+          </div>
+          <div>
+            <h4>Engagement</h4>
+            <div>
+              You better get your coat out, this is going to be a cold painting.
+              In painting, you have unlimited power. You have the ability to
+              move mountains. You can bend rivers.
+            </div>
+          </div>
+          <div>
+            <h4>Development</h4>
+            <div>
+              The least little bit can do so much. That's a crooked tree. We'll
+              send him to Washington. I really believe that if you practice
+              enough you could paint the 'Mona Lisa' with a two-inch brush.{" "}
+            </div>
+          </div>
+          <div>
+            <h4>Deployment</h4>
+            <div>
+              If you've been in Alaska less than a year you're a Cheechako. Just
+              think about these things in your mind and drop em' on canvas.
+            </div>
+          </div>
+        </div>
+      </ProcessSection>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.light}>
       <div>
@@ -289,14 +360,17 @@ export default ({ data }) => (
         </p>
       </div>
     </SectionWrapper>
-    <SectionWrapper backgroundColor={colors.black} fontColor={colors.white}>
+    <SectionWrapper backgroundColor={colors.dark} fontColor={colors.white}>
       <div>
-        <h1>Contact & careers</h1>
+        <h1>Contact</h1>
         Schedule your free business analysis today<br />
         <CallToAction to="/contact">Get in touch</CallToAction>
-        <br />
-        <br />
-        If you'd like to join our team...
+      </div>
+    </SectionWrapper>
+    <SectionWrapper backgroundColor={colors.black} fontColor={colors.white}>
+      <div>
+        <h1>Footer</h1>
+        <p>Sitemap...</p>
       </div>
     </SectionWrapper>
   </div>
