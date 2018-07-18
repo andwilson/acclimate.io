@@ -39,15 +39,17 @@ export default styled.div`
     margin: auto;
     padding: 0 10px 10px 10px;
     > h1 {
-        color: #ffffff;
+        color: ${colors.white};
+        text-align: center;
         > span {
         color: ${colors.secondary};
         font-style: italic;
         } 
     }
     > h3 {
-        color: #ffffff;
+        color: ${colors.white};
         font-weight: 300;
+        text-align: center;
     }
   }
 `;
