@@ -3,6 +3,8 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 import PageHeader from "../components/PageHeader"
 
+import SectionWrapper from "../components/SectionWrapper"
+
 import TeamSVG from "../images/team.svg";
 
 export default () => (

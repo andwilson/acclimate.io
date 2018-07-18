@@ -4,19 +4,27 @@ import { colors } from "../../styles/theme";
 export default styled.div`
   display: flex;
   align-items: center;
+  flex-direction: column;
   > div {
   }
   > svg {
-    flex: 1 0 180px;
-
-    margin: 0 0 0 100px;
+    flex: 1 0 90px;
     fill: ${colors.primary};
-    stroke-width: 2;
+    margin: 0;
   }
-  :nth-of-type(even) {
-    svg {
-      order: -1;
+  @media (min-width: 500px) {
+    flex-direction: row;
+    > svg {
+      flex: 1 0 180px;
       margin: 0 100px 0 0;
+    }
+    :nth-of-type(odd) {
+      > svg {
+        margin: 0 0 0 100px;
+      }
+      > div {
+        order: -1;
+      }
     }
   }
 `;
