@@ -132,8 +132,8 @@ export default ({ data }) => (
           <a href="#">About</a>
           <Drop>
             <SLink to="/services/">Services</SLink>
-            <SLink to="/industries/">Industries</SLink>
             <SLink to="/process/">Process</SLink>
+            <SLink to="/industries/">Industries</SLink>
           </Drop>
         </Item>
         <Item>
