@@ -3,23 +3,25 @@ import { colors } from "../../styles/theme";
 
 export default styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-start;
   > div {
+    
   }
   > svg {
-    flex: 1 0 90px;
+    flex: 1 0 80px;
     fill: ${colors.primary};
-    margin: 0;
+    margin-right: 20px;
   }
-  @media (min-width: 500px) {
+  @media (min-width: 650px) {
     flex-direction: row;
+    align-items: center;
     > svg {
       flex: 1 0 180px;
       margin: 0 100px 0 0;
     }
     :nth-of-type(odd) {
       > svg {
+        
         margin: 0 0 0 100px;
       }
       > div {
