@@ -210,7 +210,7 @@ export default ({ data }) => (
         <HorizontalAccent />
         <div>
           <div>
-            <h4>Reason 1</h4>
+            <h4>Scale Your Business Value Creation</h4>
             <p>
               Our vision is to bring every customer-centric company into the
               future. Our mission is your mission, acclimated to “State of the
@@ -218,21 +218,21 @@ export default ({ data }) => (
             </p>
           </div>
           <div>
-            <h4>Reason 2</h4>
+            <h4>Build For the Next Generation</h4>
             <p>
-              Our primary focus is to help you build a more intelligent
-              business. We leverage our experience in business strategy, data
-              science and state-of-the-art A.I technology so you can make better
-              decisions that scale.
+              Our focus is helping you build a more intelligent business.
+              Leverage business strategy, data science and State-Of-The-Art A.I
+              technology to make data-driven decisions that will build the
+              company of the future.
             </p>
           </div>
           <div>
-            <h4>Reason 3</h4>
+            <h4>Beat The Status Quo</h4>
             <p>
-              What brought us together was our shared excitement emerging
-              technologies, and how they can transform businesses. We want to
-              bring this vision into reality, fusing everyday businesses with
-              the power of today’s state of the art technology.
+              We share a perpetual excitement for emerging technologies. How
+              they create opportunities and disrupt at every turn. Partner with
+              us to create unprecedented value that outperforms the solutions of
+              yesterday.
             </p>
           </div>
         </div>
