@@ -2,12 +2,13 @@ import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components";
 
-import { lighten, darken } from "polished";
 import { colors } from "../styles/theme";
 
 import PageHeader from "../components/PageHeader";
 import SectionWrapper from "../components/SectionWrapper";
 import CallToActionButton from "../components/CallToActionButton";
+import AlternatingSection from "../components/AlternatingSection";
+import HorizontalAccent from "../components/HorizontalAccent";
 
 import ServicesSVG from "../images/services.svg";
 import StrategySVG from "../images/strategy.svg";
@@ -15,32 +16,8 @@ import MachinelearningSVG from "../images/machinelearning.svg";
 import DevelopmentSVG from "../images/development.svg";
 import SupportSVG from "../images/support.svg";
 
-const HorizontalAccent = styled.span`
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: ${colors.primary};
+const HorizontalAccentLeft = HorizontalAccent.extend`
   margin: 20px 0;
-`;
-
-const ServiceSection = styled.div`
-  display: flex;
-  align-items: center;
-  > div {
-  }
-  > svg {
-    flex: 1 0 180px;
-
-    margin: 0 0 0 100px;
-    fill: ${colors.primary};
-    stroke-width: 2;
-  }
-  :nth-of-type(even) {
-    svg {
-      order: -1;
-      margin: 0 100px 0 0;
-    }
-  }
 `;
 
 export default () => (
@@ -63,10 +40,10 @@ export default () => (
     </PageHeader>
     <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
-      <ServiceSection>
+      <AlternatingSection>
         <div>
           <h2>Digital Strategy</h2>
-          <HorizontalAccent />
+          <HorizontalAccentLeft />
           <p>
             Volunteering your time; it pays you and your whole community
             fantastic dividends. A happy cloud. Let's build an almighty
@@ -78,11 +55,11 @@ export default () => (
           </p>
         </div>
         <StrategySVG />
-      </ServiceSection>
-      <ServiceSection>
+      </AlternatingSection>
+      <AlternatingSection>
         <div>
           <h2>Data Science & ML</h2>
-          <HorizontalAccent />
+          <HorizontalAccentLeft />
           <p>
             Isn't it fantastic that you can change your mind and create all
             these happy things? The more we do this - the more it will do good
@@ -92,11 +69,11 @@ export default () => (
           </p>
         </div>
         <MachinelearningSVG />
-      </ServiceSection>
-      <ServiceSection>
+      </AlternatingSection>
+      <AlternatingSection>
         <div>
           <h2>Application Development</h2>
-          <HorizontalAccent />
+          <HorizontalAccentLeft />
           <p>
             Let your heart be your guide. The light is your friend. Preserve it.
             You could sit here for weeks with your one hair brush trying to do
@@ -106,11 +83,11 @@ export default () => (
           </p>
         </div>
         <DevelopmentSVG />
-      </ServiceSection>
-      <ServiceSection>
+      </AlternatingSection>
+      <AlternatingSection>
         <div>
           <h2>Training & Support</h2>
-          <HorizontalAccent />
+          <HorizontalAccentLeft />
           <p>
             No worries. No cares. Just float and wait for the wind to blow you
             around. Think about a cloud. Just float around and be there. Here
@@ -118,7 +95,7 @@ export default () => (
           </p>
         </div>
         <SupportSVG />
-      </ServiceSection>
+      </AlternatingSection>
     </SectionWrapper>
     <SectionWrapper>
       <div>

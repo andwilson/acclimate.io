@@ -8,6 +8,7 @@ import { colors } from "../styles/theme";
 
 import SectionWrapper from "../components/SectionWrapper";
 import CallToActionButton from "../components/CallToActionButton";
+import HorizontalAccent from "../components/HorizontalAccent";
 
 import topImage from "../images/network-4.jpg";
 import StrategySVG from "../images/strategy.svg";
@@ -40,14 +41,6 @@ const Top = styled.div`
     color: ${colors.white};
     font-weight: 300;
   }
-`;
-
-const HorizontalAccent = styled.span`
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: ${colors.primary};
-  margin: 20px auto;
 `;
 
 const WhySection = styled.div`
