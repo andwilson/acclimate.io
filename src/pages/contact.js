@@ -1,25 +1,36 @@
 import React from "react";
 import { navigateTo } from "gatsby-link";
 import styled from "styled-components";
-import FA from "react-fontawesome";
 
-const Container = styled.div`
-  max-width: 960px;
-  margin: auto;
-  padding: 0px 10px;
+import { colors } from "../styles/theme";
+
+import PageHeader from "../components/PageHeader";
+import CallToActionLink from "../components/CallToActionButton";
+
+import ContactSVG from "../images/contact.svg";
+
+const CallToActionButton = CallToActionLink.withComponent("button").extend`
+  width: 200px;
+  justify-self: end;
+  margin: 0;
+`;
+
+const H1 = styled.h1`
+  margin-top: 20px;
 `;
 
 const Form = styled.form`
   display: grid;
-  grid-row-gap: 0.5em;
+  grid-row-gap: 1em;
   grid-template-columns: 1fr;
+  margin: 20px 0;
   @media (min-width: 450px) {
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 25% 75%;
   }
   width: 100%;
   > label {
     font-style: italic;
-    color: grey;
+    color: ${colors.light};
   }
   > input {
     border-radius: 5px;
@@ -28,9 +39,13 @@ const Form = styled.form`
     box-shadow: inset 1px 1px 2px 0px rgba(189, 189, 189, 0.3);
     border: 1px solid rgba(189, 189, 189, 1);
     padding: 7px;
+    color: ${colors.dark};
+    background-color: ${colors.light};
+    opacity: 0.85;
     :focus {
       outline: none;
-      background-color: #faf2ef;
+      background-color: ${colors.white};
+      opacity: 1; 
     }
   }
   > textarea {
@@ -42,23 +57,13 @@ const Form = styled.form`
     border: 1px solid rgba(189, 189, 189, 1);
     padding: 7px;
     resize: none;
+    color: ${colors.dark};
+    background-color: ${colors.light};
+    opacity: 0.85;
     :focus {
       outline: none;
-      background-color: #faf2ef;
-    }
-  }
-  > button {
-    width: 120px;
-    justify-self: end;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #3e2e27;
-    background-color: #4b372f;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    padding: 7px
-    :hover {
-      opacity: 0.8;
+      background-color: ${colors.white};
+      opacity: 1;
     }
   }
 `;
@@ -93,29 +98,38 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (
-      <Container>
-        <h2>Contact us</h2>
-        <Form
-          name="contact"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          <label hidden>Don’t fill this out: </label>
-          <input hidden name="bot-field" onChange={this.handleChange} />
-          <label>Your name:</label>
-          <input type="text" name="name" onChange={this.handleChange} />
-          <label>Your email:</label>
-          <input type="email" name="email" onChange={this.handleChange} />
-          <label>Message:</label>
-          <textarea name="message" onChange={this.handleChange} />
-          <button type="submit">
-            SEND <FA name="arrow-circle-right" />
-          </button>
-        </Form>
-      </Container>
+      <div>
+        <PageHeader>
+          <ContactSVG />
+          <div>
+            <H1>
+              Get in <span>contact</span> with us
+            </H1>
+            <h3>
+              We'd love to hear from you! Reach out and we'll be in touch as soon as possible.
+            </h3>
+            <Form
+            name="contact"
+            method="post"
+            action="/thanks/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={this.handleSubmit}
+          >
+            <label hidden>Don’t fill this out: </label>
+            <input hidden name="bot-field" onChange={this.handleChange} />
+            <label>Your name:</label>
+            <input type="text" name="name" onChange={this.handleChange} />
+            <label>Your email:</label>
+            <input type="email" name="email" onChange={this.handleChange} />
+            <label>Message:</label>
+            <textarea name="message" onChange={this.handleChange} />
+            <div />
+            <CallToActionButton type="submit">SEND</CallToActionButton>
+          </Form>
+          </div>
+        </PageHeader>
+      </div>
     );
   }
 }

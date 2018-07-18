@@ -6,15 +6,14 @@ export default styled.div`
   position: relative;
   height: calc(100vh - 65px);
   width: 100vw;
-  background-color: ${colors.black};
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   > svg {
+      z-index: -1;
+      position: absolute;
       fill: none;
       fill-opacity: 0;
-      position: fixed;
       height: calc(100vh - 65px - 100px);
       stroke: ${lighten(0.1, colors.black)};
       stroke-width: 3;
@@ -34,7 +33,8 @@ export default styled.div`
       }
     }
   > div {
-    z-index: 2;
+    position: relative;
+    z-index: 0;
     max-width: 700px;
     margin: auto;
     padding: 0 10px 10px 10px;

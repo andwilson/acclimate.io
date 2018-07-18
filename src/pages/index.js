@@ -1,17 +1,18 @@
 import React from "react";
-import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import styled from "styled-components";
-import { lighten, darken } from "polished";
 
+import { lighten, darken } from "polished";
 import { colors } from "../styles/theme";
+
+import SectionWrapper from "../components/SectionWrapper";
+import CallToActionButton from "../components/CallToActionButton";
 
 import topImage from "../images/network-4.jpg";
 import StrategySVG from "../images/strategy.svg";
 import MachinelearningSVG from "../images/machinelearning.svg";
 import DevelopmentSVG from "../images/development.svg";
 import SupportSVG from "../images/support.svg";
-import ProcessCircleSVG from "../images/process-circle.svg";
 
 const Top = styled.div`
   position: relative;
@@ -28,61 +29,15 @@ const Top = styled.div`
     margin: auto;
     padding: 0 10px 10px 10px;
   > h1 {
-    color: #ffffff;
+    color: ${colors.white};
     > span {
       color: ${colors.secondary};
       font-style: italic;
     }
   }
   > h3 {
-    color: #ffffff;
+    color: ${colors.white};
     font-weight: 300;
-  }
-`;
-
-const CallToAction = styled(Link)`
-  text-decoration: none;
-  margin-top: 10px;
-  border: none;
-  color: #ffffff;
-  font-size: 16px;
-  background: ${colors.secondary};
-  padding: 10px;
-  border-radius: 5px;
-  display: inline-block;
-  &:after {
-    content: "\u2192";
-    display: inline-block;
-    margin-left: 5px;
-    transition: all 0.3s ease;
-  }
-  transition: all 0.3s ease;
-  &:hover {
-    background: ${lighten(0.04, colors.secondary)};
-  }
-  &:hover:after {
-    transform: scaleY(1.5);
-  }
-`;
-
-const SectionWrapper = styled.div.attrs({
-  backgroundColor: props => props.backgroundColor || colors.light,
-  fontColor: props => props.fontColor || colors.dark
-})`
-  background: ${props => props.backgroundColor};
-  border-top: 1px solid ${props => lighten(0.05, props.backgroundColor)};
-  > div {
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
-    color: ${props => props.fontColor};
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      ${props => props.fontColor};
-    }
   }
 `;
 
@@ -197,15 +152,27 @@ const ProcessSection = styled.div`
     > div {
       :nth-of-type(1) {
         border-color: ${darken(0.15, colors.primary)};  
+        span {
+          color: ${darken(0.15, colors.primary)};  
+        }
       }
       :nth-of-type(2) {
         border-color: ${darken(0.05, colors.primary)};
+        span {
+          color: ${darken(0.05, colors.primary)};  
+        }
       }
       :nth-of-type(3) {
         border-color: ${lighten(0.05, colors.primary)};
+        span {
+          color: ${lighten(0.05, colors.primary)};
+        }
       }
       :nth-of-type(4) {
         border-color: ${lighten(0.15, colors.primary)};
+        span {
+          color: ${lighten(0.15, colors.primary)};
+        }
       }
       border-left: 3px solid ${colors.primary};
       flex: 1;
@@ -218,9 +185,6 @@ const ProcessSection = styled.div`
       }
       > h4 {
         margin-top: 0;
-      }
-      > div {
-        font-weight: 200;
       }
       > svg {
         fill: ${colors.secondary};
@@ -243,7 +207,7 @@ export default ({ data }) => (
           Acclimate Consulting drives ROI in your business with the latest
           technologies
         </h3>
-        <CallToAction to="/contact">Get in touch</CallToAction>
+        <CallToActionButton to="/contact">Get in touch</CallToActionButton>
       </div>
     </Top>
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
@@ -312,7 +276,7 @@ export default ({ data }) => (
         <h1>Process</h1>
         <div>
           <div>
-            <h4>Discovery</h4>
+            <h4><span>&#9312;</span> Discovery</h4>
             <div>
               That's what makes life fun. That you can make these decisions.
               That you can create the world that you want. Just let your mind
@@ -320,7 +284,7 @@ export default ({ data }) => (
             </div>
           </div>
           <div>
-            <h4>Engagement</h4>
+            <h4><span>&#9313;</span> Engagement</h4>
             <div>
               You better get your coat out, this is going to be a cold painting.
               In painting, you have unlimited power. You have the ability to
@@ -328,7 +292,7 @@ export default ({ data }) => (
             </div>
           </div>
           <div>
-            <h4>Development</h4>
+            <h4><span>&#9314;</span> Development</h4>
             <div>
               The least little bit can do so much. That's a crooked tree. We'll
               send him to Washington. I really believe that if you practice
@@ -336,7 +300,7 @@ export default ({ data }) => (
             </div>
           </div>
           <div>
-            <h4>Deployment</h4>
+            <h4><span>&#9315;</span> Deployment</h4>
             <div>
               If you've been in Alaska less than a year you're a Cheechako. Just
               think about these things in your mind and drop em' on canvas.
@@ -364,7 +328,7 @@ export default ({ data }) => (
       <div>
         <h1>Contact</h1>
         Schedule your free business analysis today<br />
-        <CallToAction to="/contact">Get in touch</CallToAction>
+        <CallToActionButton to="/contact">Get in touch</CallToActionButton>
       </div>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.black} fontColor={colors.white}>
