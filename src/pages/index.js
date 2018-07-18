@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import Link from "gatsby-link";
 import styled from "styled-components";
 
 import { lighten, darken } from "polished";
@@ -99,7 +100,7 @@ const ServicesSection = styled.div`
       font-weight: 500;
       margin: 0 0 10px 0;
     }
-    > svg {
+    svg {
       width: 100px;
       display: block;
       margin: auto;
@@ -151,15 +152,15 @@ const ProcessSection = styled.div`
     }
     > div {
       :nth-of-type(1) {
-        border-color: ${darken(0.15, colors.primary)};  
+        border-color: ${darken(0.15, colors.primary)};
         span {
-          color: ${darken(0.15, colors.primary)};  
+          color: ${darken(0.15, colors.primary)};
         }
       }
       :nth-of-type(2) {
         border-color: ${darken(0.05, colors.primary)};
         span {
-          color: ${darken(0.05, colors.primary)};  
+          color: ${darken(0.05, colors.primary)};
         }
       }
       :nth-of-type(3) {
@@ -251,22 +252,30 @@ export default ({ data }) => (
           <div>
             <h4>Digital Strategy</h4>
             <HorizontalAccent />
-            <StrategySVG />
+            <Link to="/services#content">
+              <StrategySVG />
+            </Link>
           </div>
           <div>
             <h4>Data Science & ML</h4>
             <HorizontalAccent />
-            <MachinelearningSVG />
+            <Link to="/services#content">
+              <MachinelearningSVG />
+            </Link>
           </div>
           <div>
             <h4>Application Development</h4>
             <HorizontalAccent />
-            <DevelopmentSVG />
+            <Link to="/services#content">
+              <DevelopmentSVG />
+            </Link>
           </div>
           <div>
             <h4>Training & Support</h4>
             <HorizontalAccent />
-            <SupportSVG />
+            <Link to="/services#content">
+              <SupportSVG />
+            </Link>
           </div>
         </ServicesSection>
       </div>
@@ -276,7 +285,9 @@ export default ({ data }) => (
         <h1>Process</h1>
         <div>
           <div>
-            <h4><span>&#9312;</span> Discovery</h4>
+            <h4>
+              <span>&#9312;</span> Discovery
+            </h4>
             <div>
               That's what makes life fun. That you can make these decisions.
               That you can create the world that you want. Just let your mind
@@ -284,7 +295,9 @@ export default ({ data }) => (
             </div>
           </div>
           <div>
-            <h4><span>&#9313;</span> Engagement</h4>
+            <h4>
+              <span>&#9313;</span> Engagement
+            </h4>
             <div>
               You better get your coat out, this is going to be a cold painting.
               In painting, you have unlimited power. You have the ability to
@@ -292,7 +305,9 @@ export default ({ data }) => (
             </div>
           </div>
           <div>
-            <h4><span>&#9314;</span> Development</h4>
+            <h4>
+              <span>&#9314;</span> Development
+            </h4>
             <div>
               The least little bit can do so much. That's a crooked tree. We'll
               send him to Washington. I really believe that if you practice
@@ -300,7 +315,9 @@ export default ({ data }) => (
             </div>
           </div>
           <div>
-            <h4><span>&#9315;</span> Deployment</h4>
+            <h4>
+              <span>&#9315;</span> Deployment
+            </h4>
             <div>
               If you've been in Alaska less than a year you're a Cheechako. Just
               think about these things in your mind and drop em' on canvas.
@@ -329,12 +346,6 @@ export default ({ data }) => (
         <h1>Partner with us</h1>
         Schedule your free business analysis today<br />
         <CallToActionButton to="/contact">Get in touch</CallToActionButton>
-      </div>
-    </SectionWrapper>
-    <SectionWrapper backgroundColor={colors.black} fontColor={colors.white}>
-      <div>
-        <h1>Footer</h1>
-        <p>Sitemap...</p>
       </div>
     </SectionWrapper>
   </div>

@@ -6,7 +6,7 @@ import "../styles/normalize.css";
 import "../styles/base.css";
 
 import Navigation from "../components/Navigation";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 import favicon from "../images/logo.png";
 

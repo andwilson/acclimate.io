@@ -7,7 +7,7 @@ import { colors } from "../styles/theme";
 
 import PageHeader from "../components/PageHeader";
 import SectionWrapper from "../components/SectionWrapper";
-import CallToActionButton from "../components/CallToActionButton"
+import CallToActionButton from "../components/CallToActionButton";
 
 import ServicesSVG from "../images/services.svg";
 import StrategySVG from "../images/strategy.svg";
@@ -61,6 +61,7 @@ export default () => (
       </div>
       <ServicesSVG />
     </PageHeader>
+    <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <ServiceSection>
         <div>
