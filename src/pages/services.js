@@ -41,6 +41,7 @@ export default () => (
     <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>
+        <StrategySVG />
         <div>
           <h2>Digital Strategy</h2>
           <HorizontalAccentLeft />
@@ -54,9 +55,9 @@ export default () => (
             multitude of sins.
           </p>
         </div>
-        <StrategySVG />
       </AlternatingSection>
       <AlternatingSection>
+        <MachinelearningSVG />
         <div>
           <h2>Data Science & ML</h2>
           <HorizontalAccentLeft />
@@ -68,9 +69,9 @@ export default () => (
             your imagination, let it go.
           </p>
         </div>
-        <MachinelearningSVG />
       </AlternatingSection>
       <AlternatingSection>
+        <DevelopmentSVG />
         <div>
           <h2>Application Development</h2>
           <HorizontalAccentLeft />
@@ -82,9 +83,9 @@ export default () => (
             Just floating without any effort. Having a good day.
           </p>
         </div>
-        <DevelopmentSVG />
       </AlternatingSection>
       <AlternatingSection>
+        <SupportSVG />
         <div>
           <h2>Training & Support</h2>
           <HorizontalAccentLeft />
@@ -94,7 +95,6 @@ export default () => (
             we're limited by the time we have. That's a son of a gun of a cloud.
           </p>
         </div>
-        <SupportSVG />
       </AlternatingSection>
     </SectionWrapper>
     <SectionWrapper>
