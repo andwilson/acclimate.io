@@ -16,7 +16,7 @@ export default styled.div`
     flex-direction: row;
     align-items: center;
     > svg {
-      flex: 1 0 180px;
+      flex: 1 0 150px;
       margin: 0 100px 0 0;
     }
     :nth-of-type(odd) {

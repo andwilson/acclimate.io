@@ -15,6 +15,14 @@ import StrategySVG from "../images/strategy.svg";
 import MachinelearningSVG from "../images/machinelearning.svg";
 import DevelopmentSVG from "../images/development.svg";
 import SupportSVG from "../images/support.svg";
+import ManufacturingSVG from "../images/manufacturing.svg";
+import RetailSVG from "../images/retail.svg";
+import FinanceSVG from "../images/finance.svg";
+import HealthcareSVG from "../images/healthcare.svg";
+import HumanResourcesSVG from "../images/hr.svg";
+import TechnologySVG from "../images/technology.svg";
+import TransportationSVG from "../images/transportation.svg";
+import TravelSVG from "../images/travel.svg";
 
 const Top = styled.div`
   position: relative;
@@ -70,7 +78,7 @@ const WhySection = styled.div`
   }
 `;
 
-const ServicesSection = styled.div`
+const IconsSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 -5px;
@@ -100,36 +108,9 @@ const ServicesSection = styled.div`
       fill: ${colors.medium};
       stroke: ${colors.medium};
       stroke-width: 2;
-      transition: all 1s ease;
+      transition: all 0.3s ease;
       &:hover {
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-        animation-name: draw;
         fill: ${colors.light};
-      }
-    }
-    #strategySVG {
-      stroke-dasharray: 2143;
-      stroke-dashoffset: 2143;
-    }
-    #machinelearningSVG {
-      stroke-dasharray: 3076;
-      stroke-dashoffset: 3076;
-    }
-    #developmentSVG {
-      stroke-dasharray: 7981;
-      stroke-dashoffset: 7981;
-    }
-    #supportSVG {
-      stroke-dasharray: 7262;
-      stroke-dashoffset: 7262;
-    }
-    @keyframes draw {
-      to {
-        stroke-dashoffset: 0;
-        fill-opacity: 1;
       }
     }
   }
@@ -241,7 +222,7 @@ export default ({ data }) => (
     <SectionWrapper backgroundColor={colors.light}>
       <div>
         <h1>Services</h1>
-        <ServicesSection>
+        <IconsSection>
           <div>
             <h4>Digital Strategy</h4>
             <HorizontalAccent />
@@ -270,7 +251,7 @@ export default ({ data }) => (
               <SupportSVG />
             </Link>
           </div>
-        </ServicesSection>
+        </IconsSection>
       </div>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
@@ -322,7 +303,64 @@ export default ({ data }) => (
     <SectionWrapper backgroundColor={colors.light}>
       <div>
         <h1>Industries</h1>
-        <p>Add industries widget...</p>
+        <IconsSection>
+          <div>
+            <h4>Manufacturing</h4>
+            <HorizontalAccent />
+            <Link to="/industries#content">
+              <ManufacturingSVG />
+            </Link>
+          </div>
+          <div>
+            <h4>Retail</h4>
+            <HorizontalAccent />
+            <Link to="/industries#content">
+              <RetailSVG />
+            </Link>
+          </div>
+          <div>
+            <h4>Finance</h4>
+            <HorizontalAccent />
+            <Link to="/industries#content">
+              <FinanceSVG />
+            </Link>
+          </div>
+          <div>
+            <h4>Healthcare</h4>
+            <HorizontalAccent />
+            <Link to="/industries#content">
+              <HealthcareSVG />
+            </Link>
+          </div>
+          <div>
+            <h4>Human Resources</h4>
+            <HorizontalAccent />
+            <Link to="/industries#content">
+              <HumanResourcesSVG />
+            </Link>
+          </div>
+          <div>
+            <h4>Transportation</h4>
+            <HorizontalAccent />
+            <Link to="/industries#content">
+              <TransportationSVG />
+            </Link>
+          </div>
+          <div>
+            <h4>Technology</h4>
+            <HorizontalAccent />
+            <Link to="/industries#content">
+              <TechnologySVG />
+            </Link>
+          </div>
+          <div>
+            <h4>Travel</h4>
+            <HorizontalAccent />
+            <Link to="/industries#content">
+              <TravelSVG />
+            </Link>
+          </div>
+        </IconsSection>
       </div>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.white}>

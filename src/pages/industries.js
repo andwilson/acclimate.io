@@ -15,8 +15,9 @@ import ManufacturingSVG from "../images/manufacturing.svg";
 import RetailSVG from "../images/retail.svg";
 import FinanceSVG from "../images/finance.svg";
 import HealthcareSVG from "../images/healthcare.svg";
-import TechnologySVG from "../images/technology.svg";
 import HumanResourcesSVG from "../images/hr.svg";
+import TechnologySVG from "../images/technology.svg";
+import TransportationSVG from "../images/transportation.svg";
 import TravelSVG from "../images/travel.svg";
 
 const HorizontalAccentLeft = HorizontalAccent.extend`
@@ -41,11 +42,12 @@ export default () => (
         </h3>
       </div>
     </PageHeader>
+    <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>
         <ManufacturingSVG />
         <div>
-          <h2>Manufacturing & supply chain</h2>
+          <h2>Manufacturing</h2>
           <HorizontalAccentLeft />
           <p>
             Volunteering your time; it pays you and your whole community
@@ -99,9 +101,9 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <TechnologySVG />
+        <HumanResourcesSVG />
         <div>
-          <h2>Technology</h2>
+          <h2>Human Resources</h2>
           <HorizontalAccentLeft />
           <p>
             No worries. No cares. Just float and wait for the wind to blow you
@@ -111,9 +113,21 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <HumanResourcesSVG />
+        <TransportationSVG />
         <div>
-          <h2>Human Resources</h2>
+          <h2>Transportation</h2>
+          <HorizontalAccentLeft />
+          <p>
+            No worries. No cares. Just float and wait for the wind to blow you
+            around. Think about a cloud. Just float around and be there. Here
+            we're limited by the time we have. That's a son of a gun of a cloud.
+          </p>
+        </div>
+      </AlternatingSection>
+      <AlternatingSection>
+        <TechnologySVG />
+        <div>
+          <h2>Technology</h2>
           <HorizontalAccentLeft />
           <p>
             No worries. No cares. Just float and wait for the wind to blow you
