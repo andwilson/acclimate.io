@@ -7,6 +7,7 @@ import { colors } from "../styles/theme";
 
 import PageHeader from "../components/PageHeader";
 import SectionWrapper from "../components/SectionWrapper";
+import CallToActionButton from "../components/CallToActionButton"
 
 import ServicesSVG from "../images/services.svg";
 import StrategySVG from "../images/strategy.svg";
@@ -19,19 +20,17 @@ const HorizontalAccent = styled.span`
   width: 50px;
   height: 3px;
   background: ${colors.primary};
-  margin: 20px 0
+  margin: 20px 0;
 `;
 
 const ServiceSection = styled.div`
   display: flex;
   align-items: center;
-  
   > div {
-  
   }
   > svg {
     flex: 1 0 180px;
-  
+
     margin: 0 0 0 100px;
     fill: ${colors.primary};
     stroke-width: 2;
@@ -65,7 +64,7 @@ export default () => (
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <ServiceSection>
         <div>
-          <h1>Digital Strategy</h1>
+          <h2>Digital Strategy</h2>
           <HorizontalAccent />
           <p>
             Volunteering your time; it pays you and your whole community
@@ -81,7 +80,7 @@ export default () => (
       </ServiceSection>
       <ServiceSection>
         <div>
-          <h1>Data Science & ML</h1>
+          <h2>Data Science & ML</h2>
           <HorizontalAccent />
           <p>
             Isn't it fantastic that you can change your mind and create all
@@ -95,7 +94,7 @@ export default () => (
       </ServiceSection>
       <ServiceSection>
         <div>
-          <h1>Application Development</h1>
+          <h2>Application Development</h2>
           <HorizontalAccent />
           <p>
             Let your heart be your guide. The light is your friend. Preserve it.
@@ -109,7 +108,7 @@ export default () => (
       </ServiceSection>
       <ServiceSection>
         <div>
-          <h1>Training & Support</h1>
+          <h2>Training & Support</h2>
           <HorizontalAccent />
           <p>
             No worries. No cares. Just float and wait for the wind to blow you
@@ -119,6 +118,16 @@ export default () => (
         </div>
         <SupportSVG />
       </ServiceSection>
+    </SectionWrapper>
+    <SectionWrapper>
+      <div>
+        <h1>See how we can help your business</h1>
+        <h3>
+          Being a small team, we can provide custom solutions and a flexible
+          arrangement
+        </h3>
+        <CallToActionButton to="/contact/">Get in touch</CallToActionButton>
+      </div>
     </SectionWrapper>
   </div>
 );
