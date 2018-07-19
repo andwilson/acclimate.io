@@ -6,7 +6,6 @@ import { colors } from "../styles/theme";
 
 import PageHeader from "../components/PageHeader";
 import SectionWrapper from "../components/SectionWrapper";
-import CallToActionButton from "../components/CallToActionButton";
 import AlternatingSection from "../components/AlternatingSection";
 import HorizontalAccent from "../components/HorizontalAccent";
 
@@ -45,7 +44,7 @@ export default () => (
     <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>
-        <ManufacturingSVG />
+        <div><ManufacturingSVG /></div>
         <div>
           <h2>Manufacturing</h2>
           <HorizontalAccentLeft />
@@ -61,7 +60,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <RetailSVG />
+        <div><RetailSVG /></div>
         <div>
           <h2>Retail</h2>
           <HorizontalAccentLeft />
@@ -75,7 +74,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <FinanceSVG />
+        <div><FinanceSVG /></div>
         <div>
           <h2>Finance</h2>
           <HorizontalAccentLeft />
@@ -89,7 +88,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <HealthcareSVG />
+        <div><HealthcareSVG /></div>
         <div>
           <h2>Healthcare</h2>
           <HorizontalAccentLeft />
@@ -101,7 +100,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <HumanResourcesSVG />
+        <div><HumanResourcesSVG /></div>
         <div>
           <h2>Human Resources</h2>
           <HorizontalAccentLeft />
@@ -113,7 +112,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <TransportationSVG />
+        <div><TransportationSVG /></div>
         <div>
           <h2>Transportation</h2>
           <HorizontalAccentLeft />
@@ -125,7 +124,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <TechnologySVG />
+        <div><TechnologySVG /></div>
         <div>
           <h2>Technology</h2>
           <HorizontalAccentLeft />
@@ -137,7 +136,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <TravelSVG />
+        <div><TravelSVG /></div>
         <div>
           <h2>Travel</h2>
           <HorizontalAccentLeft />
@@ -148,16 +147,6 @@ export default () => (
           </p>
         </div>
       </AlternatingSection>
-    </SectionWrapper>
-    <SectionWrapper>
-      <div>
-        <h1>See how we can help your business</h1>
-        <h3>
-          Being a small team, we can provide custom solutions and a flexible
-          arrangement
-        </h3>
-        <CallToActionButton to="/contact/">Get in touch</CallToActionButton>
-      </div>
     </SectionWrapper>
   </div>
 );

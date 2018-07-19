@@ -372,13 +372,6 @@ export default ({ data }) => (
         </p>
       </div>
     </SectionWrapper>
-    <SectionWrapper backgroundColor={colors.dark} fontColor={colors.white}>
-      <div>
-        <h1>Partner with us</h1>
-        Schedule your free business analysis today<br />
-        <CallToActionButton to="/contact">Get in touch</CallToActionButton>
-      </div>
-    </SectionWrapper>
   </div>
 );
 

@@ -6,7 +6,6 @@ import { colors } from "../styles/theme";
 
 import PageHeader from "../components/PageHeader";
 import SectionWrapper from "../components/SectionWrapper";
-import CallToActionButton from "../components/CallToActionButton";
 import AlternatingSection from "../components/AlternatingSection";
 import HorizontalAccent from "../components/HorizontalAccent";
 
@@ -41,7 +40,7 @@ export default () => (
     <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>
-        <StrategySVG />
+        <div><StrategySVG /></div>
         <div>
           <h2>Digital Strategy</h2>
           <HorizontalAccentLeft />
@@ -57,7 +56,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <MachinelearningSVG />
+        <div><MachinelearningSVG /></div>
         <div>
           <h2>Data Science & ML</h2>
           <HorizontalAccentLeft />
@@ -71,7 +70,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <DevelopmentSVG />
+        <div><DevelopmentSVG /></div>
         <div>
           <h2>Application Development</h2>
           <HorizontalAccentLeft />
@@ -85,7 +84,7 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <SupportSVG />
+        <div><SupportSVG /></div>
         <div>
           <h2>Training & Support</h2>
           <HorizontalAccentLeft />
@@ -96,16 +95,6 @@ export default () => (
           </p>
         </div>
       </AlternatingSection>
-    </SectionWrapper>
-    <SectionWrapper>
-      <div>
-        <h1>See how we can help your business</h1>
-        <h3>
-          Being a small team, we can provide custom solutions and a flexible
-          arrangement
-        </h3>
-        <CallToActionButton to="/contact/">Get in touch</CallToActionButton>
-      </div>
     </SectionWrapper>
   </div>
 );

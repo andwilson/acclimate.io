@@ -4,28 +4,33 @@ import { colors } from "../../styles/theme";
 export default styled.div`
   display: flex;
   align-items: flex-start;
-  > div {
-    
+  margin-bottom: 20px;
+  h2 {
+    margin: 0;
   }
-  > svg {
-    flex: 1 0 80px;
+  svg {
     fill: ${colors.primary};
-    margin-right: 20px;
   }
-  @media (min-width: 650px) {
-    flex-direction: row;
+  > div:first-child {
+    flex: 0 0 100px;
+    margin: 0 20px 0 0;
+  }
+  > div:last-child {
+   flex: 1 0;
+  }
+  @media (min-width: 650px) { 
     align-items: center;
-    > svg {
-      flex: 1 0 150px;
-      margin: 0 100px 0 0;
+    > div:first-child {
+      flex: 0 0 180px;
+      margin: 0 50px 0 0;
+    }
+    > div:last-child {
+     flex: 1 0;
     }
     :nth-of-type(odd) {
-      > svg {
-        
-        margin: 0 0 0 100px;
-      }
-      > div {
-        order: -1;
+      > div:first-child {
+        order: 1;
+        margin: 0 0 0 50px;
       }
     }
   }
