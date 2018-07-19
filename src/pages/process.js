@@ -88,9 +88,14 @@ export default () => (
               <span>&#9312;</span> Discovery
             </h4>
             <div>
-              That's what makes life fun. That you can make these decisions.
-              That you can create the world that you want. Just let your mind
-              wander and enjoy. This should make you happy.
+              We begin at a high level and establish a shared vision and
+              direction of the business. With a common understanding, we review
+              the mechanisms that drive how value is created for your customer.
+              We pair this with an exploration of with the latest technological
+              solutions of your industry. Equipped with this knowledge, we
+              continue exploring facets of the business, identifying initiatives
+              that align with the vision and thorny, chronic problems that have
+              stifled the growth of your business.
             </div>
           </div>
           <div>
@@ -98,9 +103,12 @@ export default () => (
               <span>&#9313;</span> Engagement
             </h4>
             <div>
-              You better get your coat out, this is going to be a cold painting.
-              In painting, you have unlimited power. You have the ability to
-              move mountains. You can bend rivers.
+              With a roadmap in place and initiatives identified, we roll up our
+              sleeves and develop a blueprint for weaving an intelligent system
+              into your business. We establish metrics to measure the impact on
+              business, and desired capabilities of the system. Our small and
+              dedicated team will work hand in hand with you to develop an
+              actionable project plan from conception all the way to production.
             </div>
           </div>
           <div>
@@ -108,9 +116,12 @@ export default () => (
               <span>&#9314;</span> Development
             </h4>
             <div>
-              The least little bit can do so much. That's a crooked tree. We'll
-              send him to Washington. I really believe that if you practice
-              enough you could paint the 'Mona Lisa' with a two-inch brush.{" "}
+              Our team is agile and well versed in the latest available
+              solutions. We function as your data science team, engineering an
+              end-to-end solution that will feel like a natural extension to
+              your business. We value team culture and enjoy consistent
+              communication with open collaboration, so you will feel that our
+              work is part of a single company initiative.
             </div>
           </div>
           <div>
@@ -118,8 +129,12 @@ export default () => (
               <span>&#9315;</span> Deployment
             </h4>
             <div>
-              If you've been in Alaska less than a year you're a Cheechako. Just
-              think about these things in your mind and drop em' on canvas.
+              We strive to leverage modern technology to build end-to-end
+              solutions that “just work”. We have a keen interest in User
+              Experience, and believe in as little behavior change as possible,
+              so your best knowledge workers can continue doing what they do
+              best, enhanced by a sophisticated intelligent system. We fully
+              stand by our work, and back our systems with measured results.
             </div>
           </div>
         </div>

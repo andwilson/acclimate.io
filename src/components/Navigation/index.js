@@ -140,7 +140,7 @@ export default ({ data }) => (
           <a href="#">Company</a>
           <Drop>
             <SLink to="/team">Team</SLink>
-            <SLink to="/careers">Careers</SLink>
+            <SLink to="/team#careers">Careers</SLink>
             <SLink to="/contact">Contact</SLink>
           </Drop>
         </Item>

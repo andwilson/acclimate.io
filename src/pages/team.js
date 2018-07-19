@@ -148,6 +148,17 @@ export default ({ data }) => (
         </AlternatingSection>
       </div>
     </SectionWrapper>
+    <SectionWrapper>
+      <a name="careers"  />
+      <div>
+        <h1>Join our team</h1>
+        <p>
+          We are always on the lookout for great talent to join our team. Reach
+          out directly with a copy of your resume or a link to your LinkedIn
+          profile if you are interested.
+        </p>
+      </div>
+    </SectionWrapper>
   </div>
 );
 
