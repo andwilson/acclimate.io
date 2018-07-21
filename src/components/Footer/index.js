@@ -122,7 +122,7 @@ export default () => (
             <a href="https://www.flaticon.com/" title="Flaticon">
               flaticon.com
             </a>{" "}
-            licensed by{" "}
+            licensed under{" "}
             <a
               href="http://creativecommons.org/licenses/by/3.0/"
               title="Creative Commons BY 3.0"

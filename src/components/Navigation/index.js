@@ -45,6 +45,7 @@ const LogoLink = styled(Link)`
   svg {
     margin-right: 10px;
     width: 40px;
+    height: 40px;
     transition: all 0.4s ease;
     .cls-1 {
       fill: ${colors.light};
