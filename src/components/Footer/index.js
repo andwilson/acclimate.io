@@ -12,6 +12,7 @@ import LogoSVG from "../../images/logo.svg";
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
   svg {
     width: 40px;
     height: 40px;
@@ -43,7 +44,6 @@ const LogoContainer = styled.div`
 `;
 
 const FooterContent = styled.div`
-  margin-top: 20px;
   > a {
     color: ${lighten(0.2, colors.black)};
     text-decoration: none;
@@ -58,9 +58,13 @@ const FooterContent = styled.div`
 
 const FooterContainer = styled.div`
   display: flex;
-  align-items: flex-end;
+  margin-top: 15px;
+  align-items: flex-start;
   > div {
-    flex: 1 0 50%;
+    flex: 1 0 30%;
+  }
+  @media(max-width: 850px) {
+    flex-direction: column;
   }
 `;
 
@@ -83,46 +87,53 @@ export default () => (
     fontColor={lighten(0.2, colors.black)}
   >
     <div>
-      <LogoContainer>
-        <Link to="/">
-          <LogoSVG />
-        </Link>
-        <Link to="/">
-          <h2>Acclimate</h2>
-        </Link>
-      </LogoContainer>
       <FooterContainer>
+        <LogoContainer>
+          <Link to="/">
+            <LogoSVG />
+          </Link>
+          <Link to="/">
+            <h2>Acclimate</h2>
+          </Link>
+        </LogoContainer>
         <FooterContent>
           <Link to="/services">Services</Link>
           <Link to="/process">Process</Link>
           <Link to="/industries">Industries</Link>
+        </FooterContent>
+        <FooterContent>
           <Link to="/team">Team</Link>
           <Link to="/careers">Careers</Link>
           <Link to="/contact">Contact</Link>
         </FooterContent>
-
-        <FooterContent>
-          <a href="#">Terms of use</a>
-          <a href="#">Privacy policy</a>
-        </FooterContent>
       </FooterContainer>
-      <Copyright>
-        <p>&copy; Acclimate {new Date().getFullYear()}</p>
-        <p>
-          Icons from{" "}
-          <a href="https://www.flaticon.com/" title="Flaticon">
-            flaticon.com
-          </a>{" "}
-          licensed by{" "}
-          <a
-            href="http://creativecommons.org/licenses/by/3.0/"
-            title="Creative Commons BY 3.0"
-            target="_blank"
-          >
-            CC 3.0 BY
-          </a>
-        </p>
-      </Copyright>
+      <FooterContainer>
+        <div />
+        <Copyright>
+          <p>
+            &copy; Acclimate {new Date().getFullYear()}
+            {" | "}
+            <a>Terms of use</a>
+            {" | "}
+            <a>Privacy policy</a>
+          </p>
+          <p>
+            Icons from{" "}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              flaticon.com
+            </a>{" "}
+            licensed by{" "}
+            <a
+              href="http://creativecommons.org/licenses/by/3.0/"
+              title="Creative Commons BY 3.0"
+              target="_blank"
+            >
+              CC 3.0 BY
+            </a>
+          </p>
+        </Copyright>
+        <div />
+      </FooterContainer>
     </div>
   </SectionWrapper>
 );
