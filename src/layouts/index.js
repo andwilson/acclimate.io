@@ -45,10 +45,5 @@ export const pageQuery = graphql`
         shortName
       }
     }
-    logo: imageSharp(id: { regex: "/logo-light.png/" }) {
-      sizes(maxWidth: 100, grayscale: false) {
-        ...GatsbyImageSharpSizes
-      }
-    }
   }
 `;

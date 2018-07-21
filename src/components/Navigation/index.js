@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
-import Img from "gatsby-image";
 import { colors } from "../../styles/theme";
+
+import LogoSVG from "../../images/logo.svg";
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -40,16 +41,27 @@ const Right = styled.div`
   display: flex;
 `;
 
-const Logo = styled(Img)`
-  margin-right: 10px;
-  width: 40px;
-  transition: all 0.4s ease;
-  &:hover {
-    transform: rotate(72deg);
+const LogoLink = styled(Link)`
+  svg {
+    margin-right: 10px;
+    width: 40px;
+    transition: all 0.4s ease;
+    .cls-1 {
+      fill: ${colors.light};
+    }
+    &:hover {
+      transform: rotate(72deg);
+    }
+    #a2 {
+      fill: ${colors.secondary};
+    }
+    #a3 {
+      fill: ${colors.primary};
+    }
   }
 `;
 
-const Item = styled.div` 
+const Item = styled.div`
   display: flex;
   align-items: center;
   padding: 0 10px;
@@ -122,10 +134,10 @@ export default ({ data }) => (
   <Wrapper>
     <Nav>
       <Left>
-          <Link to="/">
-            <Logo sizes={data.logo.sizes} />
-          </Link>
-          <Title to="/">{data.site.siteMetadata.shortName}</Title>
+        <LogoLink to="/">
+          <LogoSVG />
+        </LogoLink>
+        <Title to="/">{data.site.siteMetadata.shortName}</Title>
       </Left>
       <Right>
         <Item>
