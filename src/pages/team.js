@@ -85,10 +85,13 @@ export default ({ data }) => (
             <h2>Andrew Wilson</h2>
             <HorizontalAccentLeft />
             <p>
-              Technology is a powerful and pervasive force. Customer discovery
-              and data analytics should drive strategy. Systems thinking leads
-              to adaptable and scalable architectures/platforms. The pace of
-              change offers countless opportunities to those who can keep up.
+              My professional journey evolved from an early obsession with
+              graphic and web design to where I am now: using data science to
+              solve hard problems. Somewhere in-between I discovered my love of
+              startup culture and business strategy, as well as technology’s
+              profound impact on just about everything. My work involves using
+              the internet and machine learning to create things that improve
+              the human experience.
             </p>
           </div>
         </AlternatingSection>
