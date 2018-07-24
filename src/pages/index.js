@@ -96,6 +96,11 @@ const IconsSection = styled.div`
     margin: 5px;
     border-radius: 5px;
     border: 1px solid ${darken(0.01, colors.light)};
+    > div {
+      margin: 20px 20px 5px 0;
+      font-size: 16px;
+      text-align: center;
+    }
     > h4 {
       text-align: center;
       font-weight: 500;
@@ -199,21 +204,22 @@ export default ({ data }) => (
             </p>
           </div>
           <div>
-            <h4>Build For the Next Generation</h4>
+            <h4>Build a Hyper Intelligent Business</h4>
             <p>
-              Our focus is helping you build a more intelligent business.
-              Leverage business strategy, data science and State-Of-The-Art A.I
-              technology to make data-driven decisions that will build the
-              company of the future.
+              Our focus is to help you build a more intelligent business. We
+              leverage our experience in business strategy, data science and
+              state-of-the-art A.I technology so you can avoid costly mistakes
+              and make better decisions that scale.
             </p>
           </div>
           <div>
             <h4>Beat The Status Quo</h4>
             <p>
-              We share a perpetual excitement for emerging technologies. How
-              they create opportunities and disrupt at every turn. Partner with
-              us to create unprecedented value that outperforms the solutions of
-              yesterday.
+              We know technology moves very fast. We pride ourselves in our
+              ability to understand this powerful, ever changing landscape.
+              Liberate yourself from entrenched business problems and old ideas.
+              Adopt fresh thinking to create unprecedented value that
+              outperforms the solutions of yesterday.
             </p>
           </div>
         </div>
@@ -229,6 +235,11 @@ export default ({ data }) => (
             <Link to="/services#content">
               <StrategySVG />
             </Link>
+            <div>
+              Custom analysis of your current technology usage, business model,
+              and competitive landscape, providing you with strategies for new
+              value creation and efficiency savings.
+            </div>
           </div>
           <div>
             <h4>Data Science & ML</h4>
@@ -236,6 +247,11 @@ export default ({ data }) => (
             <Link to="/services#content">
               <MachinelearningSVG />
             </Link>
+            <div>
+              Infuse your decision-making and products with intelligent
+              algorithms that are custom suited to your stakeholder and customer
+              needs.
+            </div>
           </div>
           <div>
             <h4>Application Development</h4>
@@ -243,6 +259,10 @@ export default ({ data }) => (
             <Link to="/services#content">
               <DevelopmentSVG />
             </Link>
+            <div>
+              Full-stack engineering of modern web and mobile apps. Apps are
+              fast, scalable, user-friendly, and adaptable.
+            </div>
           </div>
           <div>
             <h4>Training & Support</h4>
@@ -250,6 +270,11 @@ export default ({ data }) => (
             <Link to="/services#content">
               <SupportSVG />
             </Link>
+            <div>
+              Ongoing support for your custom strategy or data-centric
+              application. Training for executives and employees on general
+              technology literacy or specific technologies.
+            </div>
           </div>
         </IconsSection>
       </div>
@@ -263,9 +288,8 @@ export default ({ data }) => (
               <span>&#9312;</span> Discovery
             </h4>
             <div>
-              That's what makes life fun. That you can make these decisions.
-              That you can create the world that you want. Just let your mind
-              wander and enjoy. This should make you happy.
+              Understand your business and provide recommendations for points
+              where you can gain the most leverage.
             </div>
           </div>
           <div>
@@ -273,9 +297,8 @@ export default ({ data }) => (
               <span>&#9313;</span> Engagement
             </h4>
             <div>
-              You better get your coat out, this is going to be a cold painting.
-              In painting, you have unlimited power. You have the ability to
-              move mountains. You can bend rivers.
+              Scope and perform an in-depth analysis, leading to an actionable
+              strategy that you or third parties can implement
             </div>
           </div>
           <div>
@@ -283,9 +306,9 @@ export default ({ data }) => (
               <span>&#9314;</span> Development
             </h4>
             <div>
-              The least little bit can do so much. That's a crooked tree. We'll
-              send him to Washington. I really believe that if you practice
-              enough you could paint the 'Mona Lisa' with a two-inch brush.{" "}
+              Develop an end-to-end, custom-tailored solution for your business
+              that you can use for decision-making, efficiency gains, or
+              intelligent products/services
             </div>
           </div>
           <div>
@@ -293,8 +316,9 @@ export default ({ data }) => (
               <span>&#9315;</span> Deployment
             </h4>
             <div>
-              If you've been in Alaska less than a year you're a Cheechako. Just
-              think about these things in your mind and drop em' on canvas.
+              Provide the training and ongoing support you need to make full use
+              of the tools we’ve provided. Executive and employee coaching to
+              ensure that your team is on the cutting edge.
             </div>
           </div>
         </div>
@@ -303,6 +327,10 @@ export default ({ data }) => (
     <SectionWrapper backgroundColor={colors.light}>
       <div>
         <h1>Industries</h1>
+        <p>
+          We support customers across several industries where technology is
+          causing major disruption to business models
+        </p>
         <IconsSection>
           <div>
             <h4>Manufacturing</h4>

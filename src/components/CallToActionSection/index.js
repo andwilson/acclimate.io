@@ -34,8 +34,8 @@ export default () => (
       <div>
         <h1>Partner with us</h1>
         <p>
-          Our team provides a free discovery service, identifying opportunities
-          where your company can best leverage today's best technology
+          Have questions? Reach out to a technology strategy expert. Schedule a
+          free call with us to explore how your organization can adapt.
         </p>
         <CallToActionButton to="/contact">Get in touch</CallToActionButton>
       </div>
