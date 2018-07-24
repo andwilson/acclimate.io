@@ -115,7 +115,7 @@ export default () => (
             {" | "}
             <a>Terms of use</a>
             {" | "}
-            <a>Privacy policy</a>
+            <Link to="/privacypolicy">Privacy policy</Link>
           </p>
           <p>
             Icons from{" "}
