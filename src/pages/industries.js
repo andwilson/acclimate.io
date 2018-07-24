@@ -44,63 +44,82 @@ export default () => (
     <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>
-        <div><ManufacturingSVG /></div>
+        <div>
+          <ManufacturingSVG />
+        </div>
         <div>
           <h2>Manufacturing</h2>
           <HorizontalAccentLeft />
           <p>
-            Volunteering your time; it pays you and your whole community
-            fantastic dividends. A happy cloud. Let's build an almighty
-            mountain. The first step to doing anything is to believe you can do
-            it. See it finished in your mind before you ever start. And that's
-            when it becomes fun - you don't have to spend your time thinking
-            about what's happening - you just let it happen. Trees cover up a
-            multitude of sins.
+            Manufacturing is positioned to see enormous disruption from applied
+            A.I research. Image recognition tools for automating and enhancing
+            visual defect inspections, Anomaly detection on the product floor
+            for preventing unscheduled downtime, or a learned scheduling agent
+            for predicting lead times and scheduling start dates can drastically
+            improve your physical processes.
+          </p>
+          <p>
+            Acclimate is developing production prediction Machine Learning
+            models that help optimize manufacturing processes. With AI, once
+            your company engages Acclimate we help to create models that learn
+            and improve over time.
           </p>
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><RetailSVG /></div>
+        <div>
+          <RetailSVG />
+        </div>
         <div>
           <h2>Retail</h2>
           <HorizontalAccentLeft />
           <p>
-            Isn't it fantastic that you can change your mind and create all
-            these happy things? The more we do this - the more it will do good
-            things to our heart. That is when you can experience true joy, when
-            you have no fear. You can spend all day playing with mountains. Use
-            your imagination, let it go.
+            Would you like a better understanding the trends in your product
+            line, and the segments of customers who like to shop with you? What
+            aspects of your offerings keep customers coming back and staying?
+            Today’s technology can optimize the shopping experience for each
+            unique customer. Image Recognition systems can draw new insight from
+            your product line, and these features combined with customer
+            activity can drive recommendation engines that dramatically increase
+            your sales.
           </p>
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><FinanceSVG /></div>
+        <div>
+          <FinanceSVG />
+        </div>
         <div>
           <h2>Finance</h2>
           <HorizontalAccentLeft />
           <p>
-            Let your heart be your guide. The light is your friend. Preserve it.
-            You could sit here for weeks with your one hair brush trying to do
-            that - or you could do it with one stroke with an almighty brush.
-            You need the dark in order to show the light. Pretend you're water.
-            Just floating without any effort. Having a good day.
+            From stock market prediction to fraud detection, Acclimate can help
+            your business gain competitive advantages by leveraging advances in
+            AI technologies. We specialize in building high value customized
+            solutions to solve real business problems.
           </p>
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><HealthcareSVG /></div>
+        <div>
+          <HealthcareSVG />
+        </div>
         <div>
           <h2>Healthcare</h2>
           <HorizontalAccentLeft />
           <p>
-            No worries. No cares. Just float and wait for the wind to blow you
-            around. Think about a cloud. Just float around and be there. Here
-            we're limited by the time we have. That's a son of a gun of a cloud.
+            Delivering a diagnosis takes considerable energy from specialists
+            with limited time. Modern learning algorithms can use visual
+            understanding of patient scans to assist in screening and deliver
+            insights that extend the capabilities of your clinicians. Deliver
+            more accurate diagnoses to a larger patient base in less time.
           </p>
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><HumanResourcesSVG /></div>
+        <div>
+          <HumanResourcesSVG />
+        </div>
         <div>
           <h2>Human Resources</h2>
           <HorizontalAccentLeft />
@@ -112,7 +131,9 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><TransportationSVG /></div>
+        <div>
+          <TransportationSVG />
+        </div>
         <div>
           <h2>Transportation</h2>
           <HorizontalAccentLeft />
@@ -124,19 +145,25 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><TechnologySVG /></div>
+        <div>
+          <TechnologySVG />
+        </div>
         <div>
           <h2>Technology</h2>
           <HorizontalAccentLeft />
           <p>
-            No worries. No cares. Just float and wait for the wind to blow you
-            around. Think about a cloud. Just float around and be there. Here
-            we're limited by the time we have. That's a son of a gun of a cloud.
+            The Acclimate team has extensive experience in architecting,
+            developing and launching global technology solutions using Agile
+            principles. We believe in providing our customers with cutting-edge
+            technology to allow them to compete effectively in the marketplace
+            and grow.
           </p>
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><TravelSVG /></div>
+        <div>
+          <TravelSVG />
+        </div>
         <div>
           <h2>Travel</h2>
           <HorizontalAccentLeft />

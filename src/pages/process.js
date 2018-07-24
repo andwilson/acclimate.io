@@ -75,7 +75,7 @@ export default () => (
         </h1>
         <h3>
           A consulting engagement follows a typical process, but it can be
-          customized to suite your unique needs and timeline
+          customized to suit your unique needs and timeline
         </h3>
       </div>
     </PageHeader>
@@ -88,14 +88,11 @@ export default () => (
               <span>&#9312;</span> Discovery
             </h4>
             <div>
-              We begin at a high level and establish a shared vision and
-              direction of the business. With a common understanding, we review
-              the mechanisms that drive how value is created for your customer.
-              We pair this with an exploration of with the latest technological
-              solutions of your industry. Equipped with this knowledge, we
-              continue exploring facets of the business, identifying initiatives
-              that align with the vision and thorny, chronic problems that have
-              stifled the growth of your business.
+              Do you have complex a business challenge that seem unsolvable?
+              Today’s technology landscape offers powerful algorithms to address
+              a new class of problems. Our expert consultants walk you through
+              your business and current industry technology leverage points to
+              layout a roadmap for enhancing your services and operations.
             </div>
           </div>
           <div>
@@ -103,12 +100,12 @@ export default () => (
               <span>&#9313;</span> Engagement
             </h4>
             <div>
-              With a roadmap in place and initiatives identified, we roll up our
-              sleeves and develop a blueprint for weaving an intelligent system
-              into your business. We establish metrics to measure the impact on
-              business, and desired capabilities of the system. Our small and
-              dedicated team will work hand in hand with you to develop an
-              actionable project plan from conception all the way to production.
+              We use the roadmap and take a deeper dive into the business
+              operations to address a use case with a clear purpose. From here
+              we engage with your subject-matter experts and stakeholders to
+              specify how the cognitive system will fit into your organization.
+              We develop a clear understanding of how workers and customers will
+              interact with the system.
             </div>
           </div>
           <div>
@@ -129,12 +126,12 @@ export default () => (
               <span>&#9315;</span> Deployment
             </h4>
             <div>
-              We strive to leverage modern technology to build end-to-end
-              solutions that “just work”. We have a keen interest in User
-              Experience, and believe in as little behavior change as possible,
-              so your best knowledge workers can continue doing what they do
-              best, enhanced by a sophisticated intelligent system. We fully
-              stand by our work, and back our systems with measured results.
+              We strive to leverage modern technology to build robust systems
+              that “just work”. We have a keen interest in User Experience, and
+              believe in as little behavior change as possible. This means your
+              best knowledge workers can continue doing what they do best,
+              enhanced by a sophisticated intelligent system. We fully stand by
+              our work, and back our systems with measured results.
             </div>
           </div>
         </div>

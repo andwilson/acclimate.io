@@ -105,7 +105,9 @@ export default ({ data }) => (
             <p>
               Leader with demonstrated success at defining strategy and
               directing teams to develop and manage product lines used by
-              companies such as Black Rock, eBay, Comcast and Louis Vuitton.
+              Enterprise companies world wide. Expert in incubating businesses
+              from ideation to full scale global production by leading global
+              development and cross functional teams.
             </p>
           </div>
         </AlternatingSection>

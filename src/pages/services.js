@@ -1,6 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-import styled from "styled-components";
 
 import { colors } from "../styles/theme";
 
@@ -32,7 +31,7 @@ export default () => (
         </h1>
         <h3>
           From a free discovery session through implementation, the team at
-          Acclimate will be with you througout your transformation process
+          Acclimate will be with you throughout your transformation process
         </h3>
       </div>
       <ServicesSVG />
@@ -40,7 +39,9 @@ export default () => (
     <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>
-        <div><StrategySVG /></div>
+        <div>
+          <StrategySVG />
+        </div>
         <div>
           <h2>Digital Strategy</h2>
           <HorizontalAccentLeft />
@@ -56,21 +57,28 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><MachinelearningSVG /></div>
+        <div>
+          <MachinelearningSVG />
+        </div>
         <div>
           <h2>Data Science & ML</h2>
           <HorizontalAccentLeft />
           <p>
-            Isn't it fantastic that you can change your mind and create all
-            these happy things? The more we do this - the more it will do good
-            things to our heart. That is when you can experience true joy, when
-            you have no fear. You can spend all day playing with mountains. Use
-            your imagination, let it go.
+            We offer an intuitive familiarity with a range of learning
+            algorithms capable at solving a new class of problems. We specialize
+            in deep learning for computer vision, as well inference models.
+            These systems make suggestions on pricing, dates, categories and any
+            quantifiable metric your knowledge workers need for clairvoyant
+            decisions. Our deployed inference systems are the brain behind
+            automation routines that reduce your business costs and enhance your
+            services tremendously.
           </p>
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><DevelopmentSVG /></div>
+        <div>
+          <DevelopmentSVG />
+        </div>
         <div>
           <h2>Application Development</h2>
           <HorizontalAccentLeft />
@@ -84,7 +92,9 @@ export default () => (
         </div>
       </AlternatingSection>
       <AlternatingSection>
-        <div><SupportSVG /></div>
+        <div>
+          <SupportSVG />
+        </div>
         <div>
           <h2>Training & Support</h2>
           <HorizontalAccentLeft />
