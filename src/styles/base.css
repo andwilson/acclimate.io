@@ -13,6 +13,7 @@ h5 {
   font-family: open sans;
 }
 
-p {
+p,
+li {
   line-height: 1.3em;
 }
