@@ -14,7 +14,7 @@ import favicon from "../images/logo.png";
 class Layout extends React.Component {
   render() {
     let bottom;
-    if (this.props.location.pathname === "/contact") {
+    if (this.props.location.pathname === "/contact" || this.props.location.pathname === "/thanks") {
       bottom = null;
     } else {
     bottom = <div><CallToActionSection /><Footer /></div>;
