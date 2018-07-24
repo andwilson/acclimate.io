@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import styled from "styled-components";
 
 import { colors } from "../styles/theme";
 
@@ -18,12 +19,47 @@ const HorizontalAccentLeft = HorizontalAccent.extend`
   margin: 20px 0;
 `;
 
+const ServiceHeaderContainer = styled.div`
+  display: flex;
+  margin-bottom: 1.5em
+  > svg {
+    flex: 0 0 100px;
+    height: 100px;
+    width: 100px;
+    fill: ${colors.primary};
+    margin-right: 1em;
+  }
+  > div {
+    flex: 1 1;
+    > h2 {
+    }
+    > p {
+      font-style: italic;
+      margin: 0;
+    }
+  }
+`;
+
+const ServiceItemContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1em;
+`;
+
+const ServiceItem = styled.div`
+  flex: 1 0 250px;
+  h4 {
+    color: ${colors.secondary};
+    margin: 0 0 0.2em 0;
+  }
+  margin: 0 1em 1.5em 1em;
+`;
+
 export default () => (
   <div>
     <Helmet>
       <title>Acclimate | Services</title>
     </Helmet>
-
     <PageHeader>
       <div>
         <h1>
@@ -38,24 +74,61 @@ export default () => (
     </PageHeader>
     <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
-      <AlternatingSection>
-        <div>
+      <div>
+        <ServiceHeaderContainer>
           <StrategySVG />
-        </div>
-        <div>
-          <h2>Digital Strategy</h2>
-          <HorizontalAccentLeft />
-          <p>
-            Volunteering your time; it pays you and your whole community
-            fantastic dividends. A happy cloud. Let's build an almighty
-            mountain. The first step to doing anything is to believe you can do
-            it. See it finished in your mind before you ever start. And that's
-            when it becomes fun - you don't have to spend your time thinking
-            about what's happening - you just let it happen. Trees cover up a
-            multitude of sins.
-          </p>
-        </div>
-      </AlternatingSection>
+          <div>
+            <h2>Business Strategy</h2>
+            <p>
+              Motion isn't always progress. In today’s rapidly changing climate,
+              your business must continuously adapt in order to survive. The
+              best investment you can make is to step back and develop a
+              strategy to thrive. Acclimate provides strategy consulting
+              services with a keen understanding of the current digital
+              landscape.
+            </p>
+          </div>
+        </ServiceHeaderContainer>
+        <ServiceItemContainer>
+          <ServiceItem>
+            <h4>Data exploration and insights</h4>You’re already sitting on
+            a treasure trove of data. It’s highly likely that there are
+            low-hanging opportunities to create massive value hiding in plain
+            sight.
+          </ServiceItem>
+          <ServiceItem>
+            <h4>Technology stack advice</h4>
+            The sheer number of technologies available can be overwhelming, let
+            alone understanding how they all fit together. Get advice from our
+            experts on what technologies best fit your unique needs and existing
+            infrastructure.
+          </ServiceItem>
+          <ServiceItem>
+            <h4>Ecosystem mapping</h4>
+            Understand the birds-eye view of your industry. Visually map your
+            competitors, suppliers, partners, and customers and see the flow of
+            goods, value, and information amongst them.
+          </ServiceItem>
+          <ServiceItem>
+            <h4>Customer discovery</h4>
+            Everything you do should start with the customer. Get to know your
+            customers on a much deeper level by asking them the right questions
+            to uncover their pains and needs.
+          </ServiceItem>
+          <ServiceItem>
+            <h4>Design thinking</h4>
+            Already have an intractable problem in mind? Get a grip on potential
+            solutions by empathizing with your customers and rapidly prototyping
+            your ideas.
+          </ServiceItem>
+          <ServiceItem>
+            <h4>Business model innovation</h4>
+            Incremental gains are important, but will only take your business so
+            far. Uncover creative business models to create new value and shake
+            up your industry.
+          </ServiceItem>
+        </ServiceItemContainer>
+      </div>
       <AlternatingSection>
         <div>
           <MachinelearningSVG />
