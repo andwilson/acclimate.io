@@ -3,7 +3,6 @@ body {
   font-family: open sans;
   background-color: #222220;
   font-weight: 200;
-  line-height: 1.2em;
 }
 
 h1,
@@ -12,4 +11,8 @@ h3,
 h4,
 h5 {
   font-family: open sans;
+}
+
+p {
+  line-height: 1.3em;
 }

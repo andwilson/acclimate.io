@@ -21,11 +21,11 @@ const HorizontalAccentLeft = HorizontalAccent.extend`
 
 const ServiceHeaderContainer = styled.div`
   display: flex;
-  margin-bottom: 1.5em
+  margin-bottom: 1.5em;
   > svg {
-    flex: 0 0 100px;
-    height: 100px;
-    width: 100px;
+    flex: 0 0 120px;
+    height: 120px;
+    width: 120px;
     fill: ${colors.primary};
     margin-right: 1em;
   }
@@ -44,15 +44,17 @@ const ServiceItemContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1em;
-`;
-
-const ServiceItem = styled.div`
-  flex: 1 0 250px;
-  h4 {
-    color: ${colors.secondary};
-    margin: 0 0 0.2em 0;
+  > div {
+    flex: 1 0 300px;
+    h4 {
+      color: ${colors.secondary};
+      margin: 0 0 0.2em 0;
+    }
+    p {
+      margin: 0;
+    }
+    margin: 0 1em 1.5em 1em;
   }
-  margin: 0 1em 1.5em 1em;
 `;
 
 export default () => (
@@ -90,64 +92,113 @@ export default () => (
           </div>
         </ServiceHeaderContainer>
         <ServiceItemContainer>
-          <ServiceItem>
-            <h4>Data exploration and insights</h4>You’re already sitting on
-            a treasure trove of data. It’s highly likely that there are
-            low-hanging opportunities to create massive value hiding in plain
-            sight.
-          </ServiceItem>
-          <ServiceItem>
+          <div>
+            <h4>Data exploration and insights</h4>
+            <p>
+              You’re already sitting on a treasure trove of data. It’s highly
+              likely that there are low-hanging opportunities to create massive
+              value hiding in plain sight.
+            </p>
+          </div>
+          <div>
             <h4>Technology stack advice</h4>
-            The sheer number of technologies available can be overwhelming, let
-            alone understanding how they all fit together. Get advice from our
-            experts on what technologies best fit your unique needs and existing
-            infrastructure.
-          </ServiceItem>
-          <ServiceItem>
+            <p>
+              The sheer number of technologies available can be overwhelming,
+              let alone understanding how they all fit together. Get advice from
+              our experts on what technologies best fit your unique needs and
+              existing infrastructure.
+            </p>
+          </div>
+          <div>
             <h4>Ecosystem mapping</h4>
-            Understand the birds-eye view of your industry. Visually map your
-            competitors, suppliers, partners, and customers and see the flow of
-            goods, value, and information amongst them.
-          </ServiceItem>
-          <ServiceItem>
+            <p>
+              Understand the birds-eye view of your industry. Visually map your
+              competitors, suppliers, partners, and customers and see the flow
+              of goods, value, and information amongst them.
+            </p>
+          </div>
+          <div>
             <h4>Customer discovery</h4>
-            Everything you do should start with the customer. Get to know your
-            customers on a much deeper level by asking them the right questions
-            to uncover their pains and needs.
-          </ServiceItem>
-          <ServiceItem>
+            <p>
+              Everything you do should start with the customer. Get to know your
+              customers on a much deeper level by asking them the right
+              questions to uncover their pains and needs.
+            </p>
+          </div>
+          <div>
             <h4>Design thinking</h4>
-            Already have an intractable problem in mind? Get a grip on potential
-            solutions by empathizing with your customers and rapidly prototyping
-            your ideas.
-          </ServiceItem>
-          <ServiceItem>
+            <p>
+              Already have an intractable problem in mind? Get a grip on
+              potential solutions by empathizing with your customers and rapidly
+              prototyping your ideas.
+            </p>
+          </div>
+          <div>
             <h4>Business model innovation</h4>
-            Incremental gains are important, but will only take your business so
-            far. Uncover creative business models to create new value and shake
-            up your industry.
-          </ServiceItem>
+            <p>
+              Incremental gains are important, but will only take your business
+              so far. Uncover creative business models to create new value and
+              shake up your industry.
+            </p>
+          </div>
         </ServiceItemContainer>
       </div>
-      <AlternatingSection>
-        <div>
+    </SectionWrapper>
+    <SectionWrapper backgroundColor={colors.light} fontColor={colors.dark}>
+      <div>
+        <ServiceHeaderContainer>
           <MachinelearningSVG />
-        </div>
-        <div>
-          <h2>Data Science & ML</h2>
-          <HorizontalAccentLeft />
-          <p>
-            We offer an intuitive familiarity with a range of learning
-            algorithms capable at solving a new class of problems. We specialize
-            in deep learning for computer vision, as well inference models.
-            These systems make suggestions on pricing, dates, categories and any
-            quantifiable metric your knowledge workers need for clairvoyant
-            decisions. Our deployed inference systems are the brain behind
-            automation routines that reduce your business costs and enhance your
-            services tremendously.
-          </p>
-        </div>
-      </AlternatingSection>
+          <div>
+            <h2>Data Science & Machine Learning</h2>
+            <p>
+              Recent innovations in machine learning research are poised to
+              substantially transform companies within the next three years.
+              Adopting these powerful algorithms into your organization may be
+              the difference between surviving and thriving in the rapidly
+              changing technology landscape. Acclimate ensures you exceed the
+              hype and drive your capabilities forward with measurably
+              successful business intelligence.
+            </p>
+          </div>
+        </ServiceHeaderContainer>
+        <ServiceItemContainer>
+          <div>
+            <h4>Dynamic Dashboards</h4>
+            <p>
+              Gain insight on business processes, quantify key performance
+              indicators, and visualize the health of your operations.
+            </p>
+          </div>
+          <div>
+            <h4>A.I. Systems</h4>
+            <p>
+              Automate routine analysis and enhance decision making with data
+              tools. Use machines to infer and recommend the best options for
+              your workers and customers.
+            </p>
+          </div>
+          <div>
+            <h4>Reporting Services</h4>
+            <p>
+              Make informed strategic decisions with data-driven insights from
+              visual, interpretable reports. Schedule regular reports on
+              internal operations or leverage expert analysis for exploring new
+              opportunities within your business.
+            </p>
+          </div>
+          <div>
+            <h4>Data Infrastructure</h4>
+            <p>
+              Build the architecture necessary for an A.I powered company.
+              Engineer data pipelines, data warehouses and automated processing
+              systems to deliver clean information to the people who need it the
+              most.
+            </p>
+          </div>
+        </ServiceItemContainer>
+      </div>
+    </SectionWrapper>
+    <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>
         <div>
           <DevelopmentSVG />
@@ -164,6 +215,8 @@ export default () => (
           </p>
         </div>
       </AlternatingSection>
+    </SectionWrapper>
+    <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>
         <div>
           <SupportSVG />
