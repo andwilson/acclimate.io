@@ -10,22 +10,27 @@ export default styled.div`
   }
   svg {
     fill: ${colors.primary};
+    margin: 0;
   }
   > div:first-child {
-    flex: 0 0 100px;
+    flex: 0 0 90px;
     margin: 0 20px 0 0;
   }
   > div:last-child {
-   flex: 1 0;
+    flex: 1 0;
   }
-  @media (min-width: 650px) { 
+  @media (min-width: 650px) {
     align-items: center;
+    svg {
+      fill: ${colors.primary};
+      margin: 25px;;
+    }
     > div:first-child {
       flex: 0 0 180px;
       margin: 0 50px 0 0;
     }
     > div:last-child {
-     flex: 1 0;
+      flex: 1 0;
     }
     :nth-of-type(odd) {
       > div:first-child {

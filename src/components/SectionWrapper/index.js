@@ -11,7 +11,7 @@ export default styled.div.attrs({
   > div {
     max-width: 960px;
     margin: auto;
-    padding: 20px;
+    padding: 40px 20px;
     color: ${props => props.fontColor};
     h1,
     h2,
@@ -19,6 +19,7 @@ export default styled.div.attrs({
     h4,
     h5 {
       ${props => props.fontColor};
+      margin-top: 0;
     }
   }
 `;

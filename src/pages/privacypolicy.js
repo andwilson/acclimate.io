@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import SectionWrapper from "../components/SectionWrapper";
 
 const PrivacyPolicySection = SectionWrapper.extend`
-    padding-bottom: 100px;
+    
 `;
 
 export default () => (

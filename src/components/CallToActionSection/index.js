@@ -17,11 +17,11 @@ const CTAContainer = styled.div`
   }
   svg {
     flex: 1 0;
-    height: 350px;
-    margin: -21px -30px -20px 0;
+    height: 360px;
+    margin: -41px -30px -40px 0;
   }
   > div {
-    flex: 1 1;
+    flex: 1 0;
   }
   p {
     color: ${colors.light};
