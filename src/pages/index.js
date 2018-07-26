@@ -17,12 +17,9 @@ import DevelopmentSVG from "../images/development.svg";
 import SupportSVG from "../images/support.svg";
 import ManufacturingSVG from "../images/manufacturing.svg";
 import RetailSVG from "../images/retail.svg";
-import FinanceSVG from "../images/finance.svg";
+import LogisticsSVG from "../images/logistics.svg";
 import HealthcareSVG from "../images/healthcare.svg";
-import HumanResourcesSVG from "../images/hr.svg";
-import TechnologySVG from "../images/technology.svg";
-import TransportationSVG from "../images/transportation.svg";
-import TravelSVG from "../images/travel.svg";
+
 
 const Top = styled.div`
   position: relative;
@@ -38,16 +35,17 @@ const Top = styled.div`
     max-width: 960px;
     margin: auto;
     padding: 0 10px 10px 10px;
-  > h1 {
-    color: ${colors.white};
-    > span {
-      color: ${colors.secondary};
-      font-style: italic;
+    > h1 {
+      color: ${colors.white};
+      > span {
+        color: ${colors.secondary};
+        font-style: italic;
+      }
     }
-  }
-  > h3 {
-    color: ${colors.white};
-    font-weight: 300;
+    > h3 {
+      color: ${colors.white};
+      font-weight: 300;
+    }
   }
 `;
 
@@ -181,11 +179,10 @@ export default ({ data }) => (
     <Top>
       <div>
         <h1>
-          Make <span>intelligent</span> business decisions
+          Make <span>smart</span> business decisions
         </h1>
         <h3>
-          Acclimate Consulting drives ROI in your business with the latest
-          technologies
+          Learn how Acclimate drives business growth with intelligent technology
         </h3>
         <CallToActionButton to="/contact">Get in touch</CallToActionButton>
       </div>
@@ -248,9 +245,8 @@ export default ({ data }) => (
               <MachinelearningSVG />
             </Link>
             <div>
-              Infuse your decision-making and products with intelligent
-              algorithms that are custom suited to your stakeholder and customer
-              needs.
+              Engineering and Data Science support. Build data-driven A.I tools
+              and insights for your organization and customers.
             </div>
           </div>
           <div>
@@ -297,8 +293,8 @@ export default ({ data }) => (
               <span>&#9313;</span> Engagement
             </h4>
             <div>
-              Scope and perform an in-depth analysis, leading to an actionable
-              strategy that you or third parties can implement
+              Perform an in-depth analysis and define an actionable strategy
+              with a clear purpose for implementation.
             </div>
           </div>
           <div>
@@ -340,17 +336,17 @@ export default ({ data }) => (
             </Link>
           </div>
           <div>
-            <h4>Retail</h4>
+            <h4>Retail & e-Commerce</h4>
             <HorizontalAccent />
             <Link to="/industries#content">
               <RetailSVG />
             </Link>
           </div>
           <div>
-            <h4>Finance</h4>
+            <h4>Supply Chain & Logistics</h4>
             <HorizontalAccent />
             <Link to="/industries#content">
-              <FinanceSVG />
+              <LogisticsSVG />
             </Link>
           </div>
           <div>
@@ -358,34 +354,6 @@ export default ({ data }) => (
             <HorizontalAccent />
             <Link to="/industries#content">
               <HealthcareSVG />
-            </Link>
-          </div>
-          <div>
-            <h4>Human Resources</h4>
-            <HorizontalAccent />
-            <Link to="/industries#content">
-              <HumanResourcesSVG />
-            </Link>
-          </div>
-          <div>
-            <h4>Transportation</h4>
-            <HorizontalAccent />
-            <Link to="/industries#content">
-              <TransportationSVG />
-            </Link>
-          </div>
-          <div>
-            <h4>Technology</h4>
-            <HorizontalAccent />
-            <Link to="/industries#content">
-              <TechnologySVG />
-            </Link>
-          </div>
-          <div>
-            <h4>Travel</h4>
-            <HorizontalAccent />
-            <Link to="/industries#content">
-              <TravelSVG />
             </Link>
           </div>
         </IconsSection>

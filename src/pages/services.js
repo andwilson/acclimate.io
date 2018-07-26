@@ -199,22 +199,53 @@ export default () => (
       </div>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
-      <AlternatingSection>
-        <div>
+      <div>
+        <ServiceHeaderContainer>
           <DevelopmentSVG />
-        </div>
-        <div>
-          <h2>Application Development</h2>
-          <HorizontalAccentLeft />
-          <p>
-            Let your heart be your guide. The light is your friend. Preserve it.
-            You could sit here for weeks with your one hair brush trying to do
-            that - or you could do it with one stroke with an almighty brush.
-            You need the dark in order to show the light. Pretend you're water.
-            Just floating without any effort. Having a good day.
-          </p>
-        </div>
-      </AlternatingSection>
+          <div>
+            <h2>Application Development</h2>
+            <p>
+              It seems like there’s an app for everything these days, but not
+              for your most important business processes. The team at Acclimate
+              specializes in building custom, user friendly web and mobile apps
+              to help you with decision-making. From a simple static website to
+              a complex A.I. first mobile app, we can help.
+            </p>
+          </div>
+        </ServiceHeaderContainer>
+        <ServiceItemContainer>
+          <div>
+            <h4>Web Apps</h4>
+            <p>
+              Build useful internal tools on top of your data, or build a simple
+              and beautiful website to convey a strong brand to your customers.
+            </p>
+          </div>
+          <div>
+            <h4>Mobile Apps</h4>
+            <p>
+              80% of Americans own smartphones, and that number is quickly on
+              the rise worldwide. Extend your reach and capabilities to mobile
+              with an iPhone or Android app.
+            </p>
+          </div>
+          <div>
+            <h4>User Experience</h4>
+            <p>
+              We start with the user in mind, ensuring that our apps are
+              intuitive and easy to use. Having an app that looks great and
+              matches your branding comes standard.
+            </p>
+          </div>
+          <div>
+            <h4>Modern Tools</h4>
+            <p>
+              Our apps make use of all the most recent technology, making them
+              modular, adaptable, scalable, reliable, and secure.
+            </p>
+          </div>
+        </ServiceItemContainer>
+      </div>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <AlternatingSection>

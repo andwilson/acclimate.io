@@ -1,6 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-import styled from "styled-components";
 
 import { colors } from "../styles/theme";
 
@@ -71,17 +70,20 @@ export default () => (
           <RetailSVG />
         </div>
         <div>
-          <h2>Retail</h2>
+          <h2>Retail & e-Commerce</h2>
           <HorizontalAccentLeft />
           <p>
-            Would you like a better understanding the trends in your product
-            line, and the segments of customers who like to shop with you? What
-            aspects of your offerings keep customers coming back and staying?
-            Today’s technology can optimize the shopping experience for each
-            unique customer. Image Recognition systems can draw new insight from
-            your product line, and these features combined with customer
-            activity can drive recommendation engines that dramatically increase
-            your sales.
+            Having an online presence for your retail business is only the
+            beginning. Once you begin tracking key metrics on user behavior, you
+            can quantify customer lifetime value and find innovative ways to
+            increase it. Whether its decreasing acquisition costs, increasing
+            retention, boosting spending, locking in subscriptions, optimizing
+            pricing, or gaining evangelists, some simple analysis could make a
+            big impact on your bottom line. New machine learning models can
+            segment your customers, provide tailored recommendations, and
+            extract trends and insights about your products. Targeting the right
+            customer at the right time with the right product is easier and more
+            powerful than ever.
           </p>
         </div>
       </AlternatingSection>
@@ -93,10 +95,15 @@ export default () => (
           <h2>Finance</h2>
           <HorizontalAccentLeft />
           <p>
-            From stock market prediction to fraud detection, Acclimate can help
-            your business gain competitive advantages by leveraging advances in
-            AI technologies. We specialize in building high value customized
-            solutions to solve real business problems.
+            Machine learning technologies offer great rewards to those who can
+            keep up, but are also poised to disrupt those who cannot. Digital
+            record-keeping and client interfaces are now table-stakes, but
+            improved efficiencies in demand forecasting, route optimization,
+            warehousing, and quality control are becoming critical to running
+            your supply chain or logistics business. The good news is that it's
+            completely possible to infuse your operations with intelligent
+            analytics and machine learning models to supercharge your
+            capabilities and stay competitive.
           </p>
         </div>
       </AlternatingSection>
@@ -113,64 +120,6 @@ export default () => (
             understanding of patient scans to assist in screening and deliver
             insights that extend the capabilities of your clinicians. Deliver
             more accurate diagnoses to a larger patient base in less time.
-          </p>
-        </div>
-      </AlternatingSection>
-      <AlternatingSection>
-        <div>
-          <HumanResourcesSVG />
-        </div>
-        <div>
-          <h2>Human Resources</h2>
-          <HorizontalAccentLeft />
-          <p>
-            No worries. No cares. Just float and wait for the wind to blow you
-            around. Think about a cloud. Just float around and be there. Here
-            we're limited by the time we have. That's a son of a gun of a cloud.
-          </p>
-        </div>
-      </AlternatingSection>
-      <AlternatingSection>
-        <div>
-          <TransportationSVG />
-        </div>
-        <div>
-          <h2>Transportation</h2>
-          <HorizontalAccentLeft />
-          <p>
-            No worries. No cares. Just float and wait for the wind to blow you
-            around. Think about a cloud. Just float around and be there. Here
-            we're limited by the time we have. That's a son of a gun of a cloud.
-          </p>
-        </div>
-      </AlternatingSection>
-      <AlternatingSection>
-        <div>
-          <TechnologySVG />
-        </div>
-        <div>
-          <h2>Technology</h2>
-          <HorizontalAccentLeft />
-          <p>
-            The Acclimate team has extensive experience in architecting,
-            developing and launching global technology solutions using Agile
-            principles. We believe in providing our customers with cutting-edge
-            technology to allow them to compete effectively in the marketplace
-            and grow.
-          </p>
-        </div>
-      </AlternatingSection>
-      <AlternatingSection>
-        <div>
-          <TravelSVG />
-        </div>
-        <div>
-          <h2>Travel</h2>
-          <HorizontalAccentLeft />
-          <p>
-            No worries. No cares. Just float and wait for the wind to blow you
-            around. Think about a cloud. Just float around and be there. Here
-            we're limited by the time we have. That's a son of a gun of a cloud.
           </p>
         </div>
       </AlternatingSection>
