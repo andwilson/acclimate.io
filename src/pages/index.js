@@ -229,7 +229,7 @@ export default ({ data }) => (
           <div>
             <h4>Digital Strategy</h4>
             <HorizontalAccent />
-            <Link to="/services#content">
+            <Link to="/services#strategy">
               <StrategySVG />
             </Link>
             <div>
@@ -241,7 +241,7 @@ export default ({ data }) => (
           <div>
             <h4>Data Science & ML</h4>
             <HorizontalAccent />
-            <Link to="/services#content">
+            <Link to="/services#machinelearning">
               <MachinelearningSVG />
             </Link>
             <div>
@@ -252,7 +252,7 @@ export default ({ data }) => (
           <div>
             <h4>Application Development</h4>
             <HorizontalAccent />
-            <Link to="/services#content">
+            <Link to="/services#development">
               <DevelopmentSVG />
             </Link>
             <div>
@@ -263,7 +263,7 @@ export default ({ data }) => (
           <div>
             <h4>Training & Support</h4>
             <HorizontalAccent />
-            <Link to="/services#content">
+            <Link to="/services#support">
               <SupportSVG />
             </Link>
             <div>
@@ -331,28 +331,28 @@ export default ({ data }) => (
           <div>
             <h4>Manufacturing</h4>
             <HorizontalAccent />
-            <Link to="/industries#content">
+            <Link to="/industries#manufacturing">
               <ManufacturingSVG />
             </Link>
           </div>
           <div>
             <h4>Retail & e-Commerce</h4>
             <HorizontalAccent />
-            <Link to="/industries#content">
+            <Link to="/industries#retail">
               <RetailSVG />
             </Link>
           </div>
           <div>
             <h4>Supply Chain & Logistics</h4>
             <HorizontalAccent />
-            <Link to="/industries#content">
+            <Link to="/industries#logistics">
               <LogisticsSVG />
             </Link>
           </div>
           <div>
             <h4>Healthcare</h4>
             <HorizontalAccent />
-            <Link to="/industries#content">
+            <Link to="/industries#healthcare">
               <HealthcareSVG />
             </Link>
           </div>

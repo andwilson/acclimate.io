@@ -11,12 +11,8 @@ import HorizontalAccent from "../components/HorizontalAccent";
 import IndustriesSVG from "../images/industries.svg";
 import ManufacturingSVG from "../images/manufacturing.svg";
 import RetailSVG from "../images/retail.svg";
-import FinanceSVG from "../images/finance.svg";
+import LogisticsSVG from "../images/logistics.svg";
 import HealthcareSVG from "../images/healthcare.svg";
-import HumanResourcesSVG from "../images/hr.svg";
-import TechnologySVG from "../images/technology.svg";
-import TransportationSVG from "../images/transportation.svg";
-import TravelSVG from "../images/travel.svg";
 
 const HorizontalAccentLeft = HorizontalAccent.extend`
   margin: 20px 0;
@@ -40,8 +36,8 @@ export default () => (
         </h3>
       </div>
     </PageHeader>
-    <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
+      <a name="manufacturing" />
       <AlternatingSection>
         <div>
           <ManufacturingSVG />
@@ -65,6 +61,7 @@ export default () => (
           </p>
         </div>
       </AlternatingSection>
+      <a name="retail" />
       <AlternatingSection>
         <div>
           <RetailSVG />
@@ -87,12 +84,13 @@ export default () => (
           </p>
         </div>
       </AlternatingSection>
+      <a name="logistics" />
       <AlternatingSection>
         <div>
-          <FinanceSVG />
+          <LogisticsSVG />
         </div>
         <div>
-          <h2>Finance</h2>
+          <h2>Supply Chain & Logistics</h2>
           <HorizontalAccentLeft />
           <p>
             Machine learning technologies offer great rewards to those who can
@@ -107,6 +105,7 @@ export default () => (
           </p>
         </div>
       </AlternatingSection>
+      <a name="healthcare" />
       <AlternatingSection>
         <div>
           <HealthcareSVG />

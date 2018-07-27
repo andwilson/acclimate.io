@@ -74,10 +74,10 @@ export default () => (
       </div>
       <ServicesSVG />
     </PageHeader>
-    <a name="content" />
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <div>
         <ServiceHeaderContainer>
+          <a name="strategy" />
           <StrategySVG />
           <div>
             <h2>Business Strategy</h2>
@@ -147,6 +147,7 @@ export default () => (
     <SectionWrapper backgroundColor={colors.light} fontColor={colors.dark}>
       <div>
         <ServiceHeaderContainer>
+          <a name="machinelearning" />
           <MachinelearningSVG />
           <div>
             <h2>Data Science & Machine Learning</h2>
@@ -201,6 +202,7 @@ export default () => (
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <div>
         <ServiceHeaderContainer>
+          <a name="development" />
           <DevelopmentSVG />
           <div>
             <h2>Application Development</h2>
@@ -248,6 +250,7 @@ export default () => (
       </div>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
+      <a name="support" />
       <AlternatingSection>
         <div>
           <SupportSVG />

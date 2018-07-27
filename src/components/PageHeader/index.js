@@ -14,7 +14,8 @@ export default styled.div`
       position: absolute;
       fill: none;
       fill-opacity: 0;
-      height: calc(100vh - 65px - 100px);
+      max-height: calc(100vh - 65px - 100px);
+      max-width: calc(100vw - 40px);
       stroke: ${lighten(0.1, colors.black)};
       stroke-width: 3;
       animation-duration: 15s;
