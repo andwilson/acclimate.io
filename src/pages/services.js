@@ -249,22 +249,56 @@ export default () => (
         </ServiceItemContainer>
       </div>
     </SectionWrapper>
-    <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
-      <a name="support" />
-      <AlternatingSection>
-        <div>
+    <SectionWrapper backgroundColor={colors.light} fontColor={colors.dark}>
+      <div>
+        <ServiceHeaderContainer>
+          <a name="machinelearning" />
           <SupportSVG />
-        </div>
-        <div>
-          <h2>Training & Support</h2>
-          <HorizontalAccentLeft />
-          <p>
-            No worries. No cares. Just float and wait for the wind to blow you
-            around. Think about a cloud. Just float around and be there. Here
-            we're limited by the time we have. That's a son of a gun of a cloud.
-          </p>
-        </div>
-      </AlternatingSection>
+          <div>
+            <h2>Training & Support</h2>
+            <p>
+              Flex your engineering team with a world class data science team.
+              Acclimate offers workshops for executives and managers on market
+              trends in emerging technologies as well as technical support on
+              new ventures and complex projects.
+            </p>
+          </div>
+        </ServiceHeaderContainer>
+        <ServiceItemContainer>
+          <div>
+            <h4>State of Artificial Intelligence</h4>
+            <p>
+              What can A.I technology really do for you? Familiarize yourself
+              with the latest advancements in research and what it takes to
+              leverage these technologies in business
+            </p>
+          </div>
+          <div>
+            <h4>Blockchain Technologies</h4>
+            <p>
+              Smart contracts and decentralized ledgers stand to radically
+              change how record keeping is performed. Our workshops walk you
+              through what blockchain is and how it works in practice
+            </p>
+          </div>
+          <div>
+            <h4>Engineering Support</h4>
+            <p>
+              Quickly expand your engineering capabilities for mission critical
+              projects and receive continued support and maintenance on
+              functioning systems
+            </p>
+          </div>
+          <div>
+            <h4>Data Science Support</h4>
+            <p>
+              Build out your data science team with high functioning members
+              that offer skills in data visualization, data wrangling,
+              statistical modeling and engineering a production ready pipeline
+            </p>
+          </div>
+        </ServiceItemContainer>
+      </div>
     </SectionWrapper>
   </div>
 );

@@ -37,23 +37,19 @@ export default ({ data }) => (
         </h3>
       </div>
     </PageHeader>
-    <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
-      <div>
-        <h2>
-          Custom digital strategies and end-to-end applications requires strong
-          expertise and collaboration
-        </h2>
-        <p>
-          Some info about why we work well together as a team and what we
-          believe
-        </p>
-      </div>
-    </SectionWrapper>
     <SectionWrapper backgroundColor={colors.light} fontColor={colors.dark}>
       <div>
         <h1>Our story</h1>
         <p>
-          Some info about our backstory and why we work well together as a team
+          The partners at Acclimate share a rich history both inside the tech
+          space and out. As colleagues and peers within Bostons Venture Cafe
+          Entrepreneurship network, the team formed from a common vision in
+          emerging technologies and enthusiasm for innovating on stale business
+          processes. The partners come from Coro Fellowship, MIT Sloan business
+          program, leading strategy consulting firms, and technical startups
+          with educational backgrounds in business and engineering. The founding
+          members have been close friends for many years, and join their unique
+          skillsets together to offer you Acclimate.
         </p>
       </div>
     </SectionWrapper>

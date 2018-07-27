@@ -20,7 +20,6 @@ import RetailSVG from "../images/retail.svg";
 import LogisticsSVG from "../images/logistics.svg";
 import HealthcareSVG from "../images/healthcare.svg";
 
-
 const Top = styled.div`
   position: relative;
   height: calc(100vh - 65px);
@@ -193,30 +192,30 @@ export default ({ data }) => (
         <HorizontalAccent />
         <div>
           <div>
-            <h4>Scale Your Business Value Creation</h4>
-            <p>
-              Our vision is to bring every customer-centric company into the
-              future. Our mission is your mission, acclimated to “State of the
-              Art” Technology and shifted into overdrive.
-            </p>
-          </div>
-          <div>
-            <h4>Build a Hyper Intelligent Business</h4>
+            <h4>Build a hyper intelligent business</h4>
             <p>
               Our focus is to help you build a more intelligent business. We
               leverage our experience in business strategy, data science and
-              state-of-the-art A.I technology so you can avoid costly mistakes
+              state-of-the-art A.I. technology so you can avoid costly mistakes
               and make better decisions that scale.
             </p>
           </div>
           <div>
-            <h4>Beat The Status Quo</h4>
+            <h4>Delight your customers with new offerings</h4>
             <p>
-              We know technology moves very fast. We pride ourselves in our
-              ability to understand this powerful, ever changing landscape.
-              Liberate yourself from entrenched business problems and old ideas.
-              Adopt fresh thinking to create unprecedented value that
-              outperforms the solutions of yesterday.
+              We know technology moves very fast. Liberate yourself from
+              entrenched business problems and old ideas. Adopt fresh thinking
+              to create unprecedented value that drastically improves your
+              bottom line.
+            </p>
+          </div>
+          <div>
+            <h4>Scale your business value creation</h4>
+            <p>
+              Our vision is to bring every customer-centric company into the
+              future. Leverage our team to multiply the capabilities of every
+              facet of your organization with advanced analytics and A.I.
+              enabled products.
             </p>
           </div>
         </div>

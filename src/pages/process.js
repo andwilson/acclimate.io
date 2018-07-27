@@ -10,6 +10,34 @@ import SectionWrapper from "../components/SectionWrapper";
 
 import ProcessSVG from "../images/process.svg";
 
+const ProcessSection2 = styled.div`
+  display: flex;
+  margin-bottom: 1.5em;
+  > span {
+    flex: 0 0 100px;
+    height: 100px;
+    width: 100px;
+    margin-right: 1em;
+  }
+  > div {
+    flex: 1 1;
+    > h2 {
+    }
+    > p {
+      font-style: italic;
+      margin: 0;
+    }
+  }
+  :nth-of-type(1) {
+    > span {
+      
+    }
+    > div {
+        border-color: ${darken(0.15, colors.primary)};
+    }
+    
+`;
+
 const ProcessSection = styled.div`
   > div {
     display: flex;
