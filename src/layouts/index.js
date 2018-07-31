@@ -25,6 +25,7 @@ class Layout extends React.Component {
           <link rel="shortcut icon" type="image/png" href={favicon} />
           <meta charSet="utf-8" />
           <meta name="description" content="Acclimate Consulting website" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Helmet>
         <Headroom>
           <Navigation data={this.props.data} />
