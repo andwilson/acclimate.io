@@ -20,6 +20,13 @@ import RetailSVG from "../images/retail.svg";
 import LogisticsSVG from "../images/logistics.svg";
 import HealthcareSVG from "../images/healthcare.svg";
 
+const LearnMoreButton = CallToActionButton.extend`
+  background: ${colors.primary};
+  &:hover {
+    background: ${lighten(0.04, colors.primary)};
+  }
+`;
+
 const Top = styled.div`
   position: relative;
   height: calc(100vh - 65px);
@@ -317,6 +324,7 @@ export default ({ data }) => (
             </div>
           </div>
         </div>
+        <LearnMoreButton to="/process">Learn more about our process</LearnMoreButton>
       </ProcessSection>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.light}>
@@ -365,6 +373,7 @@ export default ({ data }) => (
           We are a team of data scientists, hackers, business strategists, and
           entrepreneurs with broad experience from several different industries
         </p>
+        <LearnMoreButton to="/team">Learn more about our team</LearnMoreButton>
       </div>
     </SectionWrapper>
   </div>
