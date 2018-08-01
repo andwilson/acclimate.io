@@ -273,9 +273,9 @@ export default ({ data }) => (
               <SupportSVG />
             </Link>
             <div>
-              Ongoing support for your custom strategy or data-centric
-              application. Training for executives and employees on general
-              technology literacy or specific technologies.
+              Training for executives and employees on general technology
+              literacy or specific technologies. Ongoing support for your custom
+              strategy or data-centric application.
             </div>
           </div>
         </IconsSection>
