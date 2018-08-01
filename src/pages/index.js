@@ -199,12 +199,12 @@ export default ({ data }) => (
         <HorizontalAccent />
         <div>
           <div>
-            <h4>Build a hyper intelligent business</h4>
+            <h4>Build a Hyper-Intelligent Business</h4>
             <p>
               Our focus is to help you build a more intelligent business. We
               leverage our experience in business strategy, data science and
-              state-of-the-art A.I. technology so you can avoid costly mistakes
-              and make better decisions that scale.
+              state-of-the-art A.I. technology so that you can avoid costly
+              mistakes and make better decisions that scale.
             </p>
           </div>
           <div>
@@ -324,7 +324,9 @@ export default ({ data }) => (
             </div>
           </div>
         </div>
-        <LearnMoreButton to="/process">Learn more about our process</LearnMoreButton>
+        <LearnMoreButton to="/process">
+          Learn more about our process
+        </LearnMoreButton>
       </ProcessSection>
     </SectionWrapper>
     <SectionWrapper backgroundColor={colors.light}>
