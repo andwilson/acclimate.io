@@ -251,7 +251,7 @@ export default ({ data }) => (
               <MachinelearningSVG />
             </Link>
             <div>
-              Engineering and Data Science support. Build data-driven A.I tools
+              Engineering and Data Science support. Build data-driven A.I. tools
               and insights for your organization and customers.
             </div>
           </div>
