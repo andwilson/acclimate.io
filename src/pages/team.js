@@ -81,13 +81,13 @@ export default ({ data }) => (
             <h2>Andrew Wilson</h2>
             <HorizontalAccentLeft />
             <p>
-              My professional journey evolved from an early obsession with
-              graphic and web design to where I am now: using data science to
-              solve hard problems. Somewhere in-between I discovered my love of
-              startup culture and business strategy, as well as technology’s
-              profound impact on just about everything. My work involves using
-              the internet and machine learning to create things that improve
-              the human experience.
+              Turning data into insights, Andrew spent 4 years consulting with
+              the world’s largest technology companies developing actionable
+              business strategies. Holding a B.A. in Industrial Engineering from
+              Northeastern University, he sees the system-level perspective yet
+              appreciates the finer details of user-centric design. Andrew also
+              draws from his startup experience, having worked as a software
+              developer at an MIT spinoff and coaching student-run ventures.
             </p>
           </div>
         </AlternatingSection>
