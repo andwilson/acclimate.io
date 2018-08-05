@@ -199,12 +199,11 @@ export default ({ data }) => (
         <HorizontalAccent />
         <div>
           <div>
-            <h4>Build a Hyper-Intelligent Business</h4>
+            <h4>Craft and implement your strategic vision</h4>
             <p>
-              Our focus is to help you build a more intelligent business. We
-              leverage our experience in business strategy, data science and
-              state-of-the-art A.I. technology so that you can avoid costly
-              mistakes and make better decisions that scale.
+              Our focus is to help you scale up the performance of your oganization. 
+              We leverage our experience in business strategy and data science 
+              so you can avoid costly mistakes and make transformative decisions.
             </p>
           </div>
           <div>
@@ -217,7 +216,7 @@ export default ({ data }) => (
             </p>
           </div>
           <div>
-            <h4>Scale your business value creation</h4>
+            <h4>Equip your business for the new frontier</h4>
             <p>
               Our vision is to bring every customer-centric company into the
               future. Leverage our team to multiply the capabilities of every
