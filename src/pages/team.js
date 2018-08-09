@@ -136,7 +136,7 @@ export default ({ data }) => (
             <p>
               Andrew is a results-oriented mobile and web application developer.
               Born in Japan, Andrew has a unique cultural upbringing of both
-              Japan and America. A Northeastern Graduate of Mechanical
+              Japan and America. A Northeastern graduate of Mechanical
               Engineering, Andrew has discovered a love for programming and has
               been building mobile applications for happy clients around the
               Boston area. Some of his interesting projects include leveraging

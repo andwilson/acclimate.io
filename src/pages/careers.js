@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import PageHeader from "../components/PageHeader";
 import SectionWrapper from "../components/SectionWrapper";
+import CallToActionButton from "../components/CallToActionButton";
 
 import CareersSVG from "../images/careers.svg";
 
@@ -31,6 +32,7 @@ export default () => (
           out directly with a copy of your resume or a link to your LinkedIn
           profile if you are interested.
         </p>
+        <CallToActionButton to="/contact">Reach out</CallToActionButton>
       </div>
     </SectionWrapper>
   </div>

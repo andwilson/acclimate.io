@@ -201,9 +201,10 @@ export default ({ data }) => (
           <div>
             <h4>Craft and implement your strategic vision</h4>
             <p>
-              Our focus is to help you scale up the performance of your oganization. 
-              We leverage our experience in business strategy and data science 
-              so you can avoid costly mistakes and make transformative decisions.
+              Our focus is to help you scale up the performance of your
+              organization. We leverage our experience in business strategy and
+              data science so you can avoid costly mistakes and make
+              transformative decisions.
             </p>
           </div>
           <div>
@@ -251,7 +252,8 @@ export default ({ data }) => (
             </Link>
             <div>
               Engineering and Data Science support. Build data-driven A.I. tools
-              that drive actionable insights for your organization and customers.
+              that drive actionable insights for your organization and
+              customers.
             </div>
           </div>
           <div>
@@ -317,9 +319,9 @@ export default ({ data }) => (
               <span>&#9315;</span> Deployment
             </h4>
             <div>
-              Provide the training and ongoing support you need to make full use
-              of the tools we’ve provided. Executive and employee coaching to
-              ensure that your team is on the cutting edge.
+              Provide the training and ongoing support you need to make full-use
+              of the tools we’ve provided, with executive and employee coaching
+              to ensure that your team is on the cutting edge.
             </div>
           </div>
         </div>

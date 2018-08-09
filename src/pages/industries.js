@@ -47,17 +47,17 @@ export default () => (
           <HorizontalAccentLeft />
           <p>
             Manufacturing is positioned to see enormous disruption from applied
-            A.I research. Image recognition tools for automating and enhancing
-            visual defect inspections, Anomaly detection on the product floor
-            for preventing unscheduled downtime, or a learned scheduling agent
-            for predicting lead times and scheduling start dates can drastically
-            improve your physical processes.
+            A.I research. Acclimate offers a range of machine learning systems
+            to improve your production efficiency and reduce escapes, including
+            visual defect detection, machine monitoring, and learning-based
+            scheduling agents. With AI, once your company engages Acclimate we
+            help to create models that learn and improve over time.
           </p>
           <p>
             Acclimate is developing production prediction Machine Learning
-            models that help optimize manufacturing processes. With AI, once
-            your company engages Acclimate we help to create models that learn
-            and improve over time.
+            models that help optimize manufacturing processes. Once your company
+            engages Acclimate, we use AI to create models that learn and improve
+            over time.
           </p>
         </div>
       </AlternatingSection>

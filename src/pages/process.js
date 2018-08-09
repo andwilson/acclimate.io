@@ -116,7 +116,7 @@ export default () => (
               <span>&#9312;</span> Discovery
             </h4>
             <div>
-              Do you have complex a business challenge that seem unsolvable?
+              Do you have a complex business challenge that seem unsolvable?
               Today’s technology landscape offers powerful algorithms to address
               a new class of problems. Our expert consultants walk you through
               your business and current industry technology leverage points to

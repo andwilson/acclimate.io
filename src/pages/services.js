@@ -6,18 +6,12 @@ import { colors } from "../styles/theme";
 
 import PageHeader from "../components/PageHeader";
 import SectionWrapper from "../components/SectionWrapper";
-import AlternatingSection from "../components/AlternatingSection";
-import HorizontalAccent from "../components/HorizontalAccent";
 
 import ServicesSVG from "../images/services.svg";
 import StrategySVG from "../images/strategy.svg";
 import MachinelearningSVG from "../images/machinelearning.svg";
 import DevelopmentSVG from "../images/development.svg";
 import SupportSVG from "../images/support.svg";
-
-const HorizontalAccentLeft = HorizontalAccent.extend`
-  margin: 20px 0;
-`;
 
 const ServiceHeaderContainer = styled.div`
   display: flex;
@@ -68,7 +62,7 @@ export default () => (
           Acclimate provides end-to-end <span>services</span>
         </h1>
         <h3>
-          From a free discovery session through implementation, the team at
+          From a free discovery session to implementation, the team at
           Acclimate will be with you throughout your transformation process
         </h3>
       </div>
@@ -190,7 +184,7 @@ export default () => (
           <div>
             <h4>Data Infrastructure</h4>
             <p>
-              Build the architecture necessary for an A.I powered company.
+              Build the architecture necessary for an A.I. powered company.
               Engineer data pipelines, data warehouses and automated processing
               systems to deliver clean information to the people who need it the
               most.
@@ -270,7 +264,7 @@ export default () => (
             <p>
               What can A.I technology really do for you? Familiarize yourself
               with the latest advancements in research and what it takes to
-              leverage these technologies in business
+              leverage these technologies in business.
             </p>
           </div>
           <div>
@@ -278,7 +272,7 @@ export default () => (
             <p>
               Smart contracts and decentralized ledgers stand to radically
               change how record keeping is performed. Our workshops walk you
-              through what blockchain is and how it works in practice
+              through what blockchain is and how it works in practice.
             </p>
           </div>
           <div>
@@ -286,7 +280,7 @@ export default () => (
             <p>
               Quickly expand your engineering capabilities for mission critical
               projects and receive continued support and maintenance on
-              functioning systems
+              functioning systems.
             </p>
           </div>
           <div>
@@ -294,7 +288,7 @@ export default () => (
             <p>
               Build out your data science team with high functioning members
               that offer skills in data visualization, data wrangling,
-              statistical modeling and engineering a production ready pipeline
+              statistical modeling and engineering a production ready pipeline.
             </p>
           </div>
         </ServiceItemContainer>
