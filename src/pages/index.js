@@ -185,7 +185,7 @@ export default ({ data }) => (
     <Top>
       <div>
         <h1>
-          Make <span>smart</span> business decisions
+          A new height of <span>performance</span>
         </h1>
         <h3>
           Learn how Acclimate drives business growth with intelligent technology
