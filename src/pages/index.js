@@ -252,7 +252,7 @@ export default ({ data }) => (
             </Link>
             <div>
               Engineering and Data Science support. Build data-driven A.I. tools
-              and insights for your organization and customers.
+              that drive actionable insights for your organization and customers.
             </div>
           </div>
           <div>
