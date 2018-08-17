@@ -11,33 +11,34 @@ import Footer from "../components/Footer";
 
 import favicon from "../images/logo.png";
 
-class Layout extends React.Component {
-  render() {
-    let bottom;
-    if (this.props.location.pathname === "/contact" || this.props.location.pathname === "/thanks") {
-      bottom = null;
-    } else {
-    bottom = <div><CallToActionSection /><Footer /></div>;
-    }
-    return (
+export default ({ location, children }) => {
+  let bottom;
+  if (location.pathname === "/contact" || location.pathname === "/thanks") {
+    bottom = null;
+  } else {
+    bottom = (
       <div>
-        <Helmet>
-          <link rel="shortcut icon" type="image/png" href={favicon} />
-          <meta charSet="utf-8" />
-          <meta name="description" content="Acclimate Consulting website" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        </Helmet>
-        <Headroom>
-          <Navigation data={this.props.data} />
-        </Headroom>
-        <div>{this.props.children()}</div>
-        {bottom}
+        <CallToActionSection />
+        <Footer />
       </div>
     );
   }
-}
-
-export default Layout;
+  return (
+    <div>
+      <Helmet>
+        <link rel="shortcut icon" type="image/png" href={favicon} />
+        <meta charSet="utf-8" />
+        <meta name="description" content="Acclimate Consulting website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
+      <Headroom>
+        <Navigation />
+      </Headroom>
+      <div>{children()}</div>
+      {bottom}
+    </div>
+  );
+};
 
 export const pageQuery = graphql`
   query LayoutQuery {

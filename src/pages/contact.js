@@ -45,7 +45,7 @@ const Form = styled.form`
     :focus {
       outline: none;
       background-color: ${colors.white};
-      opacity: 1; 
+      opacity: 1;
     }
   }
   > textarea {
@@ -106,27 +106,28 @@ export default class ContactForm extends React.Component {
               Get in <span>contact</span> with us
             </H1>
             <h3>
-              We'd love to hear from you! Reach out and we'll be in touch as soon as possible.
+              We'd love to hear from you! Reach out and we'll be in touch as
+              soon as possible.
             </h3>
             <Form
-            name="contact"
-            method="post"
-            action="/thanks/"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            onSubmit={this.handleSubmit}
-          >
-            <label hidden>Don’t fill this out: </label>
-            <input hidden name="bot-field" onChange={this.handleChange} />
-            <label>Your name:</label>
-            <input type="text" name="name" onChange={this.handleChange} />
-            <label>Your email:</label>
-            <input type="email" name="email" onChange={this.handleChange} />
-            <label>Message:</label>
-            <textarea name="message" onChange={this.handleChange} />
-            <div />
-            <CallToActionButton type="submit">SEND</CallToActionButton>
-          </Form>
+              name="contact"
+              method="post"
+              action="/thanks/"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={this.handleSubmit}
+            >
+              <label hidden>Don’t fill this out: </label>
+              <input hidden name="bot-field" onChange={this.handleChange} />
+              <label>Your name:</label>
+              <input type="text" name="name" onChange={this.handleChange} />
+              <label>Your email:</label>
+              <input type="email" name="email" onChange={this.handleChange} />
+              <label>Message:</label>
+              <textarea name="message" onChange={this.handleChange} />
+              <div />
+              <CallToActionButton type="submit">SEND</CallToActionButton>
+            </Form>
           </div>
         </PageHeader>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
+import $ from "jquery";
 import { colors } from "../../styles/theme";
 
 import LogoSVG from "../../images/logo.svg";
@@ -83,32 +84,46 @@ const Item = styled.div`
     transition: all 0.1s ease;
   }
   transition: all 0.1s ease;
-  &:hover {
-    background: ${colors.medium};
+  @media (hover: none) {
+    background: ${props => (props.toggle ? colors.dark : colors.medium)};
+    &:after {
+      transform: ${props =>
+        props.toggle ? "rotate(0deg)" : "rotate(90deg)"};
+    }
   }
-  &:hover:after {
-    transform: rotate(90deg);
+  @media (hover: hover) {
+    &:hover {
+      background: ${colors.medium};
+    }
+    &:hover:after {
+      transform: rotate(90deg);
+    }
   }
 `;
 
 const Drop = styled.div`
   position: absolute;
+  flex-direction: column;
   z-index: -1;
   left: 0;
   top: 65px;
   width: 100%;
   background: ${colors.dark};
   border-radius: 0 0 5px 5px;
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  span {
+  @media (hover: none) {
+    display: ${props => (props.toggle ? "none" : "flex")};
+    visibility: ${props => (props.toggle ? "hidden" : "visible")};
+    opacity: ${props => (props.toggle ? 0 : 1)};
   }
-  ${Item}:hover & {
-    display: flex;
-    flex-direction: column;
-    visibility: visible;
-    opacity: 1;
+  @media (hover: hover) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    ${Item}:hover & {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+    }
   }
 `;
 
@@ -131,33 +146,62 @@ const SLink = styled(Link)`
   }
 `;
 
-export default ({ data }) => (
-  <Wrapper>
-    <Nav>
-      <Left>
-        <LogoLink to="/">
-          <LogoSVG />
-        </LogoLink>
-        <Title to="/">{data.site.siteMetadata.shortName}</Title>
-      </Left>
-      <Right>
-        <Item>
-          <a href="#">About</a>
-          <Drop>
-            <SLink to="/services">Services</SLink>
-            <SLink to="/process">Process</SLink>
-            <SLink to="/industries">Industries</SLink>
-          </Drop>
-        </Item>
-        <Item>
-          <a href="#">Company</a>
-          <Drop>
-            <SLink to="/team">Team</SLink>
-            <SLink to="/careers">Careers</SLink>
-            <SLink to="/contact">Contact</SLink>
-          </Drop>
-        </Item>
-      </Right>
-    </Nav>
-  </Wrapper>
-);
+export default class Navigation extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      aboutToggle: true,
+      companyToggle: true
+    };
+    this.aboutHandler = this.aboutHandler.bind(this);
+    this.companyHandler = this.companyHandler.bind(this);
+  }
+
+  aboutHandler() {
+    this.setState(prevState => ({
+      aboutToggle: !prevState.aboutToggle
+    }));
+  }
+
+  companyHandler() {
+    this.setState(prevState => ({
+      companyToggle: !prevState.companyToggle
+    }));
+  }
+
+  render() {
+    return (
+      <Wrapper>
+        <Nav>
+          <Left>
+            <LogoLink to="/">
+              <LogoSVG />
+            </LogoLink>
+            <Title to="/">Acclimate</Title>
+          </Left>
+          <Right>
+            <Item onClick={this.aboutHandler} toggle={this.state.aboutToggle}>
+              <a href="#">About</a>
+              <Drop toggle={this.state.aboutToggle}>
+                <SLink to="/services">Services</SLink>
+                <SLink to="/process">Process</SLink>
+                <SLink to="/industries">Industries</SLink>
+              </Drop>
+            </Item>
+            <Item
+              onClick={this.companyHandler}
+              toggle={this.state.companyToggle}
+            >
+              <a href="#">Company</a>
+              <Drop toggle={this.state.companyToggle}>
+                <SLink to="/team">Team</SLink>
+                <SLink to="/careers">Careers</SLink>
+                <SLink to="/contact">Contact</SLink>
+              </Drop>
+            </Item>
+          </Right>
+        </Nav>
+      </Wrapper>
+    );
+  }
+}
