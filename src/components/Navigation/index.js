@@ -159,12 +159,14 @@ export default class Navigation extends React.Component {
 
   aboutHandler() {
     this.setState(prevState => ({
-      aboutToggle: !prevState.aboutToggle
+      aboutToggle: !prevState.aboutToggle,
+      companyToggle: true
     }));
   }
 
   companyHandler() {
     this.setState(prevState => ({
+      aboutToggle: true,
       companyToggle: !prevState.companyToggle
     }));
   }
