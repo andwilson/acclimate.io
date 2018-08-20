@@ -12,80 +12,48 @@ import ProcessSVG from "../images/process.svg";
 
 const ProcessSection2 = styled.div`
   display: flex;
-  margin-bottom: 1.5em;
-  > span {
-    flex: 0 0 100px;
-    height: 100px;
-    width: 100px;
-    margin-right: 1em;
-  }
-  > div {
-    flex: 1 1;
-    > h2 {
-    }
-    > p {
-      font-style: italic;
-      margin: 0;
-    }
-  }
-  :nth-of-type(1) {
+  flex-wrap: wrap;
+  > h2 {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0 0 1em 0;;
+    font-weight: 300;
     > span {
-      
+      font-weight: 500;
     }
-    > div {
-        border-color: ${darken(0.15, colors.primary)};
+    :nth-of-type(1) {
+      > span {color: ${darken(0.15, colors.primary)};}
     }
-    
-`;
-
-const ProcessSection = styled.div`
+    :nth-of-type(2) {
+      > span {color: ${darken(0.05, colors.primary)};}
+    }
+    :nth-of-type(3) {
+      > span {color: ${lighten(0.05, colors.primary)};}
+    }
+    :nth-of-type(4) {
+      > span {color: ${lighten(0.15, colors.primary)};}
+    }
+  }
   > div {
-    display: flex;
-    flex-direction: column;
-    margin: 0 -20px;
-    @media (min-width: 650px) {
-      flex-direction: row;
+    flex-basis: 60%;
+    flex-grow: 1;
+    margin-bottom: 2em;
+    padding-left: 30px;
+    margin-left: 12px
+    border-left: 3px solid blue;
+    line-height: 1.4;
+    :nth-of-type(1) {
+      border-color: ${darken(0.15, colors.primary)};
     }
-    > div {
-      :nth-of-type(1) {
-        border-color: ${darken(0.15, colors.primary)};
-        span {
-          color: ${darken(0.15, colors.primary)};
-        }
-      }
-      :nth-of-type(2) {
-        border-color: ${darken(0.05, colors.primary)};
-        span {
-          color: ${darken(0.05, colors.primary)};
-        }
-      }
-      :nth-of-type(3) {
-        border-color: ${lighten(0.05, colors.primary)};
-        span {
-          color: ${lighten(0.05, colors.primary)};
-        }
-      }
-      :nth-of-type(4) {
-        border-color: ${lighten(0.15, colors.primary)};
-        span {
-          color: ${lighten(0.15, colors.primary)};
-        }
-      }
-      border-left: 3px solid ${colors.primary};
-      flex: 1;
-      margin: 20px;
-      padding-left: 20px;
-      @media (min-width: 650px) {
-        border-top: 3px solid ${colors.primary};
-        border-left: none;
-        padding: 20px 0 0 0;
-      }
-      > h4 {
-        margin-top: 0;
-      }
-      > svg {
-        fill: ${colors.secondary};
-      }
+    :nth-of-type(2) {
+      border-color: ${darken(0.05, colors.primary)};
+    }
+    :nth-of-type(3) {
+      border-color: ${lighten(0.05, colors.primary)};
+    }
+    :nth-of-type(4) {
+      border-color: ${lighten(0.15, colors.primary)};
     }
   }
 `;
@@ -102,68 +70,59 @@ export default () => (
           Acclimate has a <span>process</span> that just works
         </h1>
         <h3>
-          A consulting engagement follows a typical process, but it can be
+          Our consulting engagements follow a typical process, but can be
           customized to suit your unique needs and timeline
         </h3>
       </div>
     </PageHeader>
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
-      <ProcessSection>
-        <h1>Process</h1>
-        <div>
+      <div>
+        <ProcessSection2>
+          <h2>
+            <span>&#9312;</span> Discovery
+          </h2>
           <div>
-            <h4>
-              <span>&#9312;</span> Discovery
-            </h4>
-            <div>
-              Do you have a complex business challenge that seem unsolvable?
-              Today’s technology landscape offers powerful algorithms to address
-              a new class of problems. Our expert consultants walk you through
-              your business and current industry technology leverage points to
-              layout a roadmap for enhancing your services and operations.
-            </div>
+            Do you have a complex business challenge that seem unsolvable?
+            Today’s technology landscape offers pow erful algorithms to address
+            a new class of problems. Our expert consultants walk you through
+            your business and current industry technology leverage points to
+            layout a roadmap for enhancing your services and operations.
           </div>
+          <h2>
+            <span>&#9313;</span> Engagement
+          </h2>
           <div>
-            <h4>
-              <span>&#9313;</span> Engagement
-            </h4>
-            <div>
-              We use the roadmap and take a deeper dive into the business
-              operations to address a use case with a clear purpose. From here
-              we engage with your subject-matter experts and stakeholders to
-              specify how the cognitive system will fit into your organization.
-              We develop a clear understanding of how workers and customers will
-              interact with the system.
-            </div>
+            We use the roadmap and take a deeper dive into the business
+            operations to address a use case with a clear purpose. From here we
+            engage with your subject-matter experts and stakeholders to specify
+            how the cognitive system will fit into your organization. We develop
+            a clear understanding of how workers and customers will interact
+            with the system.
           </div>
+          <h2>
+            <span>&#9314;</span> Development
+          </h2>
           <div>
-            <h4>
-              <span>&#9314;</span> Development
-            </h4>
-            <div>
-              Our team is agile and well versed in the latest available
-              solutions. We function as your data science team, engineering an
-              end-to-end solution that will feel like a natural extension to
-              your business. We value team culture and enjoy consistent
-              communication with open collaboration, so you will feel that our
-              work is part of a single company initiative.
-            </div>
+            Our team is agile and well versed in the latest available solutions.
+            We function as your data science team, engineering an end-to-end
+            solution that will feel like a natural extension to your business.
+            We value team culture and enjoy consistent communication with open
+            collaboration, so you will feel that our work is part of a single
+            company initiative.
           </div>
+          <h2>
+            <span>&#9315;</span> Deployment
+          </h2>
           <div>
-            <h4>
-              <span>&#9315;</span> Deployment
-            </h4>
-            <div>
-              We strive to leverage modern technology to build robust systems
-              that “just work”. We have a keen interest in User Experience, and
-              believe in as little behavior change as possible. This means your
-              best knowledge workers can continue doing what they do best,
-              enhanced by a sophisticated intelligent system. We fully stand by
-              our work, and back our systems with measured results.
-            </div>
+            We strive to leverage modern technology to build robust systems that
+            “just work”. We have a keen interest in User Experience, and believe
+            in as little behavior change as possible. This means your best
+            knowledge workers can continue doing what they do best, enhanced by
+            a sophisticated intelligent system. We fully stand by our work, and
+            back our systems with measured results.
           </div>
-        </div>
-      </ProcessSection>
+        </ProcessSection2>
+      </div>
     </SectionWrapper>
   </div>
 );
