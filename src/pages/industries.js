@@ -50,8 +50,7 @@ export default () => (
             A.I research. Acclimate offers a range of machine learning systems
             to improve your production efficiency and reduce escapes, including
             visual defect detection, machine monitoring, and learning-based
-            scheduling agents. With AI, once your company engages Acclimate we
-            help to create models that learn and improve over time.
+            scheduling agents. 
           </p>
           <p>
             Acclimate is developing production prediction Machine Learning
