@@ -10,7 +10,7 @@ import SectionWrapper from "../components/SectionWrapper";
 
 import ProcessSVG from "../images/process.svg";
 
-const ProcessSection2 = styled.div`
+const ProcessSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   > h2 {
@@ -40,8 +40,8 @@ const ProcessSection2 = styled.div`
     flex-grow: 1;
     margin-bottom: 2em;
     padding-left: 30px;
-    margin-left: 12px
-    border-left: 3px solid blue;
+    margin-left: 11px
+    border-left: 3px solid;
     line-height: 1.4;
     :nth-of-type(1) {
       border-color: ${darken(0.15, colors.primary)};
@@ -70,58 +70,62 @@ export default () => (
           Acclimate has a <span>process</span> that just works
         </h1>
         <h3>
-          Our consulting engagements follow a typical process, but can be
-          customized to suit your unique needs and timeline
+          Our consulting engagements help clients identify digital opportunities
+          and build solutions that drive significant business impact.
         </h3>
       </div>
     </PageHeader>
     <SectionWrapper backgroundColor={colors.white} fontColor={colors.dark}>
       <div>
-        <ProcessSection2>
+        <ProcessSection>
           <h2>
             <span>&#9312;</span> Discovery
           </h2>
           <div>
             Do you have a complex business challenge that seem unsolvable?
-            Today’s technology landscape offers pow erful algorithms to address
-            a new class of problems. Our expert consultants walk you through
-            your business and current industry technology leverage points to
-            layout a roadmap for enhancing your services and operations.
+            Today’s technology landscape offers powerful algorithms to address a
+            new class of problems. Our experts will work with your leadership
+            team to identify areas where you can gain the most leverage from
+            digital solutions. Simple or complex, we’ll build a roadmap that
+            works for your budget and timeline to enhance your services and
+            operations.
           </div>
           <h2>
             <span>&#9313;</span> Engagement
           </h2>
           <div>
-            We use the roadmap and take a deeper dive into the business
-            operations to address a use case with a clear purpose. From here we
-            engage with your subject-matter experts and stakeholders to specify
-            how the cognitive system will fit into your organization. We develop
-            a clear understanding of how workers and customers will interact
-            with the system.
+            Once we share a vision of next steps, our team will collect all the
+            necessary data, perform an in-depth analysis, build requirements,
+            and create an initial design. We'll present your team with a static
+            report or presentation, a carefully designed wireframe, or a working
+            prototype. At this stage you might have all the insights you need to
+            continue forward with your strategy.
           </div>
           <h2>
             <span>&#9314;</span> Development
           </h2>
           <div>
-            Our team is agile and well versed in the latest available solutions.
-            We function as your data science team, engineering an end-to-end
+            If building a dynamic dashboard or an intelligent app makes sense
+            for your business, Acclimate can function as your data science and
+            software engineering team. We can build you a robust, end-to-end
             solution that will feel like a natural extension to your business.
-            We value team culture and enjoy consistent communication with open
-            collaboration, so you will feel that our work is part of a single
-            company initiative.
+            We develop in an agile, modular, and scalable way using the latest
+            technologies so that you can maintain and enhance your app as time
+            goes on.
           </div>
           <h2>
             <span>&#9315;</span> Deployment
           </h2>
           <div>
-            We strive to leverage modern technology to build robust systems that
-            “just work”. We have a keen interest in User Experience, and believe
-            in as little behavior change as possible. This means your best
+            We believe in creating value for your employees and customers with
+            as little behavior change as possible. This means your best
             knowledge workers can continue doing what they do best, enhanced by
-            a sophisticated intelligent system. We fully stand by our work, and
-            back our systems with measured results.
+            a sophisticated intelligent system. We'll integrate a solution
+            seamlessly into your existing infrastructure and provide
+            accompanying documentation, employee training, and technical
+            support.
           </div>
-        </ProcessSection2>
+        </ProcessSection>
       </div>
     </SectionWrapper>
   </div>

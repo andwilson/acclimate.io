@@ -51,6 +51,7 @@ export default styled.div`
         color: ${colors.white};
         font-weight: 300;
         text-align: center;
+        line-height: 1.3em;
     }
   }
 `;
