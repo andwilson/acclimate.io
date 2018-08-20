@@ -47,11 +47,24 @@ export default () => (
           <HorizontalAccentLeft />
           <p>
             Manufacturing is positioned to see enormous disruption from applied
+<<<<<<< HEAD
             A.I. research. Acclimate is currently developing predictive machine
             learning models that help optimize manufacturing processes. We offer
             a range of machine learning systems to improve your production
             efficiency and reduce escapes, including visual defect detection,
             machine monitoring, and learning-based scheduling agents.
+=======
+            A.I research. Acclimate offers a range of machine learning systems
+            to improve your production efficiency and reduce escapes, including
+            visual defect detection, machine monitoring, and learning-based
+            scheduling agents. 
+          </p>
+          <p>
+            Acclimate is developing production prediction Machine Learning
+            models that help optimize manufacturing processes. Once your company
+            engages Acclimate, we use AI to create models that learn and improve
+            over time.
+>>>>>>> a1b6fd72552b708dee040a0093abb3677a94b7b6
           </p>
         </div>
       </AlternatingSection>
