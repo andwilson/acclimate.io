@@ -246,7 +246,7 @@ export default () => (
     <SectionWrapper backgroundColor={colors.light} fontColor={colors.dark}>
       <div>
         <ServiceHeaderContainer>
-          <a name="machinelearning" />
+          <a name="support" />
           <SupportSVG />
           <div>
             <h2>Training & Support</h2>

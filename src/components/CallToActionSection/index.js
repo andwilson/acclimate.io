@@ -35,7 +35,7 @@ export default () => (
         <h1>Partner with us</h1>
         <p>
           Have questions? Reach out to a technology strategy expert. Schedule a
-          free call with us to explore how your organization can adapt.
+          free discovery session to explore how your organization can acclimate.
         </p>
         <CallToActionButton to="/contact">Get in touch</CallToActionButton>
       </div>

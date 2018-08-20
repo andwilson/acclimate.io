@@ -130,7 +130,7 @@ const ProcessSection = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 -20px;
-    @media (min-width: 650px) {
+    @media (min-width: 680px) {
       flex-direction: row;
     }
     > div {
@@ -162,7 +162,7 @@ const ProcessSection = styled.div`
       flex: 1;
       margin: 20px;
       padding-left: 20px;
-      @media (min-width: 650px) {
+      @media (min-width: 680px) {
         border-top: 3px solid ${colors.primary};
         border-left: none;
         padding: 20px 0 0 0;
@@ -177,6 +177,10 @@ const ProcessSection = styled.div`
   }
 `;
 
+const H3 = styled.h3`
+  font-weight: 300;
+`;
+
 export default ({ data }) => (
   <div>
     <Helmet>
@@ -185,10 +189,11 @@ export default ({ data }) => (
     <Top>
       <div>
         <h1>
-          Make <span>smart</span> business decisions
+          Make <span>intelligent</span> business decisions
         </h1>
         <h3>
-          Learn how Acclimate drives business growth with intelligent technology
+          Learn how Acclimate drives business growth with data-driven strategies
+          and applications
         </h3>
         <CallToActionButton to="/contact">Get in touch</CallToActionButton>
       </div>
@@ -210,10 +215,9 @@ export default ({ data }) => (
           <div>
             <h4>Delight your customers with new offerings</h4>
             <p>
-              We know technology moves very fast. Liberate yourself from
-              entrenched business problems and old ideas. Adopt fresh thinking
-              to create unprecedented value that drastically improves your
-              bottom line.
+              We know technology moves fast. Liberate yourself from entrenched
+              business models and old ideas. Adopt fresh thinking to create
+              unprecedented value and improve your bottom line.
             </p>
           </div>
           <div>
@@ -239,9 +243,8 @@ export default ({ data }) => (
               <StrategySVG />
             </Link>
             <div>
-              Custom analysis of your current technology usage, business model,
-              and competitive landscape, providing you with strategies for new
-              value creation and efficiency savings.
+              Custom analysis to expose major opportunities for value creation
+              and efficiency savings.
             </div>
           </div>
           <div>
@@ -251,9 +254,8 @@ export default ({ data }) => (
               <MachinelearningSVG />
             </Link>
             <div>
-              Engineering and Data Science support. Build data-driven A.I. tools
-              that drive actionable insights for your organization and
-              customers.
+              Build A.I. tools and products to drive organizational insights and
+              delight customers.
             </div>
           </div>
           <div>
@@ -263,8 +265,8 @@ export default ({ data }) => (
               <DevelopmentSVG />
             </Link>
             <div>
-              Full-stack engineering of modern web and mobile apps. Apps are
-              fast, scalable, user-friendly, and adaptable.
+              Full-stack engineering of beautiful, scalable, user-centric,
+              adaptable, and secure web and mobile apps.
             </div>
           </div>
           <div>
@@ -274,9 +276,8 @@ export default ({ data }) => (
               <SupportSVG />
             </Link>
             <div>
-              Training for executives and employees on general technology
-              literacy or specific technologies. Ongoing support for your custom
-              strategy or data-centric application.
+              Technology literacy training for executives and employees, as well
+              as ongoing support for your custom strategy or application.
             </div>
           </div>
         </IconsSection>
@@ -309,9 +310,8 @@ export default ({ data }) => (
               <span>&#9314;</span> Development
             </h4>
             <div>
-              Develop an end-to-end, custom-tailored solution for your business
-              that you can use for decision-making, efficiency gains, or
-              intelligent products/services
+              Develop an end-to-end, custom-tailored solution that you can use
+              for decision-making, efficiency gains, or intelligent offerings.
             </div>
           </div>
           <div>
@@ -319,9 +319,8 @@ export default ({ data }) => (
               <span>&#9315;</span> Deployment
             </h4>
             <div>
-              Provide the training and ongoing support you need to make full-use
-              of the tools we’ve provided, with executive and employee coaching
-              to ensure that your team is on the cutting edge.
+              Integrate the solution into your process and workflow while
+              continuing to provide necessary training and support.
             </div>
           </div>
         </div>
@@ -334,8 +333,10 @@ export default ({ data }) => (
       <div>
         <h1>Industries</h1>
         <p>
-          We support customers across several industries where technology is
-          causing major disruption to business models
+          Technology is causing disruption to business models across all
+          industries, although some will shift faster than others. We focus in
+          on industries where machine learning and other digital technologies
+          will create the greatest impact in the coming years.
         </p>
         <IconsSection>
           <div>
@@ -374,7 +375,10 @@ export default ({ data }) => (
         <h1>Team</h1>
         <p>
           We are a team of data scientists, hackers, business strategists, and
-          entrepreneurs with broad experience from several different industries
+          entrepreneurs with broad experience from several different industries.
+          We share a passion for technology's impact on business, and have the
+          experience and skills to build end-to-end solutions that significantly
+          improve your bottom line.
         </p>
         <LearnMoreButton to="/team">Learn more about our team</LearnMoreButton>
       </div>
