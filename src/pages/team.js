@@ -29,7 +29,7 @@ export default ({ data }) => (
       <TeamSVG />
       <div>
         <h1>
-          The <span>team</span> at Acclimate is what sets us apart
+          Our <span>team</span> has a complementary skillset
         </h1>
         <h3>
           With a variety of industry experience and technical capabilities, the
@@ -41,15 +41,14 @@ export default ({ data }) => (
       <div>
         <h1>Our story</h1>
         <p>
-          The partners at Acclimate share a rich history both inside the tech
-          space and out. As colleagues and peers within Bostons Venture Cafe
-          Entrepreneurship network, the team formed from a common vision in
-          emerging technologies and enthusiasm for innovating on stale business
-          processes. The partners come from Coro Fellowship, MIT Sloan business
-          program, leading strategy consulting firms, and technical startups
-          with educational backgrounds in business and engineering. The founding
-          members have been close friends for many years, and join their unique
-          skillsets together to offer you Acclimate.
+          As colleagues and peers within Boston's Venture Cafe network, the
+          Acclimate team formed from a common vision in emerging technologies
+          and an enthusiasm for innovating on stale business processes. The
+          partners come from Coro Fellowship, MIT Sloan business program,
+          leading strategy consulting firms, and technical startups with
+          educational backgrounds in business and engineering. Our approach is
+          interdisciplinary and personal, with a rigorous focus on adding value
+          to your customers and stakeholders.
         </p>
       </div>
     </SectionWrapper>
@@ -101,9 +100,9 @@ export default ({ data }) => (
             <p>
               Leader with demonstrated success at defining strategy and
               directing teams to develop and manage product lines used by
-              Enterprise companies world wide. Expert in incubating businesses
+              enterprise companies world wide. Expert in incubating businesses
               from ideation to full scale global production by leading global
-              development and cross functional teams.
+              development and cross-functional teams.
             </p>
           </div>
         </AlternatingSection>
@@ -120,7 +119,7 @@ export default ({ data }) => (
               from several years in the Manufacturing industry, building out
               internal business intelligence and analytics solutions. He
               specializes in Machine Learning and Data Analytics and operates
-              under Lean Principles. Outside of his A.I passion, Josh is an avid
+              under Lean Principles. Outside of his A.I. passion, Josh is an avid
               traveler, skier and enthusiast for thought-provoking
               conversations.
             </p>

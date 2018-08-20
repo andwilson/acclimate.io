@@ -15,6 +15,12 @@ export default ({ location, children }) => {
   let bottom;
   if (location.pathname === "/contact" || location.pathname === "/thanks") {
     bottom = null;
+  } else if (location.pathname === "/careers") {
+    bottom = (
+      <div>
+        <Footer />
+      </div>
+    );
   } else {
     bottom = (
       <div>

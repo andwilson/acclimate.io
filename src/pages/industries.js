@@ -27,12 +27,12 @@ export default () => (
       <IndustriesSVG />
       <div>
         <h1>
-          Technology strategy is vital in all <span>industries</span>
+          All <span>industries</span> are affected by technology
         </h1>
         <h3>
-          Whether you look to acquire and retain customers, improve efficiency,
-          automate operations, or create delightful experiences, the team at
-          Acclimate can help
+          All companies will have to adapt their technology to keep up, but only
+          some will leverage machine learning to excel faster than the
+          competition.
         </h3>
       </div>
     </PageHeader>
@@ -47,17 +47,11 @@ export default () => (
           <HorizontalAccentLeft />
           <p>
             Manufacturing is positioned to see enormous disruption from applied
-            A.I research. Acclimate offers a range of machine learning systems
-            to improve your production efficiency and reduce escapes, including
-            visual defect detection, machine monitoring, and learning-based
-            scheduling agents. With AI, once your company engages Acclimate we
-            help to create models that learn and improve over time.
-          </p>
-          <p>
-            Acclimate is developing production prediction Machine Learning
-            models that help optimize manufacturing processes. Once your company
-            engages Acclimate, we use AI to create models that learn and improve
-            over time.
+            A.I. research. Acclimate is currently developing predictive machine
+            learning models that help optimize manufacturing processes. We offer
+            a range of machine learning systems to improve your production
+            efficiency and reduce escapes, including visual defect detection,
+            machine monitoring, and learning-based scheduling agents.
           </p>
         </div>
       </AlternatingSection>
@@ -78,9 +72,7 @@ export default () => (
             pricing, or gaining evangelists, some simple analysis could make a
             big impact on your bottom line. New machine learning models can
             segment your customers, provide tailored recommendations, and
-            extract trends and insights about your products. Targeting the right
-            customer at the right time with the right product is easier and more
-            powerful than ever.
+            extract trends and insights about your products.
           </p>
         </div>
       </AlternatingSection>
@@ -93,10 +85,8 @@ export default () => (
           <h2>Supply Chain & Logistics</h2>
           <HorizontalAccentLeft />
           <p>
-            Machine learning technologies offer great rewards to those who can
-            keep up, but are also poised to disrupt those who cannot. Digital
-            record-keeping and client interfaces are now table-stakes, but
-            improved efficiencies in demand forecasting, route optimization,
+            Digital record-keeping and client-facing apps are now table-stakes,
+            but improved efficiencies in demand forecasting, route optimization,
             warehousing, and quality control are becoming critical to running
             your supply chain or logistics business. The good news is that it's
             completely possible to infuse your operations with intelligent
