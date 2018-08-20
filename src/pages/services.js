@@ -62,8 +62,8 @@ export default () => (
           Acclimate provides end-to-end <span>services</span>
         </h1>
         <h3>
-          From a free discovery session to implementation, the team at
-          Acclimate will be with you throughout your transformation process
+          From a free discovery session to implementation, the team at Acclimate
+          will be with you throughout your transformation process
         </h3>
       </div>
       <ServicesSVG />
@@ -78,8 +78,8 @@ export default () => (
             <p>
               Motion isn't always progress. In today’s rapidly changing climate,
               your business must continuously adapt in order to survive. The
-              best investment you can make is to step back and develop a
-              strategy to thrive. Acclimate provides strategy consulting
+              best investment you can make is to step back and carefully
+              consider your next moves. Acclimate provides strategy consulting
               services with a keen understanding of the current digital
               landscape.
             </p>
@@ -98,25 +98,9 @@ export default () => (
             <h4>Technology stack advice</h4>
             <p>
               The sheer number of technologies available can be overwhelming,
-              let alone understanding how they all fit together. Get advice from
-              our experts on what technologies best fit your unique needs and
-              existing infrastructure.
-            </p>
-          </div>
-          <div>
-            <h4>Ecosystem mapping</h4>
-            <p>
-              Understand the birds-eye view of your industry. Visually map your
-              competitors, suppliers, partners, and customers and see the flow
-              of goods, value, and information amongst them.
-            </p>
-          </div>
-          <div>
-            <h4>Customer discovery</h4>
-            <p>
-              Everything you do should start with the customer. Get to know your
-              customers on a much deeper level by asking them the right
-              questions to uncover their pains and needs.
+              let alone understanding how they all fit together. Understand what
+              technologies best fit your unique needs and existing
+              infrastructure.
             </p>
           </div>
           <div>
@@ -128,11 +112,27 @@ export default () => (
             </p>
           </div>
           <div>
-            <h4>Business model innovation</h4>
+            <h4>Customer discovery</h4>
             <p>
-              Incremental gains are important, but will only take your business
-              so far. Uncover creative business models to create new value and
-              shake up your industry.
+              Get out of the building and speak with your customers. Uncover
+              pains and needs that you didn't know existed by asking the right
+              questions.
+            </p>
+          </div>
+          <div>
+            <h4>Ecosystem mapping</h4>
+            <p>
+              Understand the birds-eye view of your industry. Visually map your
+              competitors, suppliers, partners, and customers and see the flow
+              of goods, value, and information amongst them.
+            </p>
+          </div>
+          <div>
+            <h4>Technical due diligence</h4>
+            <p>
+              Avoid buying a lemon. Assess the technical architecture of
+              potential mergers and acquisitions and analyze easy opportunities
+              for savings or new value creation.
             </p>
           </div>
         </ServiceItemContainer>
@@ -160,8 +160,9 @@ export default () => (
           <div>
             <h4>Dynamic Dashboards</h4>
             <p>
-              Gain insight on business processes, quantify key performance
-              indicators, and visualize the health of your operations.
+              Gain real-time insight on business processes, quantify key
+              performance indicators, and visualize the health of your
+              operations.
             </p>
           </div>
           <div>
@@ -252,9 +253,9 @@ export default () => (
             <h2>Training & Support</h2>
             <p>
               Flex your engineering team with a world class data science team.
-              Acclimate offers workshops for executives and managers on market
-              trends in emerging technologies as well as technical support on
-              new ventures and complex projects.
+              Acclimate offers workshops for executives and managers on emerging
+              technologies as well as technical support on new ventures and
+              complex projects.
             </p>
           </div>
         </ServiceHeaderContainer>
@@ -286,9 +287,9 @@ export default () => (
           <div>
             <h4>Data Science Support</h4>
             <p>
-              Build out your data science team with high functioning members
-              that offer skills in data visualization, data wrangling,
-              statistical modeling and engineering a production ready pipeline.
+              Train your team in data science with business critical skills like
+              data visualization, data wrangling, statistical modeling and
+              engineering a production ready pipeline.
             </p>
           </div>
         </ServiceItemContainer>

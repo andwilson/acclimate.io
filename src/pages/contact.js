@@ -119,11 +119,11 @@ export default class ContactForm extends React.Component {
             >
               <label hidden>Don’t fill this out: </label>
               <input hidden name="bot-field" onChange={this.handleChange} />
-              <label>Your name:</label>
+              <label>Your Name:</label>
               <input type="text" name="name" onChange={this.handleChange} />
-              <label>Your email:</label>
+              <label>Your Email:</label>
               <input type="email" name="email" onChange={this.handleChange} />
-              <label>Message:</label>
+              <label>Your Message:</label>
               <textarea name="message" onChange={this.handleChange} />
               <div />
               <CallToActionButton type="submit">SEND</CallToActionButton>
