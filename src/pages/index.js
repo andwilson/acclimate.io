@@ -38,7 +38,7 @@ const Top = styled.div`
   align-items: center;
   justify-content: center;
   > div {
-    max-width: 960px;
+    max-width: 600px;
     margin: auto;
     padding: 0 10px 10px 10px;
     > h1 {
@@ -51,6 +51,7 @@ const Top = styled.div`
     > h3 {
       color: ${colors.white};
       font-weight: 300;
+      line-height: 1.3;
     }
   }
 `;
