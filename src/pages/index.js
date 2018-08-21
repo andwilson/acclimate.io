@@ -192,8 +192,8 @@ export default ({ data }) => (
           Make <span>intelligent</span> business decisions
         </h1>
         <h3>
-          Learn how Acclimate drives business growth with data-driven strategies
-          and applications
+          Acclimate is a consulting firm that drives business growth
+          with data-driven strategies and full-stack applications
         </h3>
         <CallToActionButton to="/contact">Get in touch</CallToActionButton>
       </div>
