@@ -42,6 +42,14 @@ export default ({ location, children }) => {
       </Headroom>
       <div>{children()}</div>
       {bottom}
+      {/* Hubspot code injection */}
+      <script
+        type="text/javascript"
+        id="hs-script-loader"
+        async
+        defer
+        src="//js.hs-scripts.com/4706986.js"
+      />
     </div>
   );
 };
