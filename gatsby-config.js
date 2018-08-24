@@ -3,6 +3,7 @@ module.exports = {
     longName: "Acclimate Consulting",
     shortName: "Acclimate",
     author: "Andrew Wilson",
+    siteUrl: `https://www.acclimate.io`
   },
   plugins: [
     {
@@ -33,32 +34,35 @@ module.exports = {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         include: `${__dirname}/src/images`
-      },
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`
     },
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
-        name: "img",
-      },
+        name: "img"
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
+        name: "pages"
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-120924365-1`,
-      },
+        trackingId: `UA-120924365-1`
+      }
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-  ],
-}
+    `gatsby-plugin-react-helmet`
+  ]
+};
