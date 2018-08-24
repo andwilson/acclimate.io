@@ -38,7 +38,7 @@ const Top = styled.div`
   align-items: center;
   justify-content: center;
   > div {
-    max-width: 600px;
+    max-width: 550px;
     margin: auto;
     padding: 0 10px 10px 10px;
     > h1 {
@@ -190,10 +190,10 @@ export default ({ data }) => (
     <Top>
       <div>
         <h1>
-          Make <span>intelligent</span> business decisions
+          Make <span>intelligent</span> decisions
         </h1>
         <h3>
-          Acclimate is a consulting firm that drives business growth
+          Acclimate is a consulting firm that puts organizations back in control
           with data-driven strategies and full-stack applications
         </h3>
         <CallToActionButton to="/contact">Get in touch</CallToActionButton>
