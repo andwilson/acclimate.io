@@ -80,7 +80,7 @@ export default () => (
               your business must continuously adapt in order to survive. The
               best investment you can make is to step back and carefully
               consider your next moves. Acclimate provides strategy consulting
-              services with a keen understanding of the current digital
+              services with a deep understanding of the current digital
               landscape.
             </p>
           </div>

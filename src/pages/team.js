@@ -141,8 +141,7 @@ export default ({ data }) => (
               Boston area. Some of his interesting projects include leveraging
               Alexa’s developer kit for voice controlled HVAC systems and an MIT
               startup that utilizes MBTA public transit for digital city tour
-              guides. These days he works primarily as a freelance mobile
-              developer in Boston.
+              guides. 
             </p>
           </div>
         </AlternatingSection>
