@@ -95,7 +95,7 @@ export default () => (
             </p>
           </div>
           <div>
-            <h4>Technology stack advice</h4>
+            <h4>IT Audit</h4>
             <p>
               The sheer number of technologies available can be overwhelming,
               let alone understanding how they all fit together. Understand what
