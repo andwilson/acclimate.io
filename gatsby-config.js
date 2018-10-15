@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://www.acclimate.io`
   },
   plugins: [
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
@@ -47,15 +48,8 @@ module.exports = {
         name: "img"
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages"
-      }
-    },
     `gatsby-transformer-sharp`,
-    'gatsby-transformer-remark',
+    // 'gatsby-transformer-remark',
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
