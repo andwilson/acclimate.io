@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://www.acclimate.io`
   },
   plugins: [
-    `gatsby-plugin-catch-links`,
+    // `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
