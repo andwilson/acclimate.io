@@ -8,6 +8,12 @@ module.exports = {
   plugins: [
     // `gatsby-plugin-catch-links`,
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "2072447129733768"
+      }
+    },
+    {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: "./src/images/logo.png",
@@ -44,19 +50,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images`,
-        name: "img"
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages"
+        name: `src`,
+        path: `${__dirname}/src`
       }
     },
     `gatsby-transformer-sharp`,
-    // 'gatsby-transformer-remark',
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
