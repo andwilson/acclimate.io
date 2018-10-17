@@ -115,8 +115,8 @@ const IconsSection = styled.div`
       width: 100px;
       display: block;
       margin: auto;
-      fill: ${colors.medium};
-      stroke: ${colors.medium};
+      fill: ${colors.dark};
+      stroke: ${colors.dark};
       stroke-width: 2;
       transition: all 0.3s ease;
       &:hover {

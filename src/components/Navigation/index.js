@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
-import $ from "jquery";
+import { lighten } from "polished";
 import { colors } from "../../styles/theme";
 
 import LogoSVG from "../../images/logo.svg";
@@ -18,7 +18,7 @@ const Nav = styled.nav`
   margin: auto;
   height: 65px;
   justify-content: space-between;
-  border-bottom: 1px solid ${colors.medium};
+  border-bottom: 1px solid ${lighten(0.05, colors.dark)};
 `;
 
 const Left = styled.div`
@@ -85,15 +85,15 @@ const Item = styled.div`
   }
   transition: all 0.1s ease;
   @media (hover: none) {
-    background: ${props => (props.toggle ? colors.dark : colors.medium)};
+    background: ${props =>
+      props.toggle ? colors.dark : lighten(0.05, colors.dark)};
     &:after {
-      transform: ${props =>
-        props.toggle ? "rotate(0deg)" : "rotate(90deg)"};
+      transform: ${props => (props.toggle ? "rotate(0deg)" : "rotate(90deg)")};
     }
   }
   @media (hover: hover) {
     &:hover {
-      background: ${colors.medium};
+      background: ${lighten(0.05, colors.dark)};
     }
     &:hover:after {
       transform: rotate(90deg);
@@ -133,13 +133,13 @@ const SLink = styled(Link)`
   text-decoration: none;
   height: 35px;
   padding-left: 10px;
-  border-top: 1px solid ${colors.medium};
+  border-top: 1px solid ${lighten(0.05, colors.dark)};
   text-decoration: none;
   color: #ffffff;
   font-size: 12px;
   font-weight: 300;
   &:hover {
-    background: ${colors.medium};
+    background: ${lighten(0.05, colors.dark)};
   }
   &:last-of-type {
     border-radius: 0 0 5px 5px;
