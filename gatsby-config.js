@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://www.acclimate.io`
   },
   plugins: [
-    // `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
@@ -34,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`open sans\:300,400,600,700,800`]
+        fonts: [`open sans\:300,400,600,700,800`, `alegreya`]
       }
     },
     {
@@ -55,7 +54,12 @@ module.exports = {
       }
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // plugins: []
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,

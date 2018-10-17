@@ -7,7 +7,7 @@ description: "Acclimate Consulting Group was started with the mission to create 
 image: "why-we-started-acclimate.jpg"
 ---
 
-_We started Acclimate to work collectively towards an AI-enabled society._ Why, you might ask, would we want to live in a world filled with artificial intelligence? We truly believe that AI, specifically machine learning, has the power to fundamentally transform society by making everything work better and by giving people more fulfilling lives. This post won’t go too deep into why AI will have this effect (there are plenty of articles on the subject), but rather the reasons why we started Acclimate to help businesses design and implement data-centric strategies and capabilities.
+We started Acclimate to work collectively towards an AI-enabled society. Why would we want to live in a world filled with artificial intelligence? We truly believe that AI, specifically machine learning, has the power to fundamentally transform society by making everything work better and by giving people more fulfilling lives. This post won’t go too deep into why AI will have this effect (there are plenty of articles on the subject), but rather the reasons why we started Acclimate to help businesses design and implement data-centric strategies and capabilities.
 
 ## The timing is right
 
@@ -47,7 +47,7 @@ We started Acclimate to solve this single challenge: getting businesses up and r
 
 ## We want to make an impact
 
-> "Artificial Intelligence, deep learning, machine learning — whatever you’re doing if you don’t understand it — learn it. Because otherwise you’re going to be a dinosaur within 3 years." – Mark Cuban>
+> "Artificial Intelligence, deep learning, machine learning — whatever you’re doing if you don’t understand it — learn it. Because otherwise you’re going to be a dinosaur within 3 years." – Mark Cuban
 
 We have a few decades in our careers to create as much value as possible and to impact the world in some meaningful way. Why not pick a craft that’s difficult, massively needed, and endlessly interesting? We want to be on the forefront of this AI movement, staying on the cutting-edge technology-wise, but deeply understanding the business and societal implications. We’re dedicating our careers to it, and will continue to be harbingers of the change to come. We believe that AI technology will be transformative in our lifetimes, but that a select few will disproportionately benefit. It’s important for us to wield these tools responsibly, and to ensure that everyone else can too.
 
