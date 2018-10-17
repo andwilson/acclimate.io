@@ -4,7 +4,7 @@ path: "why-we-started-acclimate"
 author: "Andrew Wilson"
 date: "2018-10-15"
 description: "Acclimate Consulting Group was started with the mission to create an AI-enabled society"
-banner: "why-we-started-acclimate.jpg"
+image: "why-we-started-acclimate.jpg"
 ---
 
 _We started Acclimate to work collectively towards an AI-enabled society._ Why, you might ask, would we want to live in a world filled with artificial intelligence? We truly believe that AI, specifically machine learning, has the power to fundamentally transform society by making everything work better and by giving people more fulfilling lives. This post won’t go too deep into why AI will have this effect (there are plenty of articles on the subject), but rather the reasons why we started Acclimate to help businesses design and implement data-centric strategies and capabilities.

@@ -1,12 +1,15 @@
 import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components";
+import Img from "gatsby-image";
 
 import { colors } from "../styles/theme";
 
 const PostWrapper = styled.div`
   background: ${colors.white};
-  > div {
+  `;
+
+const PostContainer = styled.div`
     max-width: 740px;
     padding: 20px;
     margin: auto;
@@ -34,9 +37,15 @@ const PostWrapper = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  color: ${colors.secondary};
-  margin: 0;
+const BannerContainer = styled.div`
+`;
+
+const BannerImage = styled(Img)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
 `;
 
 const Date = styled.p`
@@ -47,11 +56,16 @@ const Date = styled.p`
 export default ({ data }) => (
   <PostWrapper>
     <Helmet title={`${data.markdownRemark.frontmatter.title}`} />
-    <div>
-      <Title>{data.markdownRemark.frontmatter.title}</Title>
+    <BannerContainer>
+      <BannerImage
+        sizes={data.markdownRemark.frontmatter.image.childImageSharp.sizes}
+      />
+    </BannerContainer>
+    <PostContainer>
+      <h1>{data.markdownRemark.frontmatter.title}</h1>
       <Date>{data.markdownRemark.frontmatter.date}</Date>
       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-    </div>
+    </PostContainer>
   </PostWrapper>
 );
 
@@ -64,6 +78,16 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM D, YYYY")
         author
+        image {
+          childImageSharp {
+            sizes(
+              duotone: { highlight: "#E4EFF4", shadow: "#222220" }
+              maxWidth: 1200
+            ) {
+              ...GatsbyImageSharpSizes_tracedSVG
+            }
+          }
+        }
       }
     }
   }
