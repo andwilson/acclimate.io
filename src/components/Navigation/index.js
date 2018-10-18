@@ -63,7 +63,24 @@ const LogoLink = styled(Link)`
   }
 `;
 
-const Item = styled.div`
+const Insights = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+  > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  transition: all 0.1s ease;
+  &:hover {
+    background: ${lighten(0.05, colors.dark)};
+  }
+`;
+
+const DropItem = styled.div`
   display: flex;
   align-items: center;
   padding: 0 10px;
@@ -119,7 +136,7 @@ const Drop = styled.div`
     display: none;
     visibility: hidden;
     opacity: 0;
-    ${Item}:hover & {
+    ${DropItem}:hover & {
       display: flex;
       visibility: visible;
       opacity: 1;
@@ -182,15 +199,18 @@ export default class Navigation extends React.Component {
             <Title to="/">Acclimate</Title>
           </Left>
           <Right>
-            <Item onClick={this.aboutHandler} toggle={this.state.aboutToggle}>
+            <DropItem
+              onClick={this.aboutHandler}
+              toggle={this.state.aboutToggle}
+            >
               <a href="#">About</a>
               <Drop toggle={this.state.aboutToggle}>
                 <SLink to="/services">Services</SLink>
                 <SLink to="/process">Process</SLink>
                 <SLink to="/industries">Industries</SLink>
               </Drop>
-            </Item>
-            <Item
+            </DropItem>
+            <DropItem
               onClick={this.companyHandler}
               toggle={this.state.companyToggle}
             >
@@ -200,7 +220,10 @@ export default class Navigation extends React.Component {
                 <SLink to="/careers">Careers</SLink>
                 <SLink to="/contact">Contact</SLink>
               </Drop>
-            </Item>
+            </DropItem>
+            <Insights>
+              <Link to="/insights">Insights</Link>
+            </Insights>
           </Right>
         </Nav>
       </Wrapper>
