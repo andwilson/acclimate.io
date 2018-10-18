@@ -31,15 +31,22 @@ const Title = styled(Link)`
   font-weight: 700;
   text-decoration: none;
   color: #ffffff;
-  font-size: 20px;
-  transition: all 0.2s ease;
-  &:hover {
-    color: white;
+  font-size: 18pt;
+  @media (max-width: 500px) {
+    font-size: 14pt;
   }
 `;
 
 const Right = styled.div`
   display: flex;
+  font-size: 12pt;
+  @media (max-width: 500px) {
+    font-size: 10pt;
+  }
+  a {
+    color: ${colors.white}
+    text-decoration: none;
+  }
 `;
 
 const LogoLink = styled(Link)`
@@ -68,12 +75,6 @@ const Insights = styled.div`
   align-items: center;
   padding: 0 10px;
   position: relative;
-  > a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-  }
   transition: all 0.1s ease;
   &:hover {
     background: ${lighten(0.05, colors.dark)};
@@ -85,17 +86,9 @@ const DropItem = styled.div`
   align-items: center;
   padding: 0 10px;
   position: relative;
-  > a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-  }
   &:after {
     content: "\u003e";
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
+    color: ${colors.white};
     display: inline-block;
     margin-left: 5px;
     transition: all 0.1s ease;
@@ -151,10 +144,10 @@ const SLink = styled(Link)`
   height: 35px;
   padding-left: 10px;
   border-top: 1px solid ${lighten(0.05, colors.dark)};
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 300;
+  font-size: 10pt;
+  @media (max-width: 500px) {
+    font-size: 8pt;
+  }
   &:hover {
     background: ${lighten(0.05, colors.dark)};
   }
