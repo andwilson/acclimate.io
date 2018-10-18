@@ -55,31 +55,50 @@ const Subtitle = styled.span`
   font-family: "alegreya";
 `;
 
-// const Name = data.markdownRemark.frontmatter.author;
+export default class BlogPost extends React.Component {
+  getAvatar(author) {
+    if (author === "Andrew Wilson") {
+      return this.props.data.aw;
+    }
+    if (author === "Josh Zastrow") {
+      return this.props.data.jz;
+    }
+    if (author === "Zach Litif") {
+      return this.props.data.zl;
+    }
+    if (author === "Jonas Linden") {
+      return this.props.data.jl;
+    }
+    return this.props.data.aw;
+  }
 
-export default ({ data }) => (
-  <PostWrapper>
-    <Helmet title={data.markdownRemark.frontmatter.title} />
-    <Banner
-      sizes={data.markdownRemark.frontmatter.image.childImageSharp.sizes}
-    />
-    <PostContainer>
-      <h1>{data.markdownRemark.frontmatter.title}</h1>
-      <Subtitle>{data.markdownRemark.frontmatter.description}</Subtitle>
-      <Author
-        avatar={data.aw}
-        name={data.markdownRemark.frontmatter.author}
-        date={data.markdownRemark.frontmatter.date}
-      />
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      <Author
-        avatar={data.aw}
-        name={data.markdownRemark.frontmatter.author}
-        date={data.markdownRemark.frontmatter.date}
-      />
-    </PostContainer>
-  </PostWrapper>
-);
+  render() {
+    const post = this.props.data.markdownRemark.html;
+    const frontmatter = this.props.data.markdownRemark.frontmatter;
+    const avatar = this.props.data.aw;
+    return (
+      <PostWrapper>
+        <Helmet title={frontmatter.title} />
+        <Banner sizes={frontmatter.image.childImageSharp.sizes} />
+        <PostContainer>
+          <h1>{frontmatter.title}</h1>
+          <Subtitle>{frontmatter.description}</Subtitle>
+          <Author
+            avatar={this.getAvatar(frontmatter.author)}
+            name={frontmatter.author}
+            date={frontmatter.date}
+          />
+          <div dangerouslySetInnerHTML={{ __html: post }} />
+          <Author
+            avatar={this.getAvatar(frontmatter.author)}
+            name={frontmatter.author}
+            date={frontmatter.date}
+          />
+        </PostContainer>
+      </PostWrapper>
+    );
+  }
+}
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
