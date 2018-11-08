@@ -10,7 +10,7 @@ image: "components-of-a-machine-learning-system.jpg"
 There is tremendous promise from machines that can make decisions for themselves. Routine business decisions on things such as pricing, time estimates, and category choices can now be automated and scaled ad infinitum. Advanced pattern recognition algorithms serve as intelligent helpers, improving the effectiveness and focus of your specialized knowledge workers many times over. Algorithmic “pre-screens” of potential drug combinations, patient documents, contracts or images can speed-up the discovery and review process when the volume of data becomes too great to manually look through. Examples like these hint at powerfully intelligent algorithms that can offer new capabilities in a business setting.
 But in practice, the algorithms alone are not enough. Deployed, they may serve as an integral decision-making unit of a larger system, however these algorithms make up a small part of the system design and engineering efforts. In this post we will talk a bit about the auxiliary systems that support these algorithms; including your data source, pipelines, storage and visualization systems. Let us lift up the hood and survey the components of the system architecture.
 
-# Data Sources
+## Data Sources
 
 Traditionally, the task of computing an answer (or output) from incoming information was written by your Software Engineer. To oversimplify things, their job has been to synthesize an explicit set of instructions that a computer can repeatedly execute. As far as algorithmic development goes, the Software Engineer may require only a few examples (and perhaps few more “edge-cases”) to determine these steps. Machine Learning algorithms functionally do this, but the approach is more statistical. As data is fed in, the algorithms transform the information into a probable output. They then make very minor self-corrections each time the prediction is wrong. To reach the point where these algorithms begin responding correctly on a wide gamut of possible incoming information, they require far more than a few examples.
 To make matters a bit more complicated, features deemed useful for predicting the correct outcome may come from disparate sources. Understanding what it takes to extract and then combine the necessary data from multiple sources will give you an idea of the engineering effort involved. Collecting data is an essential step for training, making predictions, and retraining as the outside world changes.
@@ -18,12 +18,12 @@ To make matters a bit more complicated, features deemed useful for predicting th
 In a deployed setting, the notion of concept drift comes into play. If you train your model on data of a certain characteristic, then it will only perform well on new data of the similar characteristics. This refers to the algorithms capacity to generalize to new information. Your data source may change over time; either smoothly, abruptly, or cyclically (in the case of seasonality). There are several approaches to address this, but as the relationship from your inputs to outputs have changed, your model or your data preparation should change too.
 You will extract features from your data sources and use these as features to train a model. Features curated from data sources for training must be available for inference on new, unseen and unlabeled items. Missing data is a common occurrence in the real world, but this needs to be closely monitored as information moves from your data sources into your model. Often times it helps to assign ownership over each data source or processed feature, so changes in business logic, data collection or data organization will not silently disrupt your models performance.
 
-# Data Storage
+## Data Storage
 
 Since the available signals for the machine learning system come from a variety of sources and may be reused or processed further, often times a good solution is to create an intermediate storage system that will hold these extracted “features”. Some companies choose to design a repository of extracted features commonly referred to as a “data lake”. This unstructured data store can be continuously updated and used to generate features for a variety of machine learning systems. This structure is useful because it is not as rigidly bound to a schema as traditional relational databases, and can allow for you to more easily adapt changes as new features are engineered.
 When there is a large amount of data that ultimately needs to be ingested and joined together for the machine learning system, it may also make sense to establish a structured data warehouse that holds the prepared data. Denormalized tables of pre-joined datasets help speed up processing for your analytics and machine learning algorithms. If you have a database that supports your business processes, it is most likely intended for fast transactions that supports customer activity, but for analytics you should setup a database that supports analytical queries. Establishing these intermediary databases is necessary because it is unwise to run taxing analytical queries against your production database every time the machine learning system executes a prediction or a query is processed.
 
-# Data Pipeline
+## Data Pipeline
 
 The discussion of extracting data from a variety of sources, transforming it into appropriate signals for a machine learning algorithm and loading it into places where it’s needed falls under the umbrella of ETL processes. Modern paradigms of these data workflows take a functional approach to data transformations, and the ecosystem of tools have begun to support code as a means for defining these pipelines.
 
@@ -31,7 +31,7 @@ Where the data comes from, how it is getting transformed, and where it ends up g
 
 For young companies, leveraging third party tools and providers for pipeline management is far more preferable than building pipelines from scratch, and as the machine learning systems mature, organizations will most likely require dedicated engineers to manage the infrastructure. In the early stages of implementing your data strategy, it may make the most sense to get an end-to-end pipeline in place before any model is deployed. Heuristics and traditional programming logic is still very useful, and these components can be converted into features themselves or replaced in your pipeline with a predictive model when the time is right.
 
-# Machine Learning Model
+## Machine Learning Model
 
 The machine learning model is your core system -- responsible for receiving in signals from your business and making decisions; whether classifying observations to be in one category or another, or by providing a quantified prediction of what the results should be. They are best built for routine decisions that are based on the same subset of information -- ones that require much of your valuable knowledge workers time to process.
 
@@ -39,7 +39,7 @@ To build one, you must have many historical examples that are labeled with the r
 
 There are learning algorithms that do not require labeled "Truths" on your data. Referred to as “unsupervised learning”, these machine learning algorithms are also excellent at finding patterns in the data; uncovering structures and groupings that are not immediately realized by manual analysis. Some use cases include determining the precise location of a new cell tower or chain-store based on geographical data, or even clustering and segmenting customer or market groups by considering many factors simultaneously. Often, these algorithms are best for intelligent grouping, but do have application in other domains.
 
-# Dashboards, Monitors and Interfaces
+## Dashboards, Monitors and Interfaces
 
 This can be considered the last mile of your machine learning system. How does the algorithm interface with your business? Who is the end user, and how will they interact with the outputs? A Software Engineer may want an API to call, while an Analyst may want tabulated results to query. A Product Manager may want a report or visualization sent to their email or accessible through a dashboard. Your customer may want to see the output in the form of an emoticon on the customer platform. Executives may want the predicted results in an infographic that describes a high level view of the industry or business. The degree of automation and sophistication of delivery depend on these end user requirements. If you require the results on a frequent basis, then more engineering effort will be required to automate the delivery.
 
@@ -47,6 +47,6 @@ Monitors that keep track of the input signals and output predictions of the mode
 
 Recent demands of the market require for interpretability of the machine learning models themselves. Understanding which input signals contributed the most to your models prediction, or the reasoning behind a specific prediction require unique visualizations of the data, the predictions, and even the models inner workings. In one approach called “feature ranking”, model predictions are run repeatedly while dropping portions of the incoming data, and the corresponding prediction accuracy is measured. The impact each missing feature has on predictions can be visualized, even as heat maps in the case of image data.
 
-# Conclusion
+## Conclusion
 
 This list is not exhaustive, but hopefully gives you a perspective what to consider when moving your model from research into a real world setting. The potential capabilities of a model that understands the surrounding world is very powerful, and it should be high on the agenda to make sure this capability is retained as your model moves from in vitro to in situ.
