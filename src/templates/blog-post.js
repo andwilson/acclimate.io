@@ -75,10 +75,21 @@ export default class BlogPost extends React.Component {
   render() {
     const post = this.props.data.markdownRemark.html;
     const frontmatter = this.props.data.markdownRemark.frontmatter;
-    const avatar = this.props.data.aw;
     return (
       <PostWrapper>
-        <Helmet title={frontmatter.title} />
+        <Helmet title={frontmatter.title}>
+          <meta name="description" content={frontmatter.description} />
+          <meta name="image" content={frontmatter.image.childImageSharp.sizes.src} />
+          <meta property="og:url" content={`https://www.acclimate.io/${frontmatter.path}`} />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content={frontmatter.title} />
+          <meta property="og:description" content={frontmatter.description} />
+          <meta property="og:image" content={frontmatter.image.childImageSharp.sizes.src} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={frontmatter.title} />
+          <meta name="twitter:description" content={frontmatter.description} />
+          <meta name="twitter:image" content={frontmatter.image.childImageSharp.sizes.src} />
+        </Helmet>
         <Banner sizes={frontmatter.image.childImageSharp.sizes} />
         <PostContainer>
           <h1>{frontmatter.title}</h1>
@@ -110,6 +121,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM D, YYYY")
         author
         description
+        path
         image {
           childImageSharp {
             sizes(
