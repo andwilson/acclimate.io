@@ -7,6 +7,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.acclimate.io`
+      }
+    },
+    {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: "2072447129733768"
