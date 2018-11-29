@@ -67,7 +67,7 @@ export default ({ data }) => (
               intellectual property litigation, and a knack for capacity
               building. From working with startup nonprofits to Fortune 100
               companies, Zach analyzes the culture and organizational behavior
-              to taylor specific strategies for organizational effectiveness and
+              to tailor specific strategies for organizational effectiveness and
               sustainable scaling.
             </p>
           </div>
@@ -92,22 +92,6 @@ export default ({ data }) => (
         </AlternatingSection>
         <AlternatingSection>
           <div>
-            <Portrait sizes={data.jl.sizes} />
-          </div>
-          <div>
-            <h2>Jonas Linden</h2>
-            <HorizontalAccentLeft />
-            <p>
-              Leader with demonstrated success at defining strategy and
-              directing teams to develop and manage product lines used by
-              enterprise companies world wide. Expert in incubating businesses
-              from ideation to full scale global production by leading global
-              development and cross-functional teams.
-            </p>
-          </div>
-        </AlternatingSection>
-        <AlternatingSection>
-          <div>
             <Portrait sizes={data.jz.sizes} />
           </div>
           <div>
@@ -127,21 +111,17 @@ export default ({ data }) => (
         </AlternatingSection>
         <AlternatingSection>
           <div>
-            <Portrait sizes={data.at.sizes} />
+            <Portrait sizes={data.jl.sizes} />
           </div>
           <div>
-            <h2>Andrew Takao</h2>
+            <h2>Jonas Linden</h2>
             <HorizontalAccentLeft />
             <p>
-              Andrew is a results-oriented mobile and web application developer.
-              Born in Japan, Andrew has a unique cultural upbringing of both
-              Japan and America. A Northeastern graduate of Mechanical
-              Engineering, Andrew has discovered a love for programming and has
-              been building mobile applications for happy clients around the
-              Boston area. Some of his interesting projects include leveraging
-              Alexa’s developer kit for voice controlled HVAC systems and an MIT
-              startup that utilizes MBTA public transit for digital city tour
-              guides. 
+              Leader with demonstrated success at defining strategy and
+              directing teams to develop and manage product lines used by
+              enterprise companies world wide. Expert in incubating businesses
+              from ideation to full scale global production by leading global
+              development and cross-functional teams.
             </p>
           </div>
         </AlternatingSection>
