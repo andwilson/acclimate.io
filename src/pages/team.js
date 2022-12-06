@@ -109,22 +109,6 @@ export default ({ data }) => (
             </p>
           </div>
         </AlternatingSection>
-        <AlternatingSection>
-          <div>
-            <Portrait sizes={data.jl.sizes} />
-          </div>
-          <div>
-            <h2>Jonas Linden</h2>
-            <HorizontalAccentLeft />
-            <p>
-              Leader with demonstrated success at defining strategy and
-              directing teams to develop and manage product lines used by
-              enterprise companies world wide. Expert in incubating businesses
-              from ideation to full scale global production by leading global
-              development and cross-functional teams.
-            </p>
-          </div>
-        </AlternatingSection>
       </div>
     </SectionWrapper>
   </div>
@@ -138,11 +122,6 @@ export const pageQuery = graphql`
       }
     }
     aw: imageSharp(id: { regex: "/aw.png/" }) {
-      sizes(maxWidth: 200) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    jl: imageSharp(id: { regex: "/jl.png/" }) {
       sizes(maxWidth: 200) {
         ...GatsbyImageSharpSizes
       }
